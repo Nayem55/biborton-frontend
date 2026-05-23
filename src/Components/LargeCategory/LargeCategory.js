@@ -125,7 +125,7 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
             <div className="flex items-center gap-2 text-sm text-gray-700">
               <Phone className="w-4 h-4" />
 
-              <a href="tel:+8801404403965">+8801 404403965</a>
+              <a href="tel:+8801404403965">+8801 404403596</a>
             </div>
 
             <div className="mb-1 ">

@@ -37,7 +37,7 @@ const NewArrival = () => {
 
   return (
     <section
-      className="overflow-hidden bg-gradient-to-b from-white to-gray-50 py-15 pt-3"
+      className="overflow-hidden py-24 mt-16 bg-gradient-to-b from-white to-gray-50 pt-3"
       aria-label="Signature Perfume Collection"
     >
       {/* ✅ Structured Data */}
@@ -53,7 +53,7 @@ const NewArrival = () => {
       <div className="container mx-auto px-6 text-center">
         {/* Section Header */}
 
-        <div class="flex justify-between items-end mb-5  pb-4">
+        <div class="flex justify-between items-end mb-5 pb-4">
           <div>
             <h2 class="text-[10px] uppercase text-left tracking-[0.4em] text-gray-400 ml-1 mb-1">
               Best Selection
