@@ -11,52 +11,53 @@ import Image from "next/image";
 
 const brands = [
   {
-    name: "Flormar",
-    count: "1000+",
-    img: "https://luvit.com.bd/wp-content/uploads/2026/05/flormar-logo.jpg",
-    slug: "/product-category/flormar product",
+    name: "Shirt",
+    count: "100+",
+    img: "https://api.confidenceresellerbd.com/media/category_thumbnails/temp_56yDKnP.jpg",
+    slug: "/product-category/shirt",
   },
   {
-    name: "Armaf",
+    name: "T-shirt",
     count: "100+",
-    img: "https://luvit.com.bd/wp-content/uploads/2026/05/armaf-logo.png",
-    slug: "/product-category/armaf product",
+    img: "https://api.confidenceresellerbd.com/media/category_thumbnails/temp_jS730cm.jpg",
+    slug: "/product-category/Tshirt",
   },
   {
-    name: "Armaf Beauty",
+    name: "Two Piece",
     count: "100+",
-    img: "https://luvit.com.bd/wp-content/uploads/2026/05/armaf-beauty-logo.jpg",
-    slug: "/product-category/armaf beauty product",
+    img: "https://api.confidenceresellerbd.com/media/category_thumbnails/temp_MUFpWJe.jpg",
+    slug: "/product-category/Two piece",
   },
   {
-    name: "J.",
+    name: "Three piece",
     count: "100+",
-    img: "https://luvit.com.bd/wp-content/uploads/2026/05/jdot.png",
+    img: "https://api.confidenceresellerbd.com/media/category_thumbnails/temp_Bq9JOrB.jpg",
+    slug: "/product-category/Three piece",
+  },
+
+  {
+    name: "Lehenga",
+    count: "100+",
+    img: "https://i.pinimg.com/736x/4c/25/0c/4c250cb5e595b75236d7e2f7271c70ad.jpg",
     slug: "/product-category/jdot product",
+  },
+  {
+    name: "Men's Watch",
+    count: "100+",
+    img: "https://api.confidenceresellerbd.com/media/category_thumbnails/temp.webp",
+    slug: "/product-category/Men Watch",
   },
   {
     name: "Best Sale",
     count: "100+",
-    img: "https://luvit.com.bd/wp-content/uploads/2026/05/jdot-logo.png",
-    slug: "/product-category/jdot product",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN2x9eo7BA5pKXLmMbZwNydBP7BV60c2GJ4Q&s",
+    slug: "/product-category/best sellings",
   },
   {
-    name: "Premium",
+    name: "New Arrivals",
     count: "100+",
-    img: "https://luvit.com.bd/wp-content/uploads/2026/05/jdot-logo.png",
-    slug: "/product-category/jdot product",
-  },
-{
-    name: "Flormar",
-    count: "1000+",
-    img: "https://luvit.com.bd/wp-content/uploads/2026/05/flormar-logo.jpg",
-    slug: "/product-category/flormar product",
-  },
-  {
-    name: "Armaf",
-    count: "100+",
-    img: "https://luvit.com.bd/wp-content/uploads/2026/05/armaf-logo.png",
-    slug: "/product-category/armaf product",
+    img: "https://png.pngtree.com/png-clipart/20250103/original/pngtree-new-arrival-label-business-style-red-png-image_6810585.png",
+    slug: "/product-category/new",
   },
 ];
 

@@ -192,8 +192,11 @@ const Product = ({ product }) => {
 
         <Link href={`/product/${slug}`}>
           <h3 className="cursor-pointer font-serif text-base font-medium text-gray-950 mb-1 line-clamp-2 min-h-[2.5rem]">
-            {name} {size && `${size} ML`}
+            {name}
           </h3>
+          {/* <h3 className="cursor-pointer font-serif text-base font-medium text-gray-950 mb-1 line-clamp-2 min-h-[2.5rem]">
+            {size &&  `Size: ${size}`}
+          </h3> */}
         </Link>
 
         {/* RATING UI */}
