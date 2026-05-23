@@ -70,7 +70,7 @@ const MobileNavMenu = ({ popCart, handlePopCart }) => {
           <button
             aria-label="Open menu"
             onClick={() => handleMenu(true)}
-            className="p-2 -ml-2 text-black/90 hover:text-black transition-colors"
+            className="text-black/90 hover:text-black transition-colors"
           >
             <Menu className="w-7 h-7" />
           </button>
@@ -86,9 +86,9 @@ const MobileNavMenu = ({ popCart, handlePopCart }) => {
             </p> */}
             {/* অথবা ইমেজ  */}
             <img
-              src="https://i.ibb.co.com/JPJLjPT/592049781-122108480409129391-8011183550180274212-n.jpg"
+              src="https://i.ibb.co.com/qL6G2k62/3039b878-bec9-43ca-b082-1cec9a342a71-removebg-preview.png"
               alt="Biborton"
-              className="h-5 object-contain ml-2"
+              className="h-10 mt-[-10px] object-contain"
               title="Biborton Logo"
               width={140}
               height={50}

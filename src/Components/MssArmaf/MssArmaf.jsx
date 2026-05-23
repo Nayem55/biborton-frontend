@@ -6,31 +6,27 @@ const MssArmaf = () => {
   const items = [
     {
       id: 1,
-      title: "Lips Care",
+      title: "Home Decor Set 1",
       desc: "Thoughtful gifts for the ones who make it all happen.",
-      // img: "https://luvit.com.bd/wp-content/uploads/2026/04/mynt-img-1.jpg", Larger img for better quality
-      img: "https://luvit.com.bd/wp-content/uploads/2026/05/mynt-img-1.jpg",
+      img: "https://api.confidenceresellerbd.com/media/product_thumbnails/17558619276483.jpg",
     },
     {
       id: 2,
-      title: "Most-loved fragrances",
-      desc: "Make women’s day with a new signature scent.",
-      // img: "https://luvit.com.bd/wp-content/uploads/2026/04/mynt-img-2.png", Larger img for better quality
-      img: "https://luvit.com.bd/wp-content/uploads/2026/05/mynt-img-2.png",
+      title: "Home Decor Set 2",
+      desc: "Classic lighting set for your room",
+      img: "https://api.confidenceresellerbd.com/media/product_thumbnails/17349550584759.webp",
     },
     {
       id: 3,
-      title: "Flormar Collection",
+      title: "Makeup Brush Set 1",
       desc: "All Women’s must-haves, all in one place.",
-      // img: "https://luvit.com.bd/wp-content/uploads/2026/04/mynt-img-3.jpg", Larger img for better quality
-      img: "https://luvit.com.bd/wp-content/uploads/2026/05/mynt-img-3.jpg",
+      img: "https://api.confidenceresellerbd.com/media/product_thumbnails/17384078343743.jpg",
     },
     {
       id: 4,
-      title: "Lips color your love",
+      title: "Makeup Brush Set 2",
       desc: "Gifts Women will love. (Your wallet will too!).",
-      // img: "https://luvit.com.bd/wp-content/uploads/2026/04/mynt-img-1.png",   Larger img for better quality
-      img: "https://luvit.com.bd/wp-content/uploads/2026/05/mynt-img-1.png",
+      img: "https://api.confidenceresellerbd.com/media/product_thumbnails/17384078765885.jpg",
     },
   ];
 

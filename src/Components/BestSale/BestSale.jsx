@@ -59,11 +59,11 @@ const BestSale = () => {
               Best Selection
             </h2>
             <h3 class="text-xl sm:text-2xl uppercase   md:text-3xl">
-              Best Sellings makeup
+              Best Sellings
             </h3>
           </div>
           <Link
-            href="/shop"
+            href="/product-category/two piece"
             class="text-[11px] font-bold text-gray-800 uppercase  border-b tracking-[0.2em] border-gray-700 pb-1 hover:text-gold-accent hover:border-gold-accent transition-all"
           >
             See More

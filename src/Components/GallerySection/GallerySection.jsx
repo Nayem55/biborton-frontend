@@ -6,34 +6,30 @@ const GallerySection = () => {
   const items = [
     {
       id: 1,
-      title: "Matte Red Lips",
-      desc: "Bold matte color that stays smooth and lasts all day.",
-      img: "https://luvit.com.bd/wp-content/uploads/2026/04/flormar-lips-1.png",
-      // img: "https://luvit.com.bd/wp-content/uploads/2026/05/flormar-lips-1.png", orginal image, but may be too large for web use. Consider resizing or optimizing.
+      title: "Premium Japani Silk Saree",
+      desc: "Elegant Japanese silk saree with a soft texture and luxurious traditional look for any occasion.",
+      img: "https://api.confidenceresellerbd.com/media/product_thumbnails/17784857799746.jpg",
     },
 
     {
       id: 3,
-      title: "Jdot Perfume",
-      desc: "Most popular scent. A blend of fresh citrus, floral notes.",
-      // img: "https://luvit.com.bd/wp-content/uploads/2026/04/flormar-lips-1.jpg", original image, but may be too large for web use. Consider resizing or optimizing.
-      // img: "https://luvit.com.bd/wp-content/uploads/2026/05/flormar-lips-1.jpg",
-      img: "https://i.ibb.co.com/4b72Qrk/jdot-perfume.webp",
+      title: "Dhupiyan Silk Tangail Saree",
+      desc: "Classic Tangail saree crafted with premium Dhupiyan silk for a graceful and timeless appearance.",
+      img: "https://api.confidenceresellerbd.com/media/product_thumbnails/17717412412663.jpg",
     },
+
     {
       id: 4,
-      title: "Armaf Club De Nuit ",
-      desc: "A luxurious fragrance with a rich, long-lasting scent.",
-      // img: "https://luvit.com.bd/wp-content/uploads/2026/04/flormar-lips-2.jpg", original image, but may be too large for web use. Consider resizing or optimizing.
-      // img: "https://luvit.com.bd/wp-content/uploads/2026/05/flormar-lips-2.jpg",
-      img: "https://i.ibb.co.com/Ps82014s/armaf-perfume.webp",
+      title: "Digital Printed Three Pieces",
+      desc: "Stylish three-piece dress set featuring modern digital prints and comfortable everyday fabric.",
+      img: "https://api.confidenceresellerbd.com/media/product_thumbnails/17778748984019.jpg",
     },
-        {
+
+    {
       id: 2,
-      title: "Glossy Shine",
-      desc: "Lightweight gloss that adds shine and keeps lips hydrated.",
-      // img: "https://luvit.com.bd/wp-content/uploads/2026/04/flormar-lips-3.jpg", original image, but may be too large for web use. Consider resizing or optimizing.
-      img: "https://luvit.com.bd/wp-content/uploads/2026/05/flormar-lips-3.jpg",
+      title: "Premium Party Wear Lehenga",
+      desc: "Beautiful party wear lehenga designed with elegant detailing for weddings and festive celebrations.",
+      img: "https://api.confidenceresellerbd.com/media/product_thumbnails/17680270402433.jpg",
     },
   ];
 
@@ -48,7 +44,7 @@ const GallerySection = () => {
           <div key={item.id} className="cursor-pointer">
             
             {/* Image */}
-            <div className="relative w-full h-[210px] rounded-md overflow-hidden">
+            <div className="relative w-full h-[250px] rounded-md overflow-visible">
               <Image
                 src={item.img}
                 alt={item.title}

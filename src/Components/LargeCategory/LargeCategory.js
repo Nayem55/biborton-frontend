@@ -167,19 +167,9 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
               {/* DROPDOWN */}
               {menu.dropdown && (
                 <div
-                  className={`
-  fixed left-0 w-full
-  bg-white shadow-xl border-t
-  opacity-0 invisible translate-y-3
-  group-hover:opacity-100 
-  group-hover:visible 
-  group-hover:translate-y-0
-  transition-all duration-300
-  z-50 
-  ${mounted && scrollPosition > 50 ? "top-[117px]" : "top-[169px]"}
-`}
+                  className={`fixed left-0 w-full bg-white shadow-xl opacity-0 invisible translate-y-3 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 ${mounted && scrollPosition > 50 ? "top-[199px]" : "top-[199px]"}`}
                 >
-                  <div className="container mx-auto  py-10 grid grid-cols-5 gap-10">
+                  <div className="container mx-auto py-10 grid grid-cols-5 gap-10">
                     {menu.dropdown.map((col, i) => (
                       <div key={i}>
                         <h4 className="font-semibold mb-3 text-gray-900">

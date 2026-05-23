@@ -80,9 +80,6 @@ const Home = () => {
       <BestSale />
       <NewArrival></NewArrival>
       <PremiumSection />
-      <PomoCard></PomoCard>
-      <FlormarSection></FlormarSection>
-      <BodySpraySecrion />
       <GallerySection />
 
     </div>

@@ -23,13 +23,13 @@ const brands = [
     slug: "/product-category/Tshirt",
   },
   {
-    name: "Two Piece",
+    name: "2 Piece",
     count: "100+",
     img: "https://api.confidenceresellerbd.com/media/category_thumbnails/temp_MUFpWJe.jpg",
     slug: "/product-category/Two piece",
   },
   {
-    name: "Three piece",
+    name: "3 piece",
     count: "100+",
     img: "https://api.confidenceresellerbd.com/media/category_thumbnails/temp_Bq9JOrB.jpg",
     slug: "/product-category/Three piece",
@@ -42,7 +42,7 @@ const brands = [
     slug: "/product-category/jdot product",
   },
   {
-    name: "Men's Watch",
+    name: "Watch",
     count: "100+",
     img: "https://api.confidenceresellerbd.com/media/category_thumbnails/temp.webp",
     slug: "/product-category/Men Watch",
@@ -54,7 +54,7 @@ const brands = [
     slug: "/product-category/best sellings",
   },
   {
-    name: "New Arrivals",
+    name: "New",
     count: "100+",
     img: "https://png.pngtree.com/png-clipart/20250103/original/pngtree-new-arrival-label-business-style-red-png-image_6810585.png",
     slug: "/product-category/new",
@@ -93,8 +93,8 @@ const ShopByBrand = () => {
                       src={item.img}
                       alt={item.name}
                       title={item.name}
-                      width={24}
-                      height={24}
+                      width={28}
+                      height={28}
                       className="object-contain"
                     />
                   </div>
