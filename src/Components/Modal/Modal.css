@@ -1,0 +1,25 @@
+.dialogue {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
+  height: 80%;
+  width: 1000px;
+}
+
+.limit-details-lines{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6 ;
+  -webkit-box-orient: vertical;
+}
+
+
+
+.dialogue::backdrop{
+    background-color: rgba(0, 0, 0, 0.664)
+}
+
+.modal-img {
+  height: 400px !important;
+}

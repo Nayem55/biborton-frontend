@@ -1,0 +1,6 @@
+.mobile-search{
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 100px;
+}

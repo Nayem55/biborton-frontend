@@ -1,0 +1,35 @@
+/* ShopByConcern.css */
+.shopByConcern{
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f3f3f3 25%, #e2e2e2 75%);
+  margin-top: 40px;
+}
+
+
+.shopConcern {
+  padding: 40px 0; 
+  width: 65vw;
+  margin: 0 auto;
+}
+
+.swiper-slide img {
+  margin: 0 auto; 
+  display: block; 
+  cursor: pointer;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none; /* Hide the navigation arrows */
+}
+
+@media screen and (max-width:640px){
+  .shopConcern {
+    padding: 10px 0; 
+    width: 90vw;
+    margin: 0 auto;
+  }
+  
+}

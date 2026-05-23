@@ -1,0 +1,114 @@
+.featured {
+  margin-top: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 20px;
+  display: flex;
+}
+
+.featured a {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.featured a::after {
+  content: "";
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  transition: opacity 400ms ease-in-out;
+}
+
+.featured a:hover::after {
+  opacity: 0.3;
+  color: #ff81a9;
+}
+
+.featured  img {
+  display: block;
+  width: 100%;
+  transition: scale 400ms ease-in-out;
+}
+
+@keyframes bounceEffect {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounceEffect1 {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-50px);
+  }
+  60% {
+    transform: translateY(-25px);
+  }
+}
+@keyframes bounceEffect2 {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-70px);
+  }
+  60% {
+    transform: translateY(-35px);
+  }
+}
+
+.bounce-animation {
+  animation: bounceEffect 2s;
+}
+.bounce-animation1 {
+  animation: bounceEffect1 2s;
+}
+.bounce-animation2 {
+  animation: bounceEffect1 2s;
+}
+
+
+@media screen and (max-width: 992px) {
+  .featured {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .featured {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .featured p {
+    font-size: 10px;
+    text-decoration: underline;
+  }
+
+}

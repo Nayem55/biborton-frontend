@@ -1,0 +1,105 @@
+.cart-dialogue {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.cart-dialogue::backdrop {
+  background-color: rgba(0, 0, 0, 0.664);
+}
+
+.cartModalProductContainer {
+  display: flex;
+  padding-left: 40px;
+  position: relative;
+}
+
+.cartModalProduct {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cartModalProduct img {
+  width: 20%;
+  height: 100%;
+}
+
+.cartModalProductDetails {
+  width: 80%;
+}
+
+
+/*! css for checkboxes */
+
+input[type="checkbox"]{
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: rgba(0, 0, 0, 0.342);
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  transition: all 200ms ease-out;
+  display: grid;
+ place-items: center;
+}
+
+input[type="checkbox"]:hover{
+  background-color: rgba(0, 0, 0, 0.137);
+
+}
+
+input[type="checkbox"]:after{
+  display: inline-block;
+  text-rendering: auto;
+  font: var(--fa-font-solid);
+  -webkit-font-smoothing: antialiased;
+  content: "\f00c";
+  font-size: 15px;
+  cursor: pointer;
+  opacity: 0;
+  /* color: #F0C325; */
+  color: white;
+  transition: all 200ms ease-out;
+}
+
+
+input[type="checkbox"]:checked{
+   background: #7DC569;
+  opacity: .9;
+}
+
+input[type="checkbox"]:checked::after{
+opacity: 1;
+}
+
+@media screen and (max-width: 640px) {
+  .cart-dialogue {
+    width: 100%;
+  }
+
+  .cartModalProductContainer {
+    padding-left: 20px;
+  }
+
+  .cartModalProduct {
+    padding: 10px;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .cartModalProduct img {
+    width: 30%;
+    height: 60%;
+  }
+  
+  dialog:modal{
+    max-width: 100vw;
+  }
+}

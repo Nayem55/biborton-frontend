@@ -1,0 +1,324 @@
+[{
+    "_id": {
+      "$oid": "666989a78e2f19ed45838a2f"
+    },
+    "productID": "619011546638",
+    "question": "What are the ingredients of Earth Beauty And You Milk Brightening Face Wash?",
+    "answer": "The Earth Beauty And You Milk Brightening Face Wash is enriched with Milk and lactic acid."
+  },
+  {
+    "_id": {
+      "$oid": "666989a78e2f19ed45838a30"
+    },
+    "productID": "619011546638",
+    "question": "Why Should I Use Milk Brightening Face Wash?",
+    "answer": "You should use Milk Brightening Face Wash because milk is the best moisturizer for the skin. It is loaded with essential nutrients, including protein, fats and vitamins."
+  },
+  {
+    "_id": {
+      "$oid": "666989a78e2f19ed45838a31"
+    },
+    "productID": "619011546638",
+    "question": "Which Skin Type is the Milk Brightening Face Wash the most suitable for?",
+    "answer": "The Milk Brightening Face Wash of Earth Beauty And You is suitable for all types of skin. It does not have any side effects."
+  },
+  {
+    "_id": {
+      "$oid": "666989a78e2f19ed45838a32"
+    },
+    "productID": "619011546638",
+    "question": "What are the benefits of Milk Brightening Face Wash?",
+    "answer": "This face wash is used as a natural moisturizer of the skin, makes the skin smooth, soft and glowing by removing the dead skin cells and impurities, heals sunburns, cleanses your skin, offers relief to itchy skin."
+  },
+  {
+    "_id": {
+      "$oid": "666989a78e2f19ed45838a33"
+    },
+    "productID": "619011546638",
+    "question": "Can I Use Milk Brightening Face Wash Daily?",
+    "answer": "Yes, the Milk Brightening Face Wash is safe and effective for everyday use.."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d75"
+    },
+    "productID": "619011546621",
+    "question": "Is aloe vera good for oily skin?",
+    "answer": "Aloe vera is good for all types of skin but best for oily skin. As aloe vera controls the excess oil of the skin and keeps the skin fresh."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d76"
+    },
+    "productID": "619011546621",
+    "question": "Can I use aloe vera face wash when I have pimples?",
+    "answer": "Yes in fact aloe vera face wash prevents pimples as it soothes the skin and reduces the irritation and inflammation of the skin. "
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d77"
+    },
+    "productID": "619011546621",
+    "question": "What are the ingredients of Earth Beauty And You’s Aloe Vera Face Wash?",
+    "answer": "It has antimicrobial, anti-inflammatory and skin healing properties with the goodness of aloe vera extract."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d78"
+    },
+    "productID": "619011546621",
+    "question": "What are the benefits of using aloe vera face wash?",
+    "answer": "Heals the skin, prevents pimples, reduces irritation and helps in curing skin itching problems"
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d79"
+    },
+    "productID": "619011546621",
+    "question": "Can I Use the Aloe Vera Face Wash Daily?",
+    "answer": "Yes, you can use the aloe vera face wash daily. It has no side effects."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d7a"
+    },
+    "productID": "619011546607",
+    "question": "Is lemon good for skin?",
+    "answer": "Lemon is enriched with Vitamin-C, which is great for skin. It reduces acne, soothes the skin and helps in pimple control."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d7b"
+    },
+    "productID": "619011546607",
+    "question": "What is in Lemon Oil Control Face Wash?",
+    "answer": "It is loaded with the goodness of Vitamin-C and lemon extract."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d7c"
+    },
+    "productID": "619011546607",
+    "question": "How is Lemon Oil Control Face Wash good for oily skin?",
+    "answer": "It controls the excess oil of the skin but doesn’t make the skin dry also."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d7d"
+    },
+    "productID": "619011546607",
+    "question": "Why Should I Use Lemon Oil Control Face Wash?",
+    "answer": "It has the goodness of lemon extract that will make the skin oil free, reduces skin irritation, keeps the skin fresh and hydrated."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d7e"
+    },
+    "productID": "619011546607",
+    "question": "Is it safe to use Lemon Oil Control Face Wash everyday?",
+    "answer": "Yes, it is not only safe but also healthy for the skin to use Lemon Oil Control Face Wash everyday."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d7f"
+    },
+    "productID": "619011546645",
+    "question": "Why Should I Use Kaolin Clay Mineral Face Wash?",
+    "answer": "It hydrates the skin, makes it soft, cleanses the skin and controls the excess sebum production on the skin surface."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d80"
+    },
+    "productID": "619011546645",
+    "question": "Which skin type is the Kaolin Clay Mineral Face Wash most suitable for?",
+    "answer": "It is suitable for all types of skin."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d81"
+    },
+    "productID": "619011546645",
+    "question": "Is clay good for skin?Is clay good for skin?",
+    "answer": "Clay is excellent for skin because it absorbs excess oil, impurities, dead skin from the surface of the skin making the skin softer and smoother."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d82"
+    },
+    "productID": "619011546645",
+    "question": "Does Kaolin Clay Mineral Face Wash remove tan?",
+    "answer": "Kaolin Clay Mineral Face Wash helps to remove tan, lighten dark spots."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d83"
+    },
+    "productID": "619011546645",
+    "question": "What are the ingredients of Kaolin Clay Face Wash?",
+    "answer": "It is enriched with essential minerals , clay and exfoliator."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d84"
+    },
+    "productID": "619011546645",
+    "question": "Can I Use Kaolin Clay Mineral Face Wash daily?",
+    "answer": "Yes, it is healthy for the skin to use Kaolin Clay Mineral Face Wash everyday."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d85"
+    },
+    "productID": "619011546614",
+    "question": "Will Neem Face Wash irritate my skin?",
+    "answer": "No, neem face wash reduces irritation and inflammation of skin."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d86"
+    },
+    "productID": "619011546614",
+    "question": "Is Neem Face Wash good for dry skin?",
+    "answer": "Neem Acne Control Face Wash is good for dry skin as it controls the excess oil of the skin but does not make it dry or rough."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d87"
+    },
+    "productID": "619011546614",
+    "question": "Is Neem Acne Control Face Wash safe for Teenagers?",
+    "answer": "Neem Acne Control Face Wash is an anti acne face wash that is gentle for teenager’s skin and helps to make the skin soft and smooth. "
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d88"
+    },
+    "productID": "619011546614",
+    "question": "Why Should I Use the Neem Acne Control Face Wash?",
+    "answer": "It prevents acne, blackheads, deeply cleanses the skin, soothes irritated skin and moisturizes the skin."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d89"
+    },
+    "productID": "619011546614",
+    "question": "What will happen if I use Neem Acne Control Face Wash everyday?",
+    "answer": "Using Neem Acne Control Face Wash will make your skin acne free, healthy and smooth."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d8a"
+    },
+    "productID": "619011546737",
+    "question": "Is Vitamin-C helpful for my skin?",
+    "answer": "Yes Vitamin-C helps to reduce the irritation of skin and makes it smooth"
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d8b"
+    },
+    "productID": "619011546737",
+    "question": "What are the benefits of using Vitamin-C Purifying Face Wash?",
+    "answer": "It cleanses the excess oil and dirt of the skin, reduces irritation, brightens the skin and gives it a radiant glow."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d8c"
+    },
+    "productID": "619011546737",
+    "question": "Which skin type is most suitable for Vitamin-C Purifying Face Wash?",
+    "answer": "Vitamin-C Purifying Face Wash is good for all types of skin "
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d8d"
+    },
+    "productID": "619011546737",
+    "question": "What are the ingredients of Vitamin-C Purifying Face Wash?",
+    "answer": "It has nutrients of Vitamin- C and beta hydroxy acid – Salicylic acid – that gently exfoliates the skin pore-by-pore and fights blemishes for better skin clarity."
+  },
+  {
+    "_id": {
+      "$oid": "667a4cf3eceb799990721d8e"
+    },
+    "productID": "619011546737",
+    "question": "Is it safe to use Vitamin-C Purifying Face Wash everyday?",
+    "answer": "Yes it is safe to use Vitamin-C Purifying Face Wash everyday. There are no side effects."
+  },
+  {
+    "productID": "8941158124175",
+    "question": "Is the Hydrating Sunscreen sticky?",
+    "answer": "No, the Hydrating Sunscreen is light weighted and completely non-sticky."
+  },
+  {
+    "productID": "8941158124175",
+    "question": "How much sunscreen should you use everyday?",
+    "answer": "An adequate amount of sunscreen along the length of 2 fingers and apply 15- 20 minutes before going outside. "
+  },
+  {
+    "productID": "8941158124175",
+    "question": "Do we need to wear sunscreen everyday?",
+    "answer": "You should apply sunscreen everyday to keep your skin protected from harmful UV Rays."
+  },
+  {
+    "productID": "8941158124175",
+    "question": "Do we need to reapply sunscreen?",
+    "answer": "Yes, it is important to reapply your sunscreen.  Dermatologists recommend applying  sunscreen after every 2-3 hours. "
+  },
+  {
+    "productID": "8941158124175",
+    "question": "Why is it important to use High SPF sunscreen?",
+    "answer": "A High SPF sunscreen blocks the maximum amount of harmful UVB rays. A SPF with 50 or 50 Plus blocks around 95%- 98% of the UVB rays."
+  },
+  {
+    "productID": "8941158124182",
+    "question": "Will Onion Hair Oil make hair sticky?",
+    "answer": "No, the onion hair oil will not make the hair sticky. It is light weighted and non sticky "
+  },
+  {
+    "productID": "8941158124182",
+    "question": "How is Onion Oil helpful for Hair?",
+    "answer": "Onion Oil boosts the hair growth, controls hair fall and prevents from dandruff"
+  },
+  {
+    "productID": "8941158124182",
+    "question": "What type of hair is the Onion Oil most suitable for?",
+    "answer": "Onion Oil is suitable for all types of hair."
+  },
+  {
+    "productID": "8941158124182",
+    "question": "Can Onion Oil be mixed with other oils?",
+    "answer": "Yes, Onion Oil can be mixed with other oils. It will still be very effective"
+  },
+  {
+    "productID": "8941158124182",
+    "question": "Can I apply onion oil daily?",
+    "answer": "Yes, applying onion oil daily strengthens the hair roots, boosts hair growth, and controls hair fall damage to a great extent."
+  },
+  {
+    "productID": "8941158124205",
+    "question": "What are the benefits of coconut hair oil?",
+    "answer": "Coconut Hair Oil gives nutrients to the hair, keeps it healthy, boosts hair growth and keeps the scalp of the hair healthy."
+  },
+  {
+    "productID": "8941158124205",
+    "question": "Coconut Oil is best for what type of hair?",
+    "answer": "Coconut Hair Oil is suitable for all types of hair."
+  },
+  {
+    "productID": "8941158124205",
+    "question": "Is it necessary to regularly use coconut oil?",
+    "answer": "Yes, it is good for the scalp and hair’s health to keep oiling regularly."
+  },
+  {
+    "productID": "8941158124205",
+    "question": "How long should I keep the coconut oil in my hair ?",
+    "answer": "You should at least keep the oil in your hair for 2-3 hours. Do not keep the oil overnight or more than 12 hours. "
+  },
+  {
+    "productID": "8941158124205",
+    "question": "Can I apply Coconut Hair Oil daily?",
+    "answer": "Yes, it is better to apply coconut hair oil daily."
+  }
+]

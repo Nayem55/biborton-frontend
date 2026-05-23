@@ -1,0 +1,9 @@
+.slider-img-div{
+    overflow: hidden;
+}
+.slider-img-div img{
+    transition: all ease-in-out 600ms;
+}
+.slider-img-div img:hover{
+    transform: scale(1.3);
+}

@@ -1,0 +1,33 @@
+.mobile-category-container {
+  position: fixed;
+  top: 0px;
+  background: white;
+  z-index: 9999;
+  left: 0;
+  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.37) 0px 2px 4px;
+  width: 80%;
+  transition: all 300ms ease-in-out;
+  overflow-y: scroll;
+  padding-bottom: 200px;
+}
+
+.mobile-category-container-left{
+  left: -1000px;
+}
+
+
+.mobile-category {
+  padding: 10px 30px;
+}
+ .mobile-menu-hover {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 300ms ease-in-out ;
+}
+ .mobile-menu-hover > div{
+    overflow: hidden;
+}
+.grid-transition{
+    grid-template-rows: 1fr !important;
+}

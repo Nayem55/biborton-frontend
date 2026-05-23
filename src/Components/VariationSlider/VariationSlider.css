@@ -1,0 +1,22 @@
+.variation-swiper{
+    width: 600px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background: white;
+    padding: 10px 0px;
+    padding-left: 15px;
+}
+.variation-swiper .swiper-button-prev,.variation-swiper .swiper-button-next{
+    color: black;
+}
+.variation-swiper .swiper-button-prev::after{
+    font-size: 24px;
+}
+.variation-swiper .swiper-button-next::after{
+    font-size: 24px;
+}
+@media(max-width:640px){
+    .variation-swiper{
+        width: 320px;
+    }
+}

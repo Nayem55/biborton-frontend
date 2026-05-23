@@ -1,0 +1,92 @@
+.swing-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 60vh;
+  position: relative;
+  z-index: 100;
+  margin-top: 30px;
+}
+
+.hook {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #444;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+/* The line going down from the hook */
+.hook::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 2px;
+  height: 30px;
+  background-color: #444;
+  transform: translateX(-50%);
+}
+
+.ribbon-left,
+.ribbon-right {
+  width: 2px;
+  height: 50px;
+  background-color: #444;
+  position: absolute;
+  top: 30px;
+  z-index: 1;
+}
+
+.ribbon-left {
+  left: calc(50% - 75px);
+  transform: rotate(15deg);
+  transform-origin: top;
+}
+
+.ribbon-right {
+  right: calc(50% - 75px);
+  transform: rotate(-15deg);
+  transform-origin: top;
+}
+
+.swing-image {
+  margin-top: 30px;
+  transform-origin: top center;
+  animation: swing 4s ease-in-out infinite;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background: white;
+  z-index: 5;
+}
+
+@keyframes swing {
+  0% { transform: rotate(3deg); }
+  50% { transform: rotate(-3deg); }
+  100% { transform: rotate(3deg); }
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 992px) {
+  .swing-container {
+    height: 50vh;
+  }
+
+  .ribbon-left {
+    left: calc(50% - 40px);
+  }
+
+  .ribbon-right {
+    right: calc(50% - 40px);
+  }
+
+  .swing-image {
+    margin-top: 10px;
+    width: 90%;
+  }
+}

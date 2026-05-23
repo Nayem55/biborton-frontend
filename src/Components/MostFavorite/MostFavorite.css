@@ -1,0 +1,13 @@
+.most-favorite{
+    position: relative;
+    background: #ffffff;
+}
+
+.featured-collections::after{
+    top: 100%;
+}
+@media screen and (max-width: 640px) {
+    .most-favorite{
+        margin-top: 0;
+    }
+}

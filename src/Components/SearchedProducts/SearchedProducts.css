@@ -1,0 +1,53 @@
+.searchedProducts{
+    position: absolute;
+    width: 700px;
+    right: 0;
+    
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.18) 1px 1px 1px;
+    max-height: 500px; 
+    overflow-y: scroll;
+    top: 65px;
+    /* border: 1px solid gray; */
+}
+.searchedProduct {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.searchedProduct>div{
+    gap: 20px;
+}
+
+.searchedProduct img{
+    width: 80%;
+    height: 220px;
+}
+.searchedProductDetails{
+    height: 30%;
+    text-align: center;
+}
+
+@media screen and (max-width: 940px) {
+    .searchedProducts{
+        left: 5%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .searchedProducts{
+        left: 20px;
+        max-height: 400px; 
+        width: 90%;
+    }
+    .searchedProduct {
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .searchedProduct>div{
+        width: 90%;
+    }
+}

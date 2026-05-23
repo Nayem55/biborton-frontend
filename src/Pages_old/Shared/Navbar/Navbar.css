@@ -1,0 +1,12 @@
+   
+.goToTop{
+   position: sticky;
+   bottom: 100px;
+   left: 95%;
+   background: white;
+   font-size: 40px;
+   padding: 10px;
+   z-index: 9999;
+   display: inline;
+}
+

@@ -1,0 +1,6 @@
+.homeBanner img{
+    transition: all ease-in-out 300ms;
+}
+.homeBanner:hover img{
+    scale: 1.1;
+}

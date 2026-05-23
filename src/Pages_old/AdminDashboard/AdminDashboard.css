@@ -1,0 +1,31 @@
+.pages{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 10px;
+}
+.pages button{
+    border: 1px solid #7DC569;
+    padding: 4px;
+    transition: all ease-in-out 200ms;
+}
+.selected,.pages button:hover{
+   background: #7DC569;
+   color: white;
+}
+.product-table{
+    width: 96%;
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.product-table tr{
+    border: 1px solid rgba(0, 0, 0, 0.295);
+}
+.product-table th{
+    padding: 30px 10px;
+    text-align: left;
+}
+.product-table td{
+    padding-left: 10px;
+}

@@ -1,0 +1,32 @@
+@media screen and (max-width: 992px) {
+  .nav-login {
+    z-index: 9999;
+  }
+
+  .customer-login {
+    color: #000000d0;
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .customer-login::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.151);
+    display: flex;
+    height: 2px;
+    width: 100%;
+    color: #000000;
+  }
+  .nav-login input {
+    border: 1px solid #00000044;
+    outline-color: #0000009d;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .nav-login-button {
+    background-color: white;
+
+    border: 2px solid #1d111181 !important;
+    color: #0000009d;
+  }
+}
