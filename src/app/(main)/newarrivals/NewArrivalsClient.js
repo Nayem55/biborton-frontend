@@ -40,7 +40,7 @@ const NewArrivalsClient = () => {
         windowWidth >= 1920 ? "2xl:w-[65%]" : "2xl:w-[80%]"
       }`}
     >
-      <div className="my-10 w-[90%] 2xl:w-[full lg:w-full  mx-auto">
+      <div className="my-10 w-[90%] 2xl:w-[full lg:w-full mx-auto">
         <p className="text-[14px] font-semibold">
           HOME
           <FontAwesomeIcon

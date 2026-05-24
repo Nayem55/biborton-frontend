@@ -37,7 +37,7 @@ const NewArrival = () => {
 
   return (
     <section
-      className="overflow-hidden py-24 mt-16 bg-gradient-to-b from-white to-gray-50 pt-3"
+      className="overflow-hidden py-24 my-16 bg-gradient-to-b from-white to-gray-50 pt-3"
       aria-label="Signature Perfume Collection"
     >
       {/* ✅ Structured Data */}

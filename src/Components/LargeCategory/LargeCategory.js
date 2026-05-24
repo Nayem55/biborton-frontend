@@ -68,7 +68,7 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
 
       {/* MAIN HEADER */}
       <div
-        className={`w-full  bg-white transition-all   z-40${
+        className={`w-full bg-white transition-all z-40${
           scrollPosition > 50 ? "shadow-md  top-0 z-50 fixed" : ""
         }`}
       >
