@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { FASHION_MENU_CONFIG } from "../../../lib/fashionMenuConfig";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -7,14 +8,16 @@ const Footer = () => {
   const LinkItem = ({ to, children }) => (
     <Link
       href={to}
-      className="text-[12px] leading-6 font-semibold text-white hover:underline"
+      className="text-[12px] leading-6 font-semibold text-white/85 transition hover:text-white hover:underline"
     >
       {children}
     </Link>
   );
 
   const FooterTitle = ({ children }) => (
-    <h3 className="mb-2 text-[13px] font-bold text-white">{children}</h3>
+    <h3 className="mb-4 text-[13px] font-bold uppercase tracking-wide text-white">
+      {children}
+    </h3>
   );
 
   const SocialIcon = ({ href, ariaLabel, children }) => (
@@ -23,21 +26,69 @@ const Footer = () => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={ariaLabel}
-      className="inline-flex h-6 w-6 items-center justify-center text-white transition hover:opacity-70"
+      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white transition hover:border-white hover:bg-white hover:text-black"
     >
       {children}
     </a>
   );
 
   const UtilityItem = ({ icon, title, subtitle }) => (
-    <div className="flex items-start gap-2 text-white">
-      <div className="mt-0.5 text-white">{icon}</div>
+    <div className="flex items-start gap-3 text-white">
+      <div className="mt-0.5">{icon}</div>
+
       <div>
-        <p className="text-[11px] font-bold leading-tight">{title}</p>
-        <p className="text-[10px] font-semibold leading-tight">{subtitle}</p>
+        <p className="text-[12px] font-bold leading-tight">{title}</p>
+        <p className="text-[11px] text-white/70">{subtitle}</p>
       </div>
     </div>
   );
+
+  const categoryHref = (label) =>
+    `/product-category/${encodeURIComponent(label.toLowerCase())}`;
+
+  const footerCategoryGroups = [
+    {
+      title: "Men",
+      items: [
+        "Men's T-Shirts",
+        "Men's Shirts",
+        "Men's Polo",
+        "Men's Jeans",
+        "Men's Panjabi & Kurta",
+        "Men's Jackets",
+      ],
+    },
+    {
+      title: "Women",
+      items: [
+        "Women's Saree",
+        "Women's Dresses",
+        "Women's Kurti & Tops",
+        "Women's Hijab & Abaya",
+        "Women's Winter Collection",
+      ],
+    },
+    {
+      title: "Accessories",
+      items: [
+        "Watches",
+        "Sunglasses",
+        "Wallets",
+        "Belts",
+        "Jewellery",
+      ],
+    },
+    {
+      title: "Electronics & Home",
+      items: [
+        "Electronics",
+        "Mobile Accessories",
+        "Home Decor",
+        "Kitchen Essentials",
+        "Gift Items",
+      ],
+    },
+  ];
 
   return (
     <footer className="bg-black text-white" aria-labelledby="footer-heading">
@@ -45,10 +96,10 @@ const Footer = () => {
         Biborton Fashion Worlds Footer
       </h2>
 
-      <div className="mx-auto container px-4 sm:px-6 lg:px-0">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-0">
         {/* TOP UTILITY BAR */}
-        <div className="grid gap-5 border-b border-white/25 py-8 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8">
-          <Link href={"/malls"}>
+        <div className="grid gap-5 border-b border-white/15 py-8 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8">
+          <Link href="/malls">
             <UtilityItem
               icon={
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
@@ -87,7 +138,7 @@ const Footer = () => {
                 </svg>
               }
               title="Customer Service Chat"
-              subtitle=" "
+              subtitle="24/7 Live Support"
             />
           </a>
 
@@ -114,7 +165,7 @@ const Footer = () => {
             subtitle="Download Now"
           />
 
-          <Link href={"/login"}>
+          <Link href="/login">
             <UtilityItem
               icon={
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
@@ -150,164 +201,257 @@ const Footer = () => {
                 />
               </svg>
             }
-            title="Biborton Credit Card Program"
-            subtitle="Want % off your order? DETAILS"
+            title="Secure Payments"
+            subtitle="100% Safe Checkout"
           />
         </div>
 
-        {/* MAIN FOOTER */}
-        <div className="grid gap-10 border-b border-white/25 py-7 lg:grid-cols-[1.05fr_0.9fr_0.95fr_0.9fr_1.35fr]">
-          {/* About */}
-          <nav className="flex flex-col" aria-label="About Biborton">
-            <FooterTitle>About Biborton</FooterTitle>
-            <LinkItem to="/about">About Biborton</LinkItem>
-            <LinkItem to="/">Newsroom</LinkItem>
-            <LinkItem to="https://www.linkedin.com/company/gvibd/?originalSubdomain=bd">
-              Careers
-            </LinkItem>
-            <LinkItem to="/">Biborton Values</LinkItem>
-            <LinkItem to="/">Supply Chain Transparency</LinkItem>
-            <LinkItem to="/">Affiliates</LinkItem>
-            <LinkItem to="/">Biborton Events</LinkItem>
-            <LinkItem to="/">Gift Cards</LinkItem>
-            <LinkItem to="/">Biborton Global Sites</LinkItem>
-            <LinkItem to="/">Diversity, Equity & Inclusion</LinkItem>
-            <LinkItem to="/">Beauty Re(Purposed)</LinkItem>
-            <LinkItem to="/contact">Report a Vulnerability</LinkItem>
-          </nav>
+{/* MAIN FOOTER */}
+<div className="grid gap-10 border-b border-white/25 py-7 lg:grid-cols-[1.05fr_0.9fr_0.95fr_0.9fr_1.35fr]">
+  {/* Shop Men */}
+  <nav className="flex flex-col" aria-label="Shop Men">
+    <FooterTitle>Shop Men</FooterTitle>
 
-          {/* My Biborton */}
-          <nav className="flex flex-col" aria-label="My Biborton">
-            <FooterTitle>My Biborton</FooterTitle>
-            <LinkItem to="/beauty-insider">Beauty Insider</LinkItem>
-            <LinkItem to="/customerDashboard">Biborton order Card</LinkItem>
-            <LinkItem to="https://www.facebook.com/biborton.shop">
-              Community Profile
-            </LinkItem>
-            <LinkItem to="/customerDashboard">Order Status</LinkItem>
-            <LinkItem to="/customerDashboard">Purchase History</LinkItem>
-            <LinkItem to="/customerDashboardt">Account Settings</LinkItem>
-            <LinkItem to="/malls">Beauty Services & Store Events</LinkItem>
-            <LinkItem to="/">Auto-Replenish</LinkItem>
-            <LinkItem to="/">Beauty Offers</LinkItem>
-            <LinkItem to="/">Rewards Bazaar</LinkItem>
-            <LinkItem to="/">Loves</LinkItem>
-            <LinkItem to="/malls">Shop Your Store</LinkItem>
-            <LinkItem to="/shop">Shop Same-Day Delivery</LinkItem>
-          </nav>
+    <LinkItem to={categoryHref("Men's T-Shirts")}>
+      Men's T-Shirts
+    </LinkItem>
 
-          {/* Help */}
-          <nav className="flex flex-col" aria-label="Help">
-            <FooterTitle>Help</FooterTitle>
-            <LinkItem to="https://api.whatsapp.com/send?phone=8801404403596">
-              Customer Service
-            </LinkItem>
-            <LinkItem to="/refund">Returns & Exchanges</LinkItem>
-            <LinkItem to="/">Delivery and Pickup Options</LinkItem>
-            <LinkItem to="/shippingPolicy">Shipping</LinkItem>
-            <LinkItem to="/">Billing</LinkItem>
-            <LinkItem to="/">International Shipments</LinkItem>
-            <LinkItem to="/">Buying Guides</LinkItem>
-            <LinkItem to="/contact">Beauty Services FAQ</LinkItem>
-            <LinkItem to="/malls">Store Locations</LinkItem>
-            <LinkItem to="/">Flexible Payments</LinkItem>
-            <LinkItem to="/">Accessibility</LinkItem>
-            <LinkItem to="/">Teen Skincare Resource</LinkItem>
-          </nav>
+    <LinkItem to={categoryHref("Men's Shirts")}>
+      Men's Shirts
+    </LinkItem>
 
-          {/* Region */}
-          <div>
-            <FooterTitle>Region & Language</FooterTitle>
-            <div className="flex flex-col gap-3 text-[12px] font-semibold">
-              <p>✓ 🇧🇩 Bangladesh - English</p>
-              <p>🇺🇸 United States - English</p>
-              <p>🇨🇦 Canada - English</p>
-            </div>
-          </div>
+    <LinkItem to={categoryHref("Men's Polo")}>
+      Men's Polo
+    </LinkItem>
 
-          {/* Signup */}
-          <div className="lg:pl-2">
-            <h3 className="max-w-[320px] font-serif text-[24px] font-bold leading-[1.1] text-white sm:text-[28px]">
-              We Belong to Something Beautiful
-            </h3>
+    <LinkItem to={categoryHref("Men's Jeans")}>
+      Men's Jeans
+    </LinkItem>
 
-            <form className="mt-20 max-w-[290px] sm:mt-16">
-              <label className="mb-2 block text-[12px] font-bold">
-                Sign me up for texts from Biborton
-              </label>
-              <div className="flex gap-3">
-                <input
-                  type="tel"
-                  placeholder="Mobile Phone Number"
-                  className="h-8 flex-1 rounded-sm bg-white px-3 text-[12px] text-black outline-none"
-                />
-                <button
-                  type="button"
-                  className="h-8 rounded-full border border-white px-5 text-[12px] font-bold text-white transition hover:bg-white hover:text-black"
-                >
-                  Continue
-                </button>
-              </div>
-            </form>
+    <LinkItem to={categoryHref("Men's Pants & Trousers")}>
+      Men's Pants & Trousers
+    </LinkItem>
 
-            <form className="mt-6 max-w-[290px]">
-              <label className="mb-2 block text-[12px] font-bold">
-                Sign up for Biborton Emails
-              </label>
-              <div className="flex gap-3">
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  className="h-8 flex-1 rounded-sm bg-white px-3 text-[12px] text-black outline-none"
-                />
-                <button
-                  type="button"
-                  className="h-8 rounded-full border border-white px-5 text-[12px] font-bold text-white transition hover:bg-white hover:text-black"
-                >
-                  Sign Up
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
+    <LinkItem to={categoryHref("Men's Panjabi & Kurta")}>
+      Men's Panjabi & Kurta
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Men's Jackets")}>
+      Men's Jackets
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Men's Hoodies & Sweatshirts")}>
+      Men's Hoodies & Sweatshirts
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Footwear")}>Footwear</LinkItem>
+  </nav>
+
+  {/* Shop Women */}
+  <nav className="flex flex-col" aria-label="Shop Women">
+    <FooterTitle>Shop Women</FooterTitle>
+
+    <LinkItem to={categoryHref("Women's Saree")}>
+      Women's Saree
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Women's Salwar Kameez")}>
+      Women's Salwar Kameez
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Women's Kurti & Tops")}>
+      Women's Kurti & Tops
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Women's Dresses")}>
+      Women's Dresses
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Women's Gown")}>
+      Women's Gown
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Women's Jeans & Pants")}>
+      Women's Jeans & Pants
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Women's Skirts")}>
+      Women's Skirts
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Women's Hijab & Abaya")}>
+      Women's Hijab & Abaya
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Women's Winter Collection")}>
+      Women's Winter Collection
+    </LinkItem>
+  </nav>
+
+  {/* Accessories & Electronics */}
+  <nav className="flex flex-col" aria-label="Accessories">
+    <FooterTitle>Accessories</FooterTitle>
+
+    <LinkItem to={categoryHref("Watches")}>Watches</LinkItem>
+
+    <LinkItem to={categoryHref("Sunglasses")}>
+      Sunglasses
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Wallets")}>Wallets</LinkItem>
+
+    <LinkItem to={categoryHref("Belts")}>Belts</LinkItem>
+
+    <LinkItem to={categoryHref("Bags & Backpacks")}>
+      Bags & Backpacks
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Jewellery")}>
+      Jewellery
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Electronics")}>
+      Electronics
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Mobile Accessories")}>
+      Mobile Accessories
+    </LinkItem>
+
+    <LinkItem to={categoryHref("Smart Gadgets")}>
+      Smart Gadgets
+    </LinkItem>
+  </nav>
+
+  {/* Help */}
+  <nav className="flex flex-col" aria-label="Help">
+    <FooterTitle>Help</FooterTitle>
+
+    <LinkItem to="/contact">Contact Us</LinkItem>
+
+    <LinkItem to="/refund">
+      Returns & Exchanges
+    </LinkItem>
+
+    <LinkItem to="/shippingPolicy">
+      Shipping Policy
+    </LinkItem>
+
+    <LinkItem to="/terms">
+      Terms & Conditions
+    </LinkItem>
+
+    <LinkItem to="/privacyPolicy">
+      Privacy Policy
+    </LinkItem>
+
+    <LinkItem to="/customerDashboard">
+      Order Tracking
+    </LinkItem>
+
+    <LinkItem to="/malls">
+      Store Locations
+    </LinkItem>
+
+    <LinkItem to="/shop">
+      New Arrivals
+    </LinkItem>
+
+    <LinkItem to="/shop">
+      Best Sellers
+    </LinkItem>
+  </nav>
+
+  {/* Signup */}
+  <div className="lg:pl-2">
+    <h3 className="max-w-[320px] font-serif text-[24px] font-bold leading-[1.1] text-white sm:text-[28px]">
+      We Belong to Something Beautiful
+    </h3>
+
+    <form className="mt-20 max-w-[290px] sm:mt-16">
+      <label className="mb-2 block text-[12px] font-bold">
+        Sign me up for texts from Biborton
+      </label>
+
+      <div className="flex gap-3">
+        <input
+          type="tel"
+          placeholder="Mobile Phone Number"
+          className="h-8 flex-1 rounded-sm bg-white px-3 text-[12px] text-black outline-none"
+        />
+
+        <button
+          type="button"
+          className="h-8 rounded-full border border-white px-5 text-[12px] font-bold text-white transition hover:bg-white hover:text-black"
+        >
+          Continue
+        </button>
+      </div>
+    </form>
+
+    <form className="mt-6 max-w-[290px]">
+      <label className="mb-2 block text-[12px] font-bold">
+        Sign up for Biborton Emails
+      </label>
+
+      <div className="flex gap-3">
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          className="h-8 flex-1 rounded-sm bg-white px-3 text-[12px] text-black outline-none"
+        />
+
+        <button
+          type="button"
+          className="h-8 rounded-full border border-white px-5 text-[12px] font-bold text-white transition hover:bg-white hover:text-black"
+        >
+          Sign Up
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
 
         {/* BOTTOM BAR */}
-        <div className="flex flex-col gap-7 py-6 lg:flex-row lg:items-start lg:justify-between">
+        <div className="flex flex-col gap-8 py-6 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <p className="text-[11px] font-semibold">
+            <p className="text-[11px] font-semibold text-white/80">
               © {year} Biborton Beauty & Fragrances. All rights reserved.
             </p>
 
-            <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-[11px] font-semibold">
-              <Link href="/privacyPolicy" className="hover:underline">
+            <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-[11px] font-semibold text-white/80">
+              <Link href="/privacyPolicy" className="hover:text-white">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="hover:underline">
+
+              <Link href="/terms" className="hover:text-white">
                 Terms of Use
               </Link>
-              <Link href="/" className="hover:underline">
-                Accessibility
-              </Link>
-              <Link href="/sitemap" className="hover:underline">
+
+              <Link href="/sitemap" className="hover:text-white">
                 Sitemap
               </Link>
-              <Link href="/" className="hover:underline">
-                Your Privacy Choices
+
+              <Link href="/contact" className="hover:text-white">
+                Contact
               </Link>
             </div>
 
-            <p className="mt-2 text-[11px] font-semibold">+880 1404 403965</p>
+            <p className="mt-3 text-[11px] font-semibold text-white/80">
+              +880 1404 403965
+            </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-5">
+          {/* SOCIALS */}
+          <div className="flex flex-wrap items-center gap-3">
             <SocialIcon
               href="https://www.instagram.com/biborton.shop/"
               ariaLabel="Instagram"
             >
               <svg
                 viewBox="0 0 448 512"
-                width="19"
-                height="19"
+                width="18"
+                height="18"
                 fill="currentColor"
               >
                 <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8s-26.8-12-26.8-26.8 12-26.8 26.8-26.8 26.8 12 26.8 26.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6C36.8 358.5 39.4 288.5 39.4 256s-2.6-102.5 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.5-8 132z" />
@@ -321,7 +465,7 @@ const Footer = () => {
               <svg
                 viewBox="0 0 320 512"
                 width="16"
-                height="19"
+                height="18"
                 fill="currentColor"
               >
                 <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06H297V6.26S260.43 0 225.36 0C152.14 0 104.11 44.38 104.11 124.72v70.62H22.89V288h81.22v224h100.34V288z" />
@@ -334,8 +478,8 @@ const Footer = () => {
             >
               <svg
                 viewBox="0 0 576 512"
-                width="21"
-                height="19"
+                width="20"
+                height="18"
                 fill="currentColor"
               >
                 <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C14.9 167 14.9 256.4 14.9 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.1 337.6V175.2l142.7 81.2-142.7 81.2z" />
@@ -349,51 +493,12 @@ const Footer = () => {
               <svg
                 viewBox="0 0 448 512"
                 width="17"
-                height="19"
+                height="17"
                 fill="currentColor"
               >
                 <path d="M448 209.9a210.1 210.1 0 0 1-122.8-39.2v178.8A132.1 132.1 0 1 1 193.1 217.4v67.1a65 65 0 1 0 45.1 62.1V0h65.4A124.9 124.9 0 0 0 448 147.7z" />
               </svg>
             </SocialIcon>
-
-            {/* X (Twitter) */}
-            <SocialIcon href="/" ariaLabel="X (Twitter)">
-              <svg
-                viewBox="0 0 512 512"
-                width="18"
-                height="18"
-                fill="currentColor"
-              >
-                <path d="M389.2 48h70.6L305.6 224.2 486.4 464H345.3L231.6 318.6 97.2 464H26.5l164.7-188.3L16 48h145.9l103.6 133.3L389.2 48zm-24.8 373.8h39.1L140.7 86.1h-42l265.7 335.7z" />
-              </svg>
-            </SocialIcon>
-
-            {/* Pinterest */}
-            <SocialIcon href="/" ariaLabel="Pinterest">
-              <svg
-                viewBox="0 0 496 512"
-                width="18"
-                height="18"
-                fill="currentColor"
-              >
-                <path d="M248 8C111 8 0 119 0 256c0 100 58 186 142 225-2-19-4-49 1-70 5-19 32-123 32-123s-8-16-8-40c0-38 22-66 49-66 23 0 34 17 34 37 0 23-15 57-23 88-7 26 13 47 39 47 47 0 79-60 79-131 0-54-36-94-101-94-73 0-118 55-118 115 0 21 6 35 15 46 4 5 5 7 3 13-1 4-4 15-5 19-2 6-6 8-11 6-31-13-45-49-45-90 0-67 57-147 168-147 90 0 149 65 149 134 0 92-51 161-126 161-25 0-49-13-57-28l-15 57c-5 20-15 45-23 62 20 6 41 9 63 9 137 0 248-111 248-248S385 8 248 8z" />
-              </svg>
-            </SocialIcon>
-
-            {/* Snapchat */}
-            {/* <SocialIcon
-              href="https://www.snapchat.com/add/bibortonshop"
-              ariaLabel="Snapchat"
-            >
-              <svg
-                viewBox="0 0 448 512"
-                width="18"
-                height="18"
-                fill="currentColor"
-              >
-                <path d="M224 0c70.7 0 128 57.3 128 128v64c0 23.6 13.6 45.1 34.9 55.4 10.2 4.9 11.5 19.1 1.8 25.9-9.3 6.5-21.6 10.4-35.3 11.6-4.2 28.4-23.7 52.5-50.7 63.4-8.4 3.4-14.7 10.8-17 19.8-2.3 9-10.3 15.3-19.6 15.3h-44.2c-9.3 0-17.3-6.3-19.6-15.3-2.3-9-8.6-16.4-17-19.8-27-10.9-46.5-35-50.7-63.4-13.7-1.2-26-5.1-35.3-11.6-9.7-6.8-8.4-21 1.8-25.9C82.4 237.1 96 215.6 96 192v-64C96 57.3 153.3 0 224 0z" />
-              </svg>
-            </SocialIcon> */}
           </div>
         </div>
       </div>
