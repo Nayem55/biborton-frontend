@@ -10,7 +10,7 @@ const Sitemap = () => {
       {/* {products.map((product) => (
         <p>
           {`<url>`}<br></br>
-            {`<loc>`}https://themynt.shop/product/{product.slug}{`</loc>`}<br></br>
+            {`<loc>`}https://biborton.shop/product/{product.slug}{`</loc>`}<br></br>
           {`</url>`}
         </p>
       ))} */}
@@ -18,7 +18,7 @@ const Sitemap = () => {
         <p>
           {`<url>`}
           <br></br>
-          {`<loc>`}https://themynt.shop/sku/{product.sku}
+          {`<loc>`}https://biborton.shop/sku/{product.sku}
           {`</loc>`}
           <br></br>
           {`</url>`}

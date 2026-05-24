@@ -46,7 +46,7 @@ const Blogs = () => {
             name="description"
             content="Explore beauty tips, wellness trends, and natural enhancement insights. Stay updated with Earth Beauty and You."
           />
-          <link rel="canonical" href={`https://themynt.shop/blogs`} />
+          <link rel="canonical" href={`https://biborton.shop/blogs`} />
         </Helmet>
 
         {blogs.map((blog) => (

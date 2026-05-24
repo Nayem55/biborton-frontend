@@ -15,8 +15,7 @@ function safeJsonLd(obj) {
 
 export default function CategoryPageClient({ initialCategory }) {
   const routeParams = useParams(); // ✅ Next.js params
-  const rawCategory =
-    routeParams?.category ?? initialCategory ?? ""; // use route first, fallback to server-passed
+  const rawCategory = routeParams?.category ?? initialCategory ?? ""; // use route first, fallback to server-passed
 
   // decode + normalize
   const category = useMemo(() => {
@@ -91,9 +90,13 @@ export default function CategoryPageClient({ initialCategory }) {
   // Sorting
   useEffect(() => {
     if (sortBy === "Price: Low to High") {
-      setFilteredProducts([...categoryProducts].sort((a, b) => (a?.price ?? 0) - (b?.price ?? 0)));
+      setFilteredProducts(
+        [...categoryProducts].sort((a, b) => (a?.price ?? 0) - (b?.price ?? 0)),
+      );
     } else if (sortBy === "Price: High to Low") {
-      setFilteredProducts([...categoryProducts].sort((a, b) => (b?.price ?? 0) - (a?.price ?? 0)));
+      setFilteredProducts(
+        [...categoryProducts].sort((a, b) => (b?.price ?? 0) - (a?.price ?? 0)),
+      );
     } else {
       setFilteredProducts([]);
     }
@@ -102,7 +105,10 @@ export default function CategoryPageClient({ initialCategory }) {
   // Find category meta/title (normalize both sides)
   const matchedCategory = useMemo(() => {
     return categories.find(
-      (item) => String(item?.name ?? "").trim().toLowerCase() === category,
+      (item) =>
+        String(item?.name ?? "")
+          .trim()
+          .toLowerCase() === category,
     );
   }, [categories, category]);
 
@@ -116,22 +122,20 @@ export default function CategoryPageClient({ initialCategory }) {
     const itemList = categoryProducts.map((product, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      url: `https://themynt.shop/product/${product?.slug ?? ""}`,
+      url: `https://biborton.shop/product/${product?.slug ?? ""}`,
     }));
 
     return {
       "@context": "http://schema.org",
       "@type": "ItemList",
-      name: `${title || category} - MYNT Beauty and Fragrance`,
+      name: `${title || category} - Biborton Fashion World`,
       description: meta_description,
       itemListElement: itemList,
     };
   }, [categoryProducts, title, category, meta_description]);
 
   return (
-    <div
-      className="container mb-20 mx-auto"
-    >
+    <div className="container mb-20 mx-auto">
       {/* JSON-LD */}
       <script
         type="application/ld+json"

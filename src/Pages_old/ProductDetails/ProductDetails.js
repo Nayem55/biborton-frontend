@@ -366,7 +366,7 @@ const ProductDetails = ({
             {/* Product Details Section */}
             <div className="lg:col-span-5 flex flex-col justify-center">
               <span className="text-xs tracking-[0.3em] text-gray-400 uppercase mb-2">
-                {product?.brand || "MYNT"}
+                {product?.brand || "Biborton"}
               </span>
               <h1 className="text-3xl md:text-4xl font-light mb-4 tracking-tight leading-tight">
                 {product?.name} {product?.size && `${product.size} ML`}

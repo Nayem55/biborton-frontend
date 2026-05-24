@@ -53,9 +53,7 @@ const SkinTips = () => {
       </button> */}
 
       {/* ✅ Blog Post Grid */}
-      <div
-        className="flex flex-col sm:flex-row justify-center gap-10 flex-wrap"
-      >
+      <div className="flex flex-col sm:flex-row justify-center gap-10 flex-wrap">
         {blogPosts.map((post) => (
           <article
             key={post.id}
@@ -93,7 +91,7 @@ const SkinTips = () => {
           itemListElement: blogPosts.map((post, index) => ({
             "@type": "ListItem",
             position: index + 1,
-            url: `https://themynt.shop/blog/${post.id}`,
+            url: `https://biborton.shop/blog/${post.id}`,
             name: post.title_en,
             image: post.img,
           })),

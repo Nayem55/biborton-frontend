@@ -68,7 +68,7 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
 
       {/* MAIN HEADER */}
       <div
-        className={`w-full  bg-white border-b  transition-all   z-40${
+        className={`w-full  bg-white transition-all   z-40${
           scrollPosition > 50 ? "shadow-md  top-0 z-50 fixed" : ""
         }`}
       >
@@ -86,7 +86,7 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
               priority
               className="w-[130px] sm:w-[100px] md:w-[120px] h-auto"
             />
-            {/* <span className="tracking-[0.2em] text-[28px]">MYNT</span> */}
+            {/* <span className="tracking-[0.2em] text-[28px]">Biborton</span> */}
           </Link>
 
           {/* SEARCH */}

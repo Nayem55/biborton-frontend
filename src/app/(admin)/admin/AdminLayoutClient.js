@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useEffect, useContext } from "react";
 import Link from "next/link";
@@ -24,8 +23,7 @@ import {
 const AdminLayoutClient = ({ children }) => {
   const pathname = usePathname();
   const router = useRouter();
-  const { user, loading, isAdmin, isAdminLoading } =
-    useContext(ThemeContext);
+  const { user, loading, isAdmin, isAdminLoading } = useContext(ThemeContext);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -56,23 +54,21 @@ const AdminLayoutClient = ({ children }) => {
 
   return (
     <div className="bg-gradient-to-br from-[#f6fbff] to-white min-h-screen">
-      
       {/* ===== Fixed Sidebar ===== */}
       <aside className="fixed left-0 top-0 w-52 h-screen bg-white/80 backdrop-blur-xl border-r border-gray-200 shadow-xl flex flex-col z-50">
-        
         {/* Logo */}
         <div className="p-6 border-b border-gray-200">
           <Link href="/">
             <Image
-              src="https://luvit.com.bd/wp-content/uploads/2026/04/MYNT-logo-1.png"
-              alt="Mynt logo"
+              src="https://i.ibb.co.com/qL6G2k62/3039b878-bec9-43ca-b082-1cec9a342a71-removebg-preview.png"
+              alt="Biborton logo"
               width={130}
               height={60}
               className="transition-transform duration-500 hover:scale-105"
               priority
             />
 
-            {/* <span className="tracking-[0.2em] pl-4 text-[28px]">MYNT</span> */}
+            {/* <span className="tracking-[0.2em] pl-4 text-[28px]">Biborton</span> */}
           </Link>
         </div>
 
@@ -132,7 +128,6 @@ const AdminLayoutClient = ({ children }) => {
 
 export default AdminLayoutClient;
 
-
 // "use client";
 // import React, { useEffect, useContext } from "react";
 // import Link from 'next/link';
@@ -170,7 +165,7 @@ export default AdminLayoutClient;
 //     if (!loading && !isAdminLoading) {
 //       if (!user || !isAdmin) {
 //         // Uncomment to redirect non-admins
-//         // router.push('/'); 
+//         // router.push('/');
 //       }
 //     }
 //   }, [user, isAdmin, loading, isAdminLoading, router]);
@@ -182,12 +177,12 @@ export default AdminLayoutClient;
 //       </div>
 //     );
 //   }
-  
+
 //   if (!user || !isAdmin) return null;
 
 //   return (
 //     <div>
-//       <div className="drawer drawer-mobile drawer-open"> 
+//       <div className="drawer drawer-mobile drawer-open">
 //         <input
 //           id="dashboard-drawer"
 //           type="checkbox"
@@ -199,10 +194,10 @@ export default AdminLayoutClient;
 //         <div className="drawer-side bg-[#F2F9FF] h-full min-h-screen">
 //           <label htmlFor="dashboard-drawer" className="drawer-overlay"></label>
 // <ul className="menu p-4 w-60 lg:w-60 text-primary bg-accent mt-20 lg:mt-0 h-full space-y-1">
-  
+
 //   <Link href="/" className="block p-4 mb-6">
-//     <Image 
-//       src="https://luvit.com.bd/wp-content/uploads/2026/02/Aroma-Talks-logo-2.png" 
+//     <Image
+//       src="https://luvit.com.bd/wp-content/uploads/2026/02/Aroma-Talks-logo-2.png"
 //       alt="J. Fragrances Logo"
 //       width={150}
 //       height={80}

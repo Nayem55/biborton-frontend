@@ -1,7 +1,7 @@
 import CustomerDashboardClient from "./CustomerDashboardClient";
 
 export const metadata = {
-  title: "Dashboard - MYNT ",
+  title: "Dashboard - Biborton ",
   description: "Customer Dashboard",
 };
 

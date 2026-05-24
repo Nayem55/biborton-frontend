@@ -1,7 +1,7 @@
 import TrackOrderClient from "./TrackOrderClient";
 
 export const metadata = {
-  title: "Track Order - MYNT| Fragrances |",
+  title: "Track Order - Biborton| Fragrances |",
   description: "Track your order",
 };
 

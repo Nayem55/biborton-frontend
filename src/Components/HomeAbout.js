@@ -12,8 +12,8 @@ const HomeAbout = () => {
       setIsDesktop(window.innerWidth > 900);
     };
     handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const aboutSchema = {
@@ -22,11 +22,11 @@ const HomeAbout = () => {
     name: "About J. Fragrances",
     description:
       "J. (Junaid Jamshed) Fragrances blend tradition and modern elegance to create timeless, long-lasting perfumes.",
-    url: "https://themynt.shop/about",
+    url: "https://biborton.shop/about",
     publisher: {
       "@type": "Organization",
       name: "J. (Junaid Jamshed)",
-      logo: "https://themynt.shop/images/logo.png",
+      logo: "https://biborton.shop/images/logo.png",
     },
   };
 

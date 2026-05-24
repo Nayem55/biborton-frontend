@@ -95,13 +95,13 @@ const Shop = ({ initialProducts = [], initialPageCount = 0 }) => {
   }, []);
 
   return (
-    <div
-      className="container mx-auto mb-20"
-    >
+    <div className="container mx-auto mb-20">
       {/* ================= Breadcrumb ================= */}
       <div className="mt-10 w-[90%] 2xl:w-full lg:w-full mx-auto">
         <p className="text-[14px] font-semibold">
-          <Link href={"/"} className="cursor-pointer hover:underline">Home</Link>
+          <Link href={"/"} className="cursor-pointer hover:underline">
+            Home
+          </Link>
           <FontAwesomeIcon className="mx-2" icon={faCaretRight} />
           <span>Shop</span>
         </p>
@@ -110,7 +110,7 @@ const Shop = ({ initialProducts = [], initialPageCount = 0 }) => {
       <div className="flex flex-col md:flex-row">
         {/* ================= H1 ================= */}
         <h1 className="w-[90%] 2xl:w-full lg:w-full mx-auto font-bold my-10 text-xl md:text-2xl pb-10">
-          All PRODUCT OF MYNT
+          All PRODUCT OF Biborton
         </h1>
 
         {/* ================= View Toggle ================= */}

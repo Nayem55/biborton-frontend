@@ -35,7 +35,7 @@ const NewArrivals = () => {
           name="description"
           content="Discover the newest beauty products and trends at Junaid Jamshed Fragrances. Update your skincare routine with our latest arrivals."
         />
-        <link rel="canonical" href={`https://themynt.shop/newarrivals`} />
+        <link rel="canonical" href={`https://biborton.shop/newarrivals`} />
       </Helmet>
       <div className="my-10 w-[90%] 2xl:w-[full lg:w-full  mx-auto">
         <p className="text-[14px] font-semibold">

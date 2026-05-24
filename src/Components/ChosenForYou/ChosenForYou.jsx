@@ -20,7 +20,7 @@ const ChosenForYou = () => {
       "@type": "Product",
       position: index + 1,
       name: product?.name,
-      url: `https://themynt.shop/product/${product?.slug}`,
+      url: `https://biborton.shop/product/${product?.slug}`,
       image: product?.images?.[0]?.src,
       offers: {
         "@type": "Offer",
@@ -47,13 +47,14 @@ const ChosenForYou = () => {
       )}
 
       <div className="container mx-auto px-4 md:px-1 text-center">
-
         <div class="flex justify-between items-end mb-5  pb-6">
           <div>
             <h2 class="text-[10px] uppercase text-left tracking-[0.4em] text-gray-400 ml-1 mb-1">
               Best Selection
             </h2>
-            <h3 class="text-xl sm:text-2xl uppercase   md:text-3xl">Chosen For You</h3>
+            <h3 class="text-xl sm:text-2xl uppercase   md:text-3xl">
+              Chosen For You
+            </h3>
           </div>
           <Link
             href="/product-category/tshirt"

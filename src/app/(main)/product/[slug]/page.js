@@ -39,7 +39,7 @@ export async function generateMetadata({ params }) {
 
   if (!product) {
     return {
-      title: "Product Not Found | MYNT Beauty and Fragrance",
+      title: "Product Not Found | Biborton Fashion World",
       description: "Product not found.",
       robots: { index: false, follow: false },
     };
@@ -50,13 +50,13 @@ export async function generateMetadata({ params }) {
   // ✅ Dynamic Meta Title (priority based)
   const title =
     product?.meta_title ||
-    `${product?.name} Price in Bangladesh | Buy Original ${product?.brand || ""} Perfume | MYNT`;
+    `${product?.name} Price in Bangladesh | Buy Original ${product?.brand || ""} Perfume | Biborton`;
 
   // ✅ Dynamic Meta Description (priority based)
   const description =
     product?.meta_description ||
     stripHTML(product?.short_description || "").slice(0, 160) ||
-    `${product?.name} by ${product?.brand || "top brand"} at best price in Bangladesh. Buy original perfume from MYNT Beauty and Fragrance.`;
+    `${product?.name} by ${product?.brand || "top brand"} at best price in Bangladesh. Buy original perfume from Biborton Fashion World.`;
 
   return {
     title,
@@ -70,10 +70,10 @@ export async function generateMetadata({ params }) {
       "original perfume BD",
       "best perfume in bd",
       "best fragrances in bd",
-      "mynt shop",
-      "mynt bd",
-      "mynt perfume",
-      "mynt beauty products",
+      "Biborton shop",
+      "Biborton bd",
+      "Biborton perfume",
+      "Biborton beauty products",
     ],
 
     robots: {
@@ -82,15 +82,15 @@ export async function generateMetadata({ params }) {
     },
 
     alternates: {
-      canonical: `https://themynt.shop/product/${slug}`,
+      canonical: `https://biborton.shop/product/${slug}`,
     },
 
     openGraph: {
       type: "website",
       title: title, // ✅ synced with meta title
       description: description, // ✅ synced
-      url: `https://themynt.shop/product/${slug}`,
-      siteName: "MYNT Beauty and Fragrance",
+      url: `https://biborton.shop/product/${slug}`,
+      siteName: "Biborton Fashion World",
       images: product?.images?.[0]?.src
         ? [
             {
@@ -119,10 +119,10 @@ export default async function ProductDetailsPage({ params }) {
   const product = await getProduct(slug);
   if (!product) return <div className="p-10">Product not found.</div>;
 
-const [faqs, initialReviews] = await Promise.all([
-  getFaqs(),
-  getReviews(product?.name),
-]);
+  const [faqs, initialReviews] = await Promise.all([
+    getFaqs(),
+    getReviews(product?.name),
+  ]);
 
   // ✅ Structured Data (VERY IMPORTANT 🔥)
   const jsonLd = {
@@ -133,7 +133,7 @@ const [faqs, initialReviews] = await Promise.all([
     description: product?.meta_description || product?.short_description,
     brand: {
       "@type": "Brand",
-      name: product?.brand || "MYNT",
+      name: product?.brand || "Biborton",
     },
     offers: {
       "@type": "Offer",
@@ -145,7 +145,7 @@ const [faqs, initialReviews] = await Promise.all([
         product?.stock_status === "outofstock"
           ? "https://schema.org/OutOfStock"
           : "https://schema.org/InStock",
-      url: `https://themynt.shop/product/${slug}`,
+      url: `https://biborton.shop/product/${slug}`,
     },
     aggregateRating:
       initialReviews?.length > 0
@@ -164,19 +164,19 @@ const [faqs, initialReviews] = await Promise.all([
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://themynt.shop",
+        item: "https://biborton.shop",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Product",
-        item: "https://themynt.shop/product",
+        item: "https://biborton.shop/product",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: product?.name,
-        item: `https://themynt.shop/product/${slug}`,
+        item: `https://biborton.shop/product/${slug}`,
       },
     ],
   };

@@ -1,8 +1,8 @@
-import CartPage from './../../../Pages_old/CartPage/CartPage';
+import CartPage from "./../../../Pages_old/CartPage/CartPage";
 
 export const metadata = {
-  title: 'Shopping Cart | MYNT ',
-  description: 'Review your shopping cart and proceed to checkout.',
+  title: "Shopping Cart | Biborton ",
+  description: "Review your shopping cart and proceed to checkout.",
   robots: {
     index: false, // Don't index cart pages
     follow: true,

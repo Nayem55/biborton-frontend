@@ -23,7 +23,7 @@ const HomeCicaCare = () => {
       "@type": "ListItem",
       position: index + 1,
       name: product?.name,
-      url: `https://themynt.shop/product/${product?.slug}`,
+      url: `https://biborton.shop/product/${product?.slug}`,
     })),
   };
 

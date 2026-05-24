@@ -6,7 +6,7 @@ import Link from "next/link";
 const MostFavorite = () => {
   const { MostFavorite } = useContext(ThemeContext);
   // const products = MostFavorite?.slice(5, 13);
-  const products = MostFavorite?.slice(0,4)
+  const products = MostFavorite?.slice(0, 4);
 
   const isLoading = !MostFavorite || MostFavorite.length === 0;
 
@@ -21,7 +21,7 @@ const MostFavorite = () => {
       "@type": "Product",
       position: index + 1,
       name: product?.name,
-      url: `https://themynt.shop/product/${product?.slug}`,
+      url: `https://biborton.shop/product/${product?.slug}`,
       image: product?.images?.[0]?.src,
       offers: {
         "@type": "Offer",
@@ -61,11 +61,11 @@ const MostFavorite = () => {
             </h2>
           </div> */}
           <div class=" mb-2">
-          <h2 class="text-[10px] uppercase tracking-[0.4em] text-gray-500 mb-2">
-            Our Curated Selection
-          </h2>
-          <h3 class="text-3xl  uppercase">Explore More</h3>
-        </div>
+            <h2 class="text-[10px] uppercase tracking-[0.4em] text-gray-500 mb-2">
+              Our Curated Selection
+            </h2>
+            <h3 class="text-3xl  uppercase">Explore More</h3>
+          </div>
 
           {/* Right */}
           <Link
@@ -87,7 +87,6 @@ const MostFavorite = () => {
           </div>
         ) : (
           <>
-            
             {/* Product Grid */}
             <div className="mt-12 grid grid-cols-2 gap-3 sm:gap-4 md:gap-5 lg:grid-cols-4  lg:gap-6">
               {products.map((product) => (

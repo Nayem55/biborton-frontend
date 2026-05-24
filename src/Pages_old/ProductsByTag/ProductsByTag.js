@@ -212,10 +212,10 @@ const ProductsByTag = () => {
             />
             <meta
               property="og:url"
-              content={`https://themynt.shop/sku/${sku}`}
+              content={`https://biborton.shop/sku/${sku}`}
             />
             <meta property="og:type" content="website" />
-            <link rel="canonical" href={`https://themynt.shop/sku/${sku}`} />
+            <link rel="canonical" href={`https://biborton.shop/sku/${sku}`} />
             <script type="application/ld+json">
               {`
                 {
@@ -250,7 +250,7 @@ const ProductsByTag = () => {
                     }"
                   },
                   "image": "${product?.images && product?.images[0].src}",
-                  "url": "https://themynt.shop/sku/${sku}"
+                  "url": "https://biborton.shop/sku/${sku}"
                 }
               `}
             </script>

@@ -7,15 +7,12 @@ export default function ContactUs() {
       <div className="w-full max-w-4xl">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-semibold text-gray-800">
-            Contact Us
-          </h2>
+          <h2 className="text-3xl font-semibold text-gray-800">Contact Us</h2>
           <p className="text-gray-500 text-sm mt-2">
             We'd love to hear from you. Reach out anytime.
           </p>
         </div>
 
-        
         <div className="flex flex-col md:flex-row flex-wrap gap-8">
           {/* Email */}
           <div className="flex items-start gap-4 group">
@@ -25,10 +22,10 @@ export default function ContactUs() {
             <div>
               <p className="text-xs text-gray-500">Email</p>
               <a
-                href="mailto:info@themynt.shop"
+                href="mailto:info@biborton.shop"
                 className="text-gray-800 text-sm hover:underline"
               >
-                info@themynt.shop
+                info@biborton.shop
               </a>
             </div>
           </div>

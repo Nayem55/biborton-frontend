@@ -9,7 +9,9 @@ const HomeNewArrivals = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/getProductsByTags?name=new arrivals`)
+    fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/getProductsByTags?name=new arrivals`,
+    )
       .then((res) => res.json())
       .then((data) => setNewArrivals(data));
 
@@ -34,7 +36,7 @@ const HomeNewArrivals = () => {
       "@type": "ListItem",
       position: index + 1,
       name: product?.name,
-      url: `https://themynt.shop/product/${product?.slug}`,
+      url: `https://biborton.shop/product/${product?.slug}`,
     })),
   };
 

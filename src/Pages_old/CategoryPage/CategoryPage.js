@@ -100,7 +100,7 @@ const CategoryPage = () => {
         <meta name="description" content={meta_description} />
         <link
           rel="canonical"
-          href={`https://themynt.shop/product-category/${category}`}
+          href={`https://biborton.shop/product-category/${category}`}
         />
         <script type="application/ld+json">
           {`
@@ -116,7 +116,7 @@ const CategoryPage = () => {
                   {
                     "@type": "ListItem",
                     "position": ${index + 1},
-                    "url": "https://themynt.shop/product/${product?.slug}"
+                    "url": "https://biborton.shop/product/${product?.slug}"
                   }`,
                   )
                   .join(",")}

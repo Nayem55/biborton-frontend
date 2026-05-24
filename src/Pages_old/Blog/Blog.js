@@ -26,7 +26,7 @@ const Blog = () => {
         />
         <link
           rel="canonical"
-          href={`https://themynt.shop/blog/${blog?._id}`}
+          href={`https://biborton.shop/blog/${blog?._id}`}
         />
       </Helmet>
       <div>

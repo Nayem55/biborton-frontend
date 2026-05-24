@@ -151,7 +151,7 @@ const ResellerDashboard = () => {
   // Affiliate Link Generator
   const generateAffiliateLink = useCallback(
     (slug) =>
-      `https://themynt.shop/product/${slug}?ref=${reseller?.resellerID}`,
+      `https://biborton.shop/product/${slug}?ref=${reseller?.resellerID}`,
     [reseller?.resellerID],
   );
 

@@ -42,7 +42,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
-        MYNT Beauty and Fragrances Footer
+        Biborton Fashion Worlds Footer
       </h2>
 
       <div className="mx-auto container px-4 sm:px-6 lg:px-0">
@@ -126,7 +126,7 @@ const Footer = () => {
                   <path d="M11 18h2" stroke="currentColor" strokeWidth="2" />
                 </svg>
               }
-              title="Get MYNT Texts"
+              title="Get Biborton Texts"
               subtitle="Sign up Now"
             />
           </Link>
@@ -150,7 +150,7 @@ const Footer = () => {
                 />
               </svg>
             }
-            title="MYNT Credit Card Program"
+            title="Biborton Credit Card Program"
             subtitle="Want % off your order? DETAILS"
           />
         </div>
@@ -158,30 +158,30 @@ const Footer = () => {
         {/* MAIN FOOTER */}
         <div className="grid gap-10 border-b border-white/25 py-7 lg:grid-cols-[1.05fr_0.9fr_0.95fr_0.9fr_1.35fr]">
           {/* About */}
-          <nav className="flex flex-col" aria-label="About MYNT">
-            <FooterTitle>About MYNT</FooterTitle>
-            <LinkItem to="/about">About MYNT</LinkItem>
+          <nav className="flex flex-col" aria-label="About Biborton">
+            <FooterTitle>About Biborton</FooterTitle>
+            <LinkItem to="/about">About Biborton</LinkItem>
             <LinkItem to="/">Newsroom</LinkItem>
             <LinkItem to="https://www.linkedin.com/company/gvibd/?originalSubdomain=bd">
               Careers
             </LinkItem>
-            <LinkItem to="/">MYNT Values</LinkItem>
+            <LinkItem to="/">Biborton Values</LinkItem>
             <LinkItem to="/">Supply Chain Transparency</LinkItem>
             <LinkItem to="/">Affiliates</LinkItem>
-            <LinkItem to="/">MYNT Events</LinkItem>
+            <LinkItem to="/">Biborton Events</LinkItem>
             <LinkItem to="/">Gift Cards</LinkItem>
-            <LinkItem to="/">MYNT Global Sites</LinkItem>
+            <LinkItem to="/">Biborton Global Sites</LinkItem>
             <LinkItem to="/">Diversity, Equity & Inclusion</LinkItem>
             <LinkItem to="/">Beauty Re(Purposed)</LinkItem>
             <LinkItem to="/contact">Report a Vulnerability</LinkItem>
           </nav>
 
-          {/* My MYNT */}
-          <nav className="flex flex-col" aria-label="My MYNT">
-            <FooterTitle>My MYNT</FooterTitle>
+          {/* My Biborton */}
+          <nav className="flex flex-col" aria-label="My Biborton">
+            <FooterTitle>My Biborton</FooterTitle>
             <LinkItem to="/beauty-insider">Beauty Insider</LinkItem>
-            <LinkItem to="/customerDashboard">MYNT order Card</LinkItem>
-            <LinkItem to="https://www.facebook.com/themynt.shop">
+            <LinkItem to="/customerDashboard">Biborton order Card</LinkItem>
+            <LinkItem to="https://www.facebook.com/biborton.shop">
               Community Profile
             </LinkItem>
             <LinkItem to="/customerDashboard">Order Status</LinkItem>
@@ -233,7 +233,7 @@ const Footer = () => {
 
             <form className="mt-20 max-w-[290px] sm:mt-16">
               <label className="mb-2 block text-[12px] font-bold">
-                Sign me up for texts from MYNT
+                Sign me up for texts from Biborton
               </label>
               <div className="flex gap-3">
                 <input
@@ -252,7 +252,7 @@ const Footer = () => {
 
             <form className="mt-6 max-w-[290px]">
               <label className="mb-2 block text-[12px] font-bold">
-                Sign up for MYNT Emails
+                Sign up for Biborton Emails
               </label>
               <div className="flex gap-3">
                 <input
@@ -275,7 +275,7 @@ const Footer = () => {
         <div className="flex flex-col gap-7 py-6 lg:flex-row lg:items-start lg:justify-between">
           <div>
             <p className="text-[11px] font-semibold">
-              © {year} MYNT Beauty & Fragrances. All rights reserved.
+              © {year} Biborton Beauty & Fragrances. All rights reserved.
             </p>
 
             <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-[11px] font-semibold">
@@ -301,7 +301,7 @@ const Footer = () => {
 
           <div className="flex flex-wrap items-center gap-5">
             <SocialIcon
-              href="https://www.instagram.com/themynt.shop/"
+              href="https://www.instagram.com/biborton.shop/"
               ariaLabel="Instagram"
             >
               <svg
@@ -315,7 +315,7 @@ const Footer = () => {
             </SocialIcon>
 
             <SocialIcon
-              href="https://www.facebook.com/themynt.shop/"
+              href="https://www.facebook.com/biborton.shop/"
               ariaLabel="Facebook"
             >
               <svg
@@ -329,7 +329,7 @@ const Footer = () => {
             </SocialIcon>
 
             <SocialIcon
-              href="https://www.youtube.com/@themyntshop"
+              href="https://www.youtube.com/@bibortonshop"
               ariaLabel="YouTube"
             >
               <svg
@@ -343,7 +343,7 @@ const Footer = () => {
             </SocialIcon>
 
             <SocialIcon
-              href="https://www.tiktok.com/@themyntshop"
+              href="https://www.tiktok.com/@bibortonshop"
               ariaLabel="TikTok"
             >
               <svg
@@ -382,7 +382,7 @@ const Footer = () => {
 
             {/* Snapchat */}
             {/* <SocialIcon
-              href="https://www.snapchat.com/add/themyntshop"
+              href="https://www.snapchat.com/add/bibortonshop"
               ariaLabel="Snapchat"
             >
               <svg

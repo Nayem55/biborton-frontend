@@ -169,7 +169,7 @@ const AllProducts = () => {
                   <td>
                     <textarea
                       className="border border-black p-2"
-                      value={`https://themynt.shop/sku/${product?.sku}`}
+                      value={`https://biborton.shop/sku/${product?.sku}`}
                     />
                   </td>
                   <td>{product?.sku ? product?.sku : "--"}</td>

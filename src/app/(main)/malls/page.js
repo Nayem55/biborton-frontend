@@ -1,7 +1,7 @@
 import MallsClient from "./MallsClient";
 
 export const metadata = {
-  title: "Outlets - MYNT",
+  title: "Outlets - Biborton",
   description: "Find our store locations.",
 };
 

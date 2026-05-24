@@ -25,17 +25,17 @@ async function getShopProducts(page = 0) {
 
 export async function generateMetadata() {
   return {
-    title: "Shop - MYNT Beauty and Fragrance",
+    title: "Shop - Biborton Fashion World",
     description:
       "Shop Junaid Jamshed Fragrances , attars, body sprays, and premium fragrances in Bangladesh. Explore best sellers, new arrivals, and exclusive collections.",
-    alternates: { canonical: "https://themynt.shop/shop" },
+    alternates: { canonical: "https://biborton.shop/shop" },
     robots: { index: true, follow: true },
     openGraph: {
       type: "website",
       title: "Shop All Fragrances | ",
       description:
         "Discover the complete collection of Junaid Jamshed Fragrances and fragrances in Bangladesh.",
-      url: "https://themynt.shop/shop",
+      url: "https://biborton.shop/shop",
     },
   };
 }
@@ -64,7 +64,7 @@ export default async function ShopPage() {
             itemListElement: (initialProducts || []).map((product, index) => ({
               "@type": "ListItem",
               position: index + 1,
-              url: `https://themynt.shop/product/${product?.slug || ""}`,
+              url: `https://biborton.shop/product/${product?.slug || ""}`,
             })),
           }),
         }}

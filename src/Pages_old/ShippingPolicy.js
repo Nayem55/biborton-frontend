@@ -12,7 +12,7 @@ const ShippingPolicy = () => {
           name="description"
           content="Read Earth Beauty and You's shipping policy to understand our delivery processes, times, and eco-friendly practices. Your satisfaction is our priority"
         />
-        <link rel="canonical" href={`https://themynt.shop/about`} />
+        <link rel="canonical" href={`https://biborton.shop/about`} />
       </Helmet>
       <h1 className="text-3xl text-center font-bold my-10 lg:text-4xl">
         Delivery and Shipping Policy

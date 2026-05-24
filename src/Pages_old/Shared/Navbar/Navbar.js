@@ -30,7 +30,7 @@ const Navbar = ({ popCart, handlePopCart }) => {
 
   if (searchText.length > 2) {
     searchedProducts = products?.filter((product) =>
-      product.name.toLowerCase().includes(searchText.toLowerCase())
+      product.name.toLowerCase().includes(searchText.toLowerCase()),
     );
   }
 
@@ -51,9 +51,9 @@ const Navbar = ({ popCart, handlePopCart }) => {
         {/* LOGO */}
         <div className="cursor-pointer">
           <Link href="/">
-            <Image 
-              src="https://luvit.com.bd/wp-content/uploads/2026/03/favicon.png" 
-              alt="MYNTLogo" 
+            <Image
+              src="https://luvit.com.bd/wp-content/uploads/2026/03/favicon.png"
+              alt="BibortonLogo"
               width={200}
               height={80}
               className="w-full h-[80px]"
@@ -115,15 +115,10 @@ const Navbar = ({ popCart, handlePopCart }) => {
           <div
             className={`cart-icon mobile-cart-position ${
               scrollPosition > 10 ? "cart-scrolled-50" : "cart-not-scrolled"
-            } ${
-              scrollPosition > 80 ? "cart-scrolled-80" : "cart-scrolled-50"
-            }`}
+            } ${scrollPosition > 80 ? "cart-scrolled-80" : "cart-scrolled-50"}`}
           >
             {/* ✅ UPDATED REDIRECT */}
-            <button
-              onClick={handleUserRedirect}
-              className="hover:text-accent"
-            >
+            <button onClick={handleUserRedirect} className="hover:text-accent">
               <FontAwesomeIcon
                 className="text-[24px] mr-10 mb-2"
                 icon={faUser}

@@ -3,11 +3,12 @@ import React from "react";
 // import img from '../../../../Images/shipping.jpg';
 
 export const metadata = {
-  title: "Shipping Policy | MYNT| Fragrances |",
-  description: "Read MYNT| Fragrances | shipping policy to understand our delivery processes, times, and eco-friendly practices. Your satisfaction is our priority",
+  title: "Shipping Policy | Biborton| Fragrances |",
+  description:
+    "Read Biborton| Fragrances | shipping policy to understand our delivery processes, times, and eco-friendly practices. Your satisfaction is our priority",
   alternates: {
-      canonical: "https://themynt.shop/shippingPolicy", // Adjusted from original which had /about accidentally?
-  }
+    canonical: "https://biborton.shop/shippingPolicy", // Adjusted from original which had /about accidentally?
+  },
 };
 
 const ShippingPolicy = () => {

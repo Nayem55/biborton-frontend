@@ -94,7 +94,7 @@ const InstaShop = () => {
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "Junaid Jamshed Fragrances",
-            url: "https://themynt.shop",
+            url: "https://biborton.shop",
             sameAs: ["https://www.instagram.com/earthbeautyandyou/"],
           })}
         </script>

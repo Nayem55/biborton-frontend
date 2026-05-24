@@ -21,7 +21,7 @@ const NewArrival = () => {
       "@type": "Product",
       position: index + 1,
       name: product?.name,
-      url: `https://themynt.shop/product/${product?.slug}`,
+      url: `https://biborton.shop/product/${product?.slug}`,
       image: product?.images?.[0]?.src,
       offers: {
         "@type": "Offer",

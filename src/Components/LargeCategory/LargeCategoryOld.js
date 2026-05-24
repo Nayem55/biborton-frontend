@@ -88,14 +88,14 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
               {/* <Image
                 // src="https://luvit.com.bd/wp-content/uploads/2026/03/Aroma-Talks-logo-3-1.png"
                 src="https://luvit.com.bd/wp-content/uploads/2026/03/aroma-talks-logo-gold.png"
-                alt="MYNTLogo"
+                alt="BibortonLogo"
                 width={140}
                 height={50}
                 priority
                 className="w-[130px] sm:w-[120px] md:w-[140px] h-auto"
               /> */}
               <span className="text-2xl tracking-[0.3em] font-medium">
-                MYNT
+                Biborton
               </span>
             </Link>
           </div>

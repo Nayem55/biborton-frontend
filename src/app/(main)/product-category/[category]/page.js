@@ -4,8 +4,8 @@ export const revalidate = 1800;
 export const dynamicParams = true;
 
 const API = process.env.NEXT_PUBLIC_API_URL;
-const SITE_URL = "https://themynt.shop";
-const BRAND_NAME = "MYNT Beauty and Fragrance";
+const SITE_URL = "https://biborton.shop";
+const BRAND_NAME = "Biborton Fashion World";
 
 function formatCategory(value = "") {
   return decodeURIComponent(String(value)).trim().replace(/-/g, " ");
@@ -15,7 +15,7 @@ async function getCategoryMeta(category) {
   try {
     const res = await fetch(
       `${API}/category-meta?name=${encodeURIComponent(category)}`,
-      { next: { revalidate: 1800 } }
+      { next: { revalidate: 1800 } },
     );
 
     if (!res.ok) return null;
@@ -31,15 +31,14 @@ export async function generateMetadata({ params }) {
 
   const meta = await getCategoryMeta(category);
 
-  const title =
-    meta?.meta_title || `${category.toUpperCase()} | ${BRAND_NAME}`;
+  const title = meta?.meta_title || `${category.toUpperCase()} | ${BRAND_NAME}`;
 
   const description =
     meta?.meta_description ||
     `Shop ${category} at ${BRAND_NAME}. Discover authentic beauty and fragrance products at the best price in Bangladesh.`;
 
   const canonical = `${SITE_URL}/product-category/${encodeURIComponent(
-    category
+    category,
   )}`;
 
   return {
@@ -69,6 +68,5 @@ export default async function CategoryPage({ params }) {
 
   return <CategoryPageClient initialCategory={category} />;
 }
-
 
 // Last updated

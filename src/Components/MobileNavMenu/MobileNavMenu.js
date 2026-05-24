@@ -9,7 +9,14 @@ import MobileCategory from "../MobileCategory/MobileCategory";
 import { ThemeContext } from "../../Contexts/ThemeContext";
 
 // Lucide icons
-import { Menu, Search, User, ShieldCheck, ShoppingBag, Settings2 } from "lucide-react";
+import {
+  Menu,
+  Search,
+  User,
+  ShieldCheck,
+  ShoppingBag,
+  Settings2,
+} from "lucide-react";
 
 const MobileNavMenu = ({ popCart, handlePopCart }) => {
   const { isAdmin } = useContext(ThemeContext);
@@ -82,7 +89,7 @@ const MobileNavMenu = ({ popCart, handlePopCart }) => {
             className="absolute  left-1/3 -translate-x-1/2 -ml-2 md:ml-1  pr-7 md:pr-0"
           >
             {/* <p className="text-black text-2xl md:text-3xl font-bold tracking-[0.3em]">
-              MYNT
+              Biborton
             </p> */}
             {/* অথবা ইমেজ  */}
             <img
@@ -94,7 +101,6 @@ const MobileNavMenu = ({ popCart, handlePopCart }) => {
               height={50}
               priority
             />
-           
           </Link>
 
           {/* Right: Icons */}
@@ -119,12 +125,12 @@ const MobileNavMenu = ({ popCart, handlePopCart }) => {
               </Link>
             ) : (
               <Link
-              href={otpUser?.phone ? "/dashboard" : "/customerDashboard"}
-              aria-label={otpUser?.phone ? "My Account" : "Login"}
-              className="pr-4 text-black/90 hover:text-black transition-transform hover:scale-110 touch-manipulation"
-            >
-              <User className="w-6 h-6 sm:w-5 sm:h-5" />
-            </Link>
+                href={otpUser?.phone ? "/dashboard" : "/customerDashboard"}
+                aria-label={otpUser?.phone ? "My Account" : "Login"}
+                className="pr-4 text-black/90 hover:text-black transition-transform hover:scale-110 touch-manipulation"
+              >
+                <User className="w-6 h-6 sm:w-5 sm:h-5" />
+              </Link>
             )}
 
             {/* Cart –  */}

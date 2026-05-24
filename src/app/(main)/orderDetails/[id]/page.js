@@ -1,7 +1,7 @@
 import OrderDetailsClient from "./OrderDetailsClient";
 
 export const metadata = {
-  title: "Order Details - MYNT ",
+  title: "Order Details - Biborton ",
   description: "Order Details",
 };
 

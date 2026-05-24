@@ -33,7 +33,6 @@ const StoreLocator = () => {
   return (
     <section className="py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-6 md:px-6">
-
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -53,7 +52,6 @@ const StoreLocator = () => {
 
         {/* Grid */}
         <div className="grid grid-cols-2 gap-6 md:gap-20 max-w-5xl mx-auto">
-
           {/* Column 1 */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -121,7 +119,6 @@ const StoreLocator = () => {
               ))}
             </div>
           </motion.div>
-
         </div>
 
         {/* Button */}
@@ -131,10 +128,9 @@ const StoreLocator = () => {
             className="px-8 md:px-12 py-3 flex items-center gap-4 uppercase tracking-[0.2em] text-[10px] md:text-[15px]  hover:scale-105 underline transition-all"
           >
             <MapPin></MapPin>
-            Find MYNT store
+            Find Biborton store
           </Link>
         </div>
-
       </div>
     </section>
   );

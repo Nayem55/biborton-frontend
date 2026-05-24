@@ -1,7 +1,7 @@
 import OrderConfirmationClient from "./OrderConfirmationClient";
 
 export const metadata = {
-  title: "Order Confirmation - MYNT| Fragrances |",
+  title: "Order Confirmation - Biborton| Fragrances |",
   description: "Order Confirmation",
 };
 

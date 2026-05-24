@@ -34,7 +34,7 @@ const Features = () => {
   return (
     <section
       className="py-6"
-      aria-label="Key shopping benefits at MYNT Beauty and Fragrance"
+      aria-label="Key shopping benefits at Biborton Fashion World"
     >
       {/* ✅ Desktop Features List */}
       <div className="hidden lg:flex justify-center 2xl:w-[65%] lg:w-[75%] mx-auto text-[12px] 2xl:text-[14px]">

@@ -3,4 +3,4 @@ User-agent: *
 Disallow: /admin/
 
 
-Sitemap: https://themynt.shop/sitemap.xml
+Sitemap: https://biborton.shop/sitemap.xml

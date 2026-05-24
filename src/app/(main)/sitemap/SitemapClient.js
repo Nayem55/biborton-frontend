@@ -8,16 +8,17 @@ const SitemapClient = () => {
   // This renders as a visual list of links, not a real XML sitemap.
   return (
     <div>
-      {products && products.map((product) => (
-        <p key={product._id || product.slug}>
-          {`<url>`}
-          <br></br>
-          {`<loc>`}https://themynt.shop/sku/{product.sku}
-          {`</loc>`}
-          <br></br>
-          {`</url>`}
-        </p>
-      ))}
+      {products &&
+        products.map((product) => (
+          <p key={product._id || product.slug}>
+            {`<url>`}
+            <br></br>
+            {`<loc>`}https://biborton.shop/sku/{product.sku}
+            {`</loc>`}
+            <br></br>
+            {`</url>`}
+          </p>
+        ))}
     </div>
   );
 };

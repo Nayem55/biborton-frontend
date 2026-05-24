@@ -97,8 +97,8 @@ const CustomerReview = () => {
                 </svg>
               </div>
               <p class="text-sm font-serif italic leading-relaxed mb-6">
-                "The packaging alone is a luxury experience. MYNThas
-                become my primary destination for gifting."
+                "The packaging alone is a luxury experience. Bibortonhas become
+                my primary destination for gifting."
               </p>
               <span class="text-[10px] uppercase tracking-widest font-bold">
                 — Michael R.
