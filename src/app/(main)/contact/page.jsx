@@ -85,7 +85,7 @@ export default function ContactUs() {
         {/* WhatsApp Button */}
         <div className="flex justify-center mt-12">
           <a
-            href="https://wa.me/8801404403965"
+            href="https://wa.me/8801404403596"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-green-500 text-white px-8 py-3 rounded-full font-medium hover:bg-green-600 transition"

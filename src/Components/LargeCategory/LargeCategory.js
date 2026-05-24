@@ -51,7 +51,7 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
   return (
     <header className="hidden lg:block w-full font-sans ">
       {/* TOP BAR */}
-      <div className="bg-white border-b  text-black bgg-[#810017] bgg-[#cf112c]  bgg-[#4E6E5D]  bgg-[#F5E6DF]">
+      <div className="bg-white text-black bgg-[#810017] bgg-[#cf112c]  bgg-[#4E6E5D]  bgg-[#F5E6DF]">
         <div className="container mx-auto textt-white text-xs py-4  flex justify-between ">
           {/* <span>Save up to 20% on all products with "GET20OFF" code</span> */}
           <span className="">
@@ -125,7 +125,7 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
             <div className="flex items-center gap-2 text-sm text-gray-700">
               <Phone className="w-4 h-4" />
 
-              <a href="tel:+8801404403965">+8801 404403596</a>
+              <a href="tel:+8801404403596">+8801404403596</a>
             </div>
 
             <div className="mb-1 ">
@@ -199,7 +199,7 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
                               title="offer"
                               width={700}
                               height={400}
-                              className="w-full  group-hover:scale-105 transition duration-300"
+                              className="w-full group-hover:scale-105 transition duration-300"
                             />
 
                             {/* Overlay */}

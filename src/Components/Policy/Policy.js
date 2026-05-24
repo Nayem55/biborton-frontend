@@ -20,7 +20,7 @@ const Policy = () => {
 
   const handleCall = () => {
     if (typeof window !== "undefined") {
-      window.location.href = `tel:+8801404403965`;
+      window.location.href = `tel:+8801404403596`;
     }
   };
 
@@ -105,7 +105,7 @@ const Policy = () => {
         />
         <h3 className="text-xl font-bold mt-6 sm:mt-10">Customer Helpline</h3>
         <p className="text-center text-black font-bold">
-          +880 1404 403 965
+          +880 1404 403 596
         </p>
       </article>
 
@@ -119,7 +119,7 @@ const Policy = () => {
           "contactPoint": [
             {
               "@type": "ContactPoint",
-              "telephone": "+8801404403965",
+              "telephone": "+8801404403596",
               "contactType": "Customer Support",
               "areaServed": "BD",
               "availableLanguage": "en"

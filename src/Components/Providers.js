@@ -316,7 +316,7 @@ const [newArrival, setNewArrival] = useState(initialData?.newArrival || []);
       {children}
 
       <a
-        href="https://api.whatsapp.com/send?phone=8801404403965"
+        href="https://api.whatsapp.com/send?phone=8801404403596"
         target="_blank"
         rel="noopener noreferrer"
       >

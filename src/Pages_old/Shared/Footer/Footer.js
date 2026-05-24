@@ -72,7 +72,7 @@ const Footer = () => {
           </Link>
 
           <a
-            href="https://api.whatsapp.com/send?phone=8801404403965"
+            href="https://api.whatsapp.com/send?phone=8801404403596"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -199,7 +199,7 @@ const Footer = () => {
           {/* Help */}
           <nav className="flex flex-col" aria-label="Help">
             <FooterTitle>Help</FooterTitle>
-            <LinkItem to="https://api.whatsapp.com/send?phone=8801404403965">
+            <LinkItem to="https://api.whatsapp.com/send?phone=8801404403596">
               Customer Service
             </LinkItem>
             <LinkItem to="/refund">Returns & Exchanges</LinkItem>
