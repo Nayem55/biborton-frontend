@@ -31,7 +31,7 @@ export default async function ProvidersServer({ children }) {
     getJSON(`${API}/productsByCategories?name=Three piece`),
     getJSON(`${API}/productsByCategories?name=Lehenga`),
     getJSON(`${API}/productsByCategories?name=Men watch`),
-    getJSON(`${API}/productsByCategories?name=best sellings`),
+    getJSON(`${API}/productsByCategories?name=salwar`),
     getJSON(`${API}/productsByCategories?name=new`),
     getJSON(`${API}/orders`),
     getJSON(`${API}/getBlogs`),

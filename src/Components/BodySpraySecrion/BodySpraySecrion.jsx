@@ -56,11 +56,11 @@ const BodySpraySecrion = () => {
               New Arrived
             </h2>
             <h3 class="text-xl sm:text-2xl uppercase   md:text-3xl">
-              Body Spray Collection
+              Elegant Watch Collection
             </h3>
           </div>
           <Link
-            href="/product-category/jdot body spray"
+            href="/product-category/watch"
             class="text-[11px] font-bold text-gray-800 uppercase  border-b tracking-[0.2em] border-gray-700 pb-1 hover:text-gold-accent hover:border-gold-accent transition-all"
           >
             See More

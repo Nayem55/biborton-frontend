@@ -10,6 +10,7 @@ import ChosenForYou from "../../Components/ChosenForYou/ChosenForYou";
 import BannerCard from "../../Components/Banner/CardBanner";
 import NewArrival from "../../Components/BestSale copy/NewArrival";
 import Saree from "../../Components/ChosenForYou/Saree";
+import BodySpraySecrion from "../../Components/BodySpraySecrion/BodySpraySecrion";
 
 // Lazy load heavy video components
 const VideoBanner = dynamic(
@@ -68,6 +69,7 @@ const Home = () => {
       <BestSale />
       <NewArrival></NewArrival>
       <PremiumSection />
+      <BodySpraySecrion/>
       <GallerySection />
     </div>
   );

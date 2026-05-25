@@ -56,14 +56,14 @@ const BestSale = () => {
         <div class="flex justify-between items-end mb-5  pb-6">
           <div>
             <h2 class="text-[10px] uppercase text-left tracking-[0.4em] text-gray-400 ml-1 mb-1">
-              Best Selection
+              Best Selling
             </h2>
             <h3 class="text-xl sm:text-2xl uppercase   md:text-3xl">
-              Best Sellings
+              Salwar Kamiz
             </h3>
           </div>
           <Link
-            href="/product-category/two piece"
+            href="/product-category/salwar"
             class="text-[11px] font-bold text-gray-800 uppercase  border-b tracking-[0.2em] border-gray-700 pb-1 hover:text-gold-accent hover:border-gold-accent transition-all"
           >
             See More

@@ -1,7 +1,7 @@
 import Product from "../Shared/Product";
 import { useContext } from "react";
 import Link from "next/link";
-import { ThemeContext } from "../Providers";
+import { ThemeContext } from './../../Contexts/ThemeContext';
 
 const PremiumSection = () => {
   const { premium } = useContext(ThemeContext);

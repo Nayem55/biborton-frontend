@@ -57,7 +57,7 @@ const Saree = () => {
             </h3>
           </div>
           <Link
-            href="/product-category/tshirt"
+            href="/product-category/saree"
             class="text-[11px] font-bold text-gray-800 uppercase  border-b tracking-[0.2em] border-gray-700 pb-1 hover:text-gold-accent hover:border-gold-accent transition-all"
           >
             See More
