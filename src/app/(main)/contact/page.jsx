@@ -3,8 +3,8 @@ import { Mail, Phone, MessageCircle, Globe, Users } from "lucide-react";
 
 export default function ContactUs() {
   return (
-    <div className=" bg-white px-4 py-12 flex items-center justify-center mt-10 md:mt-0">
-      <div className="w-full max-w-4xl">
+    <div className=" bg-white py-16 flex items-center justify-center mt-10 md:mt-0">
+      <div className="w-auto mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-semibold text-gray-800">Contact Us</h2>
@@ -41,7 +41,7 @@ export default function ContactUs() {
                 href="tel:+09613160160"
                 className="text-gray-800 text-sm hover:underline"
               >
-                +09613160160
+                01404403596
               </a>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function ContactUs() {
                 href="mailto:imtiazazhz@gmail.com"
                 className="text-gray-800 text-sm hover:underline"
               >
-                imtiazazhz@gmail.com
+                nayem.sayed.web@gmail.com
               </a>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function ContactUs() {
                 href="mailto:niloygvi@gmail.com"
                 className="text-gray-800 text-sm hover:underline"
               >
-                niloygvi@gmail.com
+                nayem.sayed.web@gmail.com
               </a>
             </div>
           </div>

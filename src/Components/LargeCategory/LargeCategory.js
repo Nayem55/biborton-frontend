@@ -51,8 +51,8 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
   return (
     <header className="hidden lg:block w-full font-sans ">
       {/* TOP BAR */}
-      <div className="bg-white text-black bgg-[#810017] bgg-[#cf112c]  bgg-[#4E6E5D]  bgg-[#F5E6DF]">
-        <div className="container mx-auto textt-white text-xs py-4  flex justify-between ">
+      <div className="bg-white text-black">
+        <div className="container mx-auto text-white text-xs py-4 flex justify-between ">
           {/* <span>Save up to 20% on all products with "GET20OFF" code</span> */}
           <span className="">
             Fashion for Every Moment - Free Shipping on Orders Over BDT 3000
@@ -167,7 +167,7 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
               {/* DROPDOWN */}
               {menu.dropdown && (
                 <div
-                  className={`fixed left-0 w-full bg-white shadow-xl opacity-0 invisible translate-y-3 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 ${mounted && scrollPosition > 50 ? "top-[199px]" : "top-[199px]"}`}
+                  className={`fixed left-0 w-full bg-white shadow-xl opacity-0 invisible translate-y-3 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 ${mounted && scrollPosition > 50 ? "top-[150px]" : "top-[170px]"}`}
                 >
                   <div className="container mx-auto py-10 grid grid-cols-5 gap-10">
                     {menu.dropdown.map((col, i) => (
