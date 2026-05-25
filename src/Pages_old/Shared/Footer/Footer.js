@@ -409,7 +409,7 @@ const Footer = () => {
           {/* SOCIALS */}
           <div className="flex flex-wrap items-center gap-3">
             <SocialIcon
-              href="https://www.instagram.com/biborton.shop/"
+              href="https://www.instagram.com/bibortonfashionworld/"
               ariaLabel="Instagram"
             >
               <svg
@@ -423,7 +423,7 @@ const Footer = () => {
             </SocialIcon>
 
             <SocialIcon
-              href="https://www.facebook.com/biborton.shop/"
+              href="https://www.facebook.com/bibortonfashionworld/"
               ariaLabel="Facebook"
             >
               <svg
@@ -437,7 +437,7 @@ const Footer = () => {
             </SocialIcon>
 
             <SocialIcon
-              href="https://www.youtube.com/@bibortonshop"
+              href="https://www.youtube.com/@bibortonfashionworld"
               ariaLabel="YouTube"
             >
               <svg
@@ -451,7 +451,7 @@ const Footer = () => {
             </SocialIcon>
 
             <SocialIcon
-              href="https://www.tiktok.com/@bibortonshop"
+              href="https://www.tiktok.com/@bibortonfashionworld"
               ariaLabel="TikTok"
             >
               <svg
