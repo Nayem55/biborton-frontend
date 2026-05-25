@@ -10,13 +10,13 @@ const CustomerOrders = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`http://localhost:3200/userOrder/${ph}`)
+    fetch(`https://biborton-server.vercel.app/userOrder/${ph}`)
       .then((res) => res.json())
       .then((data) => {
         setUserOrders(data);
         setLoading(false);
       });
-    fetch(`http://localhost:3200/user1Order/${ph}`)
+    fetch(`https://biborton-server.vercel.app/user1Order/${ph}`)
       .then((res) => res.json())
       .then((data) => {
         setUser1Orders(data);

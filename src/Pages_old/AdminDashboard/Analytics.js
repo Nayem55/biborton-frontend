@@ -27,10 +27,10 @@ const Analytics = () => {
 
           const [ordersResponse, totalResponse] = await Promise.all([
             fetch(
-              `http://localhost:3200/sortOrders?startDate=${startDate}&endDate=${endDate}${platformParam}`,
+              `https://biborton-server.vercel.app/sortOrders?startDate=${startDate}&endDate=${endDate}${platformParam}`,
             ),
             fetch(
-              `http://localhost:3200/orders/total${
+              `https://biborton-server.vercel.app/orders/total${
                 platform !== "all" ? `?platform=${platform}` : ""
               }`,
             ),

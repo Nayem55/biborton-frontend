@@ -36,7 +36,7 @@ const ComboCart = () => {
     } else {
       setNewCustomer(true);
     }
-    fetch(`http://localhost:3200/getCoupons`)
+    fetch(`https://biborton-server.vercel.app/getCoupons`)
       .then((res) => res.json())
       .then((data) => setCoupons(data));
   }, [previousCustomer]);

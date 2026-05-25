@@ -134,7 +134,7 @@ const AddProduct = () => {
       cost: cost,
       meta_description: metaDescription,
     };
-    fetch("http://localhost:3200/addProduct", {
+    fetch("https://biborton-server.vercel.app/addProduct", {
       method: "post",
       headers: {
         "content-type": "application/json",
@@ -221,7 +221,7 @@ const AddProduct = () => {
       cost: cost,
       meta_description: metaDescription,
     };
-    fetch("http://localhost:3200/addProduct", {
+    fetch("https://biborton-server.vercel.app/addProduct", {
       method: "post",
       headers: {
         "content-type": "application/json",

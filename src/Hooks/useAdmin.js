@@ -6,7 +6,7 @@
 //     const [isAdminLoading,setIsAdminLoading] = useState(false);
 //     useEffect(() => {
 //           setIsAdminLoading(true);
-//           fetch(`http://localhost:3200/users/admin/${ph}`)
+//           fetch(`https://biborton-server.vercel.app/users/admin/${ph}`)
 //             .then((res) => res.json())
 //             .then((data) => {
 //                 setIsAdmin(data.isAdmin);

@@ -76,7 +76,7 @@ const ResellerDashboard = () => {
     const fetchProducts = async () => {
       try {
         setLoadingProducts(true);
-        const res = await fetch("http://localhost:3200/products");
+        const res = await fetch("https://biborton-server.vercel.app/products");
         if (!res.ok) throw new Error("Failed to fetch products");
         const data = await res.json();
         setProducts(Array.isArray(data) ? data : []);
@@ -105,7 +105,7 @@ const ResellerDashboard = () => {
       });
 
       const res = await fetch(
-        `http://localhost:3200/orders/affiliate/${reseller.resellerID}?${params}`,
+        `https://biborton-server.vercel.app/orders/affiliate/${reseller.resellerID}?${params}`,
       );
       if (!res.ok) throw new Error("Failed to fetch orders");
 
@@ -174,7 +174,7 @@ const ResellerDashboard = () => {
       setLoadingProductDetail(true);
 
       const res = await fetch(
-        `http://localhost:3200/getSingleProduct/${productFromList.slug}`,
+        `https://biborton-server.vercel.app/getSingleProduct/${productFromList.slug}`,
       );
       if (!res.ok) throw new Error("Failed to load product");
 

@@ -36,7 +36,7 @@ const ProductsByTag = () => {
   // const product = products?.find((product) => product?.slug === slug);
 
   useEffect(() => {
-    fetch(`http://localhost:3200/getProductsByTags?name=${sku}`)
+    fetch(`https://biborton-server.vercel.app/getProductsByTags?name=${sku}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data[0]);
@@ -45,7 +45,9 @@ const ProductsByTag = () => {
   }, [sku]);
 
   useEffect(() => {
-    fetch(`http://localhost:3200/reviews?productId=${product?._id}`)
+    fetch(
+      `https://biborton-server.vercel.app/reviews?productId=${product?._id}`,
+    )
       .then((res) => res.json())
       .then((data) => setReviews(data))
       .catch((error) => console.error("Error fetching reviews:", error));
@@ -117,7 +119,7 @@ const ProductsByTag = () => {
         96: "",
       },
     };
-    fetch("http://localhost:3200/reviews", {
+    fetch("https://biborton-server.vercel.app/reviews", {
       method: "post",
       headers: {
         "content-type": "application/json",

@@ -16,7 +16,7 @@ const SearchedProductPage = () => {
   useEffect(() => {
     setSearchedProducts([]);
     setLoading(true);
-    fetch(`http://localhost:3200/searchProduct/${searchText}`)
+    fetch(`https://biborton-server.vercel.app/searchProduct/${searchText}`)
       .then((res) => res.json())
       .then((data) => {
         setSearchedProducts(data);

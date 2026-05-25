@@ -27,7 +27,7 @@ const AdminAffiliateDashboard = () => {
   const fetchSummary = () => {
     setLoading(true);
     fetch(
-      `http://localhost:3200/admin/affiliate-summary?start=${startDate}&end=${endDate}`,
+      `https://biborton-server.vercel.app/admin/affiliate-summary?start=${startDate}&end=${endDate}`,
     )
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch");
@@ -60,7 +60,7 @@ const AdminAffiliateDashboard = () => {
       });
 
       const res = await fetch(
-        `http://localhost:3200/orders/affiliate/${resellerID}?${params}`,
+        `https://biborton-server.vercel.app/orders/affiliate/${resellerID}?${params}`,
       );
       const result = await res.json();
 
@@ -94,7 +94,7 @@ const AdminAffiliateDashboard = () => {
     setUpdatingOrderId(orderId);
     try {
       const response = await fetch(
-        `http://localhost:3200/editOrder/${orderId}`,
+        `https://biborton-server.vercel.app/editOrder/${orderId}`,
         {
           method: "PUT",
           headers: {

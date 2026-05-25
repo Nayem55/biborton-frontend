@@ -22,7 +22,7 @@ const OrderList = () => {
   console.log(searchedText);
 
   useEffect(() => {
-    fetch("http://localhost:3200/orderCount")
+    fetch("https://biborton-server.vercel.app/orderCount")
       .then((res) => res.json())
       .then((data) => {
         const count = data.count;
@@ -34,7 +34,7 @@ const OrderList = () => {
   useEffect(() => {
     setOrders([]);
     setLoading(true);
-    fetch(`http://localhost:3200/orders?page=${page}`)
+    fetch(`https://biborton-server.vercel.app/orders?page=${page}`)
       .then((res) => res.json())
       .then((data) => {
         setOrders(data);
@@ -48,7 +48,7 @@ const OrderList = () => {
   }, [orders]);
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:3200/deleteorder/${id}`, {
+    fetch(`https://biborton-server.vercel.app/deleteorder/${id}`, {
       method: "delete",
     })
       .then((res) => res.json())
@@ -64,21 +64,25 @@ const OrderList = () => {
     setOrders([]);
     setLoading(true);
     if (filterBy === "Name") {
-      fetch(`http://localhost:3200/searchOrder/${searchedText}`)
+      fetch(`https://biborton-server.vercel.app/searchOrder/${searchedText}`)
         .then((res) => res.json())
         .then((data) => {
           setOrders(data);
           setLoading(false);
         });
     } else if (filterBy === "Phone") {
-      fetch(`http://localhost:3200/searchOrderByPhone/${searchedText}`)
+      fetch(
+        `https://biborton-server.vercel.app/searchOrderByPhone/${searchedText}`,
+      )
         .then((res) => res.json())
         .then((data) => {
           setOrders(data);
           setLoading(false);
         });
     } else {
-      fetch(`http://localhost:3200/searchOrderById/${searchedText}`)
+      fetch(
+        `https://biborton-server.vercel.app/searchOrderById/${searchedText}`,
+      )
         .then((res) => res.json())
         .then((data) => {
           setOrders(data);

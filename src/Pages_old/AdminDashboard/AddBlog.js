@@ -53,7 +53,7 @@ const AddBlog = () => {
         ],
       },
     };
-    fetch(`http://localhost:3200/addBlog`, {
+    fetch(`https://biborton-server.vercel.app/addBlog`, {
       method: "post",
       headers: {
         "content-type": "application/json",
@@ -89,7 +89,7 @@ const AddBlog = () => {
         ],
       },
     };
-    fetch(`http://localhost:3200/addBlog`, {
+    fetch(`https://biborton-server.vercel.app/addBlog`, {
       method: "post",
       headers: {
         "content-type": "application/json",

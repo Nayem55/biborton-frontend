@@ -135,7 +135,7 @@ export default function CategoryPageClient({ initialCategory }) {
   }, [categoryProducts, title, category, meta_description]);
 
   return (
-    <div className="container mb-20 mx-auto">
+    <div className="container mb-20 mx-auto px-4">
       {/* JSON-LD */}
       <script
         type="application/ld+json"
@@ -152,7 +152,7 @@ export default function CategoryPageClient({ initialCategory }) {
       </div>
 
       <h1
-        className={`w-[90%] 2xl:w-full lg:w-full mx-auto font-bold my-10 text-[22px] ${
+        className={`w-[100%] 2xl:w-full lg:w-full mx-auto font-bold my-10 text-[22px] ${
           category.includes("top 10") ? "text-center" : ""
         }`}
       >
@@ -161,18 +161,6 @@ export default function CategoryPageClient({ initialCategory }) {
 
       {/* Controls */}
       <div className="hidden lg:flex items-center mb-10 gap-4">
-        <button
-          className={`px-4 py-2 rounded-md border ${!list ? "bg-gray-100" : ""}`}
-          onClick={() => setList(false)}
-        >
-          Grid
-        </button>
-        <button
-          className={`px-4 py-2 rounded-md border ${list ? "bg-gray-100" : ""}`}
-          onClick={() => setList(true)}
-        >
-          List
-        </button>
 
         <select
           className="ml-auto border rounded-md px-3 py-2"

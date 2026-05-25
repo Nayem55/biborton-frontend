@@ -28,7 +28,7 @@ const MobileCategory = ({ menu, handleMenu }) => {
 
   return (
     <div
-      className={`mobile-category-container fixed top-0 left-0 h-full w-72 bg-black/95 backdrop-blur-xl z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
+      className={`bg-white fixed top-0 left-0 h-[100vh] w-72 bg-black/95 backdrop-blur-xl z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
         menu ? "translate-x-0" : "-translate-x-full"
       }`}
     >
@@ -98,18 +98,11 @@ const MobileCategory = ({ menu, handleMenu }) => {
           <Link
             href="/about"
             onClick={closeMenu}
-            className="block py-3 px-4 hover:bg-white/10 rounded-lg"
+            className="block py-3 px-4 hover:bg-white/10 rounded-lg font-semibold text-md"
           >
-            ABOUT
+            About
           </Link>
 
-          <Link
-            href="/shop"
-            onClick={closeMenu}
-            className="block py-3 px-4 hover:bg-white/10 rounded-lg"
-          >
-            SHOP
-          </Link>
         </div>
       </div>
     </div>

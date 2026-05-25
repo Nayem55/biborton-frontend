@@ -11,7 +11,7 @@ const TrackOrder = () => {
   const handleTrack = () => {
     setOrder();
     setTrack(false);
-    fetch(`http://localhost:3200/order/${orderID}`)
+    fetch(`https://biborton-server.vercel.app/order/${orderID}`)
       .then((res) => res.json())
       .then((data) => {
         setOrder(data);

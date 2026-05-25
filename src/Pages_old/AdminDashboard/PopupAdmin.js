@@ -14,7 +14,7 @@ import {
 
 export default function PopupAdmin() {
   // 👉 If your API is on another origin, change this base URL
-  const API_BASE = "http://localhost:3200";
+  const API_BASE = "https://biborton-server.vercel.app";
   const endpoint = `${API_BASE}/api/popup`;
 
   const [form, setForm] = useState({

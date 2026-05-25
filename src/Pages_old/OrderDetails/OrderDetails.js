@@ -11,7 +11,7 @@ const OrderDetails = () => {
   const { products } = useContext(ThemeContext);
 
   useEffect(() => {
-    fetch(`http://localhost:3200/order/${id}`)
+    fetch(`https://biborton-server.vercel.app/order/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setDate(data.order_date);

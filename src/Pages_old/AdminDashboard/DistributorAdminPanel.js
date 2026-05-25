@@ -6,7 +6,9 @@ const DistributorAdminPanel = () => {
 
   const fetchDistributors = async () => {
     try {
-      const res = await fetch("http://localhost:3200/distributors");
+      const res = await fetch(
+        "https://biborton-server.vercel.app/distributors",
+      );
       const data = await res.json();
       setDistributors(data);
     } catch (error) {
@@ -17,9 +19,12 @@ const DistributorAdminPanel = () => {
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure you want to delete this entry?")) return;
     try {
-      const res = await fetch(`http://localhost:3200/distributors/${id}`, {
-        method: "DELETE",
-      });
+      const res = await fetch(
+        `https://biborton-server.vercel.app/distributors/${id}`,
+        {
+          method: "DELETE",
+        },
+      );
       const result = await res.json();
       toast.success(result.message);
       fetchDistributors(); // refresh the list

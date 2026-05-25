@@ -1,5 +1,6 @@
 "use client";
-import React, { useState, useEffect, useContext } from "react";
+
+import React, { useCallback, useContext, useEffect, useState } from "react";
 import "./MobileNavMenu.css";
 import Cart from "../Cart/Cart";
 import Link from "next/link";
@@ -8,63 +9,69 @@ import MobileSearch from "../MobileSearch/MobileSearch";
 import MobileCategory from "../MobileCategory/MobileCategory";
 import { ThemeContext } from "../../Contexts/ThemeContext";
 
-// Lucide icons
-import {
-  Menu,
-  Search,
-  User,
-  ShieldCheck,
-  ShoppingBag,
-  Settings2,
-} from "lucide-react";
+import { Menu, Search, User, Settings2 } from "lucide-react";
 
 const MobileNavMenu = ({ popCart, handlePopCart }) => {
   const { isAdmin } = useContext(ThemeContext);
-  const [userLogin, setUserLogin] = useState(false);
+
   const [showSearch, setShowSearch] = useState(false);
   const [otpUser, setOtpUser] = useState(null);
   const [menu, setMenu] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const user = localStorage.getItem("user");
-      if (user) {
+    const user = localStorage.getItem("user");
+
+    if (user) {
+      try {
         setOtpUser(JSON.parse(user));
+      } catch {
+        setOtpUser(null);
       }
     }
   }, []);
 
-  const handleSearch = (search) => {
-    setShowSearch(search);
-  };
+  const handleSearch = useCallback((value) => {
+    setShowSearch(value);
 
-  const handleMenu = (menu) => {
-    setMenu(menu);
-    setShowSearch(false);
-    if (menu) {
+    if (value) {
+      setMenu(false);
       handlePopCart(false);
     }
-  };
+  }, [handlePopCart]);
 
-  // Prevent body scroll when overlay open
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      if (popCart || showSearch || menu) {
-        if (window.innerWidth < 640) {
-          document.body.style.overflow = "hidden";
-        }
-      } else {
-        document.body.style.overflow = "";
-      }
+  const handleMenu = useCallback((value) => {
+    setMenu(value);
+    setShowSearch(false);
+
+    if (value) {
+      handlePopCart(false);
     }
+  }, [handlePopCart]);
+
+  useEffect(() => {
+    const isOpen = popCart || showSearch || menu;
+
+    if (isOpen && window.innerWidth < 640) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [popCart, showSearch, menu]);
+
+  const closeAll = () => {
+    handleMenu(false);
+    handleSearch(false);
+    handlePopCart(false);
+  };
 
   return (
     <div className="relative z-50 md:hidden">
-      {/* Pop-up Cart */}
       <PopCart handlePopCart={handlePopCart} popCart={popCart} />
 
-      {/* Main Mobile Header Bar */}
       <div
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           popCart || menu || showSearch
@@ -73,48 +80,46 @@ const MobileNavMenu = ({ popCart, handlePopCart }) => {
         }`}
       >
         <div className="mx-auto max-w-screen-xl px-4 h-14 flex items-center justify-between">
-          {/* Left:  */}
           <button
+            type="button"
             aria-label="Open menu"
             onClick={() => handleMenu(true)}
-            className="text-black/90 hover:text-black transition-colors"
+            className="text-black/90 hover:text-black transition-colors touch-manipulation"
           >
             <Menu className="w-7 h-7" />
           </button>
 
-          {/* Center: Logo */}
           <Link
             href="/"
             aria-label="Home"
-            className="absolute  left-1/3 -translate-x-1/2 -ml-2 md:ml-1  pr-7 md:pr-0"
+            className="absolute left-1/2 -translate-x-1/2"
+            onClick={closeAll}
           >
             <img
               src="https://i.ibb.co.com/qL6G2k62/3039b878-bec9-43ca-b082-1cec9a342a71-removebg-preview.png"
               alt="Biborton"
-              className="h-10 mt-[-10px] object-contain"
+              className="h-10 object-contain"
               title="Biborton Logo"
               width={140}
               height={50}
-              priority
             />
           </Link>
 
-          {/* Right: Icons */}
           <div className="flex items-center gap-5 sm:gap-6 -mr-1">
-            {/* Search */}
             <button
+              type="button"
               aria-label="Search"
               onClick={() => handleSearch(!showSearch)}
-              className="r-2 text-black/90 hover:text-black transition-colors touch-manipulation"
+              className="text-black/90 hover:text-black transition-colors touch-manipulation"
             >
               <Search className="w-6 h-6 sm:w-5 sm:h-5" />
             </button>
 
-            {/* Admin (if applicable) */}
             {isAdmin ? (
               <Link
                 href="/admin"
                 aria-label="Admin Dashboard"
+                onClick={closeAll}
                 className="pr-4 text-black/90 hover:text-black transition-transform hover:scale-110 touch-manipulation"
               >
                 <Settings2 className="w-6 h-6 sm:w-5 sm:h-5" />
@@ -123,13 +128,13 @@ const MobileNavMenu = ({ popCart, handlePopCart }) => {
               <Link
                 href={otpUser?.phone ? "/dashboard" : "/customerDashboard"}
                 aria-label={otpUser?.phone ? "My Account" : "Login"}
+                onClick={closeAll}
                 className="pr-4 text-black/90 hover:text-black transition-transform hover:scale-110 touch-manipulation"
               >
                 <User className="w-6 h-6 sm:w-5 sm:h-5" />
               </Link>
             )}
 
-            {/* Cart –  */}
             <div className="touch-manipulation ml-3">
               <Cart
                 popCart={popCart}
@@ -141,23 +146,18 @@ const MobileNavMenu = ({ popCart, handlePopCart }) => {
         </div>
       </div>
 
-      {/* Mobile Menu Drawer */}
-      <MobileCategory menu={menu} handleMenu={handleMenu} />
-
-      {/* Mobile Search Drawer */}
-      <MobileSearch showSearch={showSearch} handleSearch={handleSearch} />
-
-      {/* Overlay (closes menu/search/cart on click) */}
       {(popCart || menu || showSearch) && (
-        <div
+        <button
+          type="button"
+          aria-label="Close menu overlay"
           className="fixed inset-0 bg-black/60 backdrop-blur-sm z-30 transition-opacity duration-300"
-          onClick={() => {
-            handleMenu(false);
-            handleSearch(false);
-            handlePopCart(false);
-          }}
+          onClick={closeAll}
         />
       )}
+
+      <MobileCategory menu={menu} handleMenu={handleMenu} />
+
+      <MobileSearch showSearch={showSearch} handleSearch={handleSearch} />
     </div>
   );
 };

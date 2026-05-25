@@ -117,7 +117,7 @@ const ComboCheckout = () => {
   //   });
   // }, []);
   useEffect(() => {
-    fetch("http://localhost:3200/last-order-id")
+    fetch("https://biborton-server.vercel.app/last-order-id")
       .then((res) => res.json())
       .then((data) => setOrderId(data[0].id + 1));
   }, []);
@@ -243,7 +243,7 @@ const ComboCheckout = () => {
               ? "instock"
               : "outofstock",
         };
-        fetch(`http://localhost:3200/editProduct/${product._id}`, {
+        fetch(`https://biborton-server.vercel.app/editProduct/${product._id}`, {
           method: "put",
           headers: {
             "content-type": "application/json",
@@ -295,7 +295,7 @@ const ComboCheckout = () => {
 
     if (paymentMethod === "Cash On Delivery") {
       if (district !== "select") {
-        await fetch("http://localhost:3200/order", {
+        await fetch("https://biborton-server.vercel.app/order", {
           method: "post",
           headers: {
             "content-type": "application/json",

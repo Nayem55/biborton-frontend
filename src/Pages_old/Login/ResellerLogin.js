@@ -17,14 +17,17 @@ const ResellerLogin = () => {
 
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:3200/reseller-login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          contactNumber: resellerPhone,
-          password: resellerPassword,
-        }),
-      });
+      const res = await fetch(
+        "https://biborton-server.vercel.app/reseller-login",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            contactNumber: resellerPhone,
+            password: resellerPassword,
+          }),
+        },
+      );
 
       const data = await res.json();
       if (!res.ok) {

@@ -124,7 +124,7 @@ const ComboShipping = () => {
             product.stock_quantity - product.quantity,
           ),
         };
-        fetch(`http://localhost:3200/editProduct/${product._id}`, {
+        fetch(`https://biborton-server.vercel.app/editProduct/${product._id}`, {
           method: "put",
           headers: {
             "content-type": "application/json",
@@ -163,7 +163,7 @@ const ComboShipping = () => {
       coupon_used: "Combo discount",
     };
 
-    await fetch("http://localhost:3200/order", {
+    await fetch("https://biborton-server.vercel.app/order", {
       method: "post",
       headers: {
         "content-type": "application/json",

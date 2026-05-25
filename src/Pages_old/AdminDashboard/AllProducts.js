@@ -15,7 +15,7 @@ const AllProducts = () => {
   const [deletedId, setDeletedId] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:3200/productCount")
+    fetch("https://biborton-server.vercel.app/productCount")
       .then((res) => res.json())
       .then((data) => {
         const count = data.count;
@@ -27,7 +27,7 @@ const AllProducts = () => {
   useEffect(() => {
     setProducts([]);
     setLoading(true);
-    fetch(`http://localhost:3200/Allproducts?page=${page}`)
+    fetch(`https://biborton-server.vercel.app/Allproducts?page=${page}`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
@@ -36,7 +36,7 @@ const AllProducts = () => {
   }, [page]);
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:3200/deleteProduct/${id}`, {
+    fetch(`https://biborton-server.vercel.app/deleteProduct/${id}`, {
       method: "delete",
     })
       .then((res) => res.json())
@@ -52,7 +52,7 @@ const AllProducts = () => {
   const handleSearch = () => {
     setProducts([]);
     setLoading(true);
-    fetch(`http://localhost:3200/search/${searchedText}`)
+    fetch(`https://biborton-server.vercel.app/search/${searchedText}`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

@@ -1,7 +1,8 @@
 // app/shop/page.js
 import Shop from "../../../Pages_old/Shop";
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3200";
+const API =
+  process.env.NEXT_PUBLIC_API_URL || "https://biborton-server.vercel.app";
 
 async function safeJSON(url) {
   try {

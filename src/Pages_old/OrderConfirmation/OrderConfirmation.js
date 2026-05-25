@@ -6,7 +6,9 @@ const OrderConfirmation = () => {
   const [confirmationData, setConfirmationData] = useState({});
   const { products } = useContext(ThemeContext);
   useEffect(() => {
-    fetch(`http://localhost:3200/orderConfirmation/${confirmationTime}`)
+    fetch(
+      `https://biborton-server.vercel.app/orderConfirmation/${confirmationTime}`,
+    )
       .then((res) => res.json())
       .then((data) => setConfirmationData(data));
   }, []);

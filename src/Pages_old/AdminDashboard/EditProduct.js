@@ -41,7 +41,7 @@ const EditProduct = () => {
   const [metaTitle, setMetaTitle] = useState("");
 
   useEffect(() => {
-    fetch(`http://localhost:3200/backendProduct/${id}`)
+    fetch(`https://biborton-server.vercel.app/backendProduct/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setName(data.name || "");
@@ -164,7 +164,7 @@ const EditProduct = () => {
 
   const handleUpdateAndPublish = () => {
     const data = prepareData("publish");
-    fetch(`http://localhost:3200/editProduct/${id}`, {
+    fetch(`https://biborton-server.vercel.app/editProduct/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -178,7 +178,7 @@ const EditProduct = () => {
 
   const handleUpdateAndDraft = () => {
     const data = prepareData("draft");
-    fetch(`http://localhost:3200/editProduct/${id}`, {
+    fetch(`https://biborton-server.vercel.app/editProduct/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

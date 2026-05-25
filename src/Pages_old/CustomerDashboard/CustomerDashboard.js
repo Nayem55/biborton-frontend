@@ -25,14 +25,14 @@ const CustomerDashboard = () => {
       Navigate("/admin");
     } else {
       if (otpUser?.phone) {
-        fetch(`http://localhost:3200/userOrder/${otpUser?.phone}`)
+        fetch(`https://biborton-server.vercel.app/userOrder/${otpUser?.phone}`)
           .then((res) => res.json())
           .then((data) => {
             setUserOrders(data);
             setLoading(false);
           });
       } else {
-        fetch(`http://localhost:3200/user1Order/${user?.email}`)
+        fetch(`https://biborton-server.vercel.app/user1Order/${user?.email}`)
           .then((res) => res.json())
           .then((data) => {
             setUserOrders(data);

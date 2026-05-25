@@ -12,7 +12,9 @@ const Offer30Percent = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:3200/getProductsByTags?name=30 percent")
+    fetch(
+      "https://biborton-server.vercel.app/getProductsByTags?name=30 percent",
+    )
       .then((res) => res.json())
       .then((data) => {
         setOfferyProducts(data);

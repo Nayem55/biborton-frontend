@@ -12,7 +12,9 @@ const Offer40Percent = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:3200/getProductsByTags?name=40 clearance")
+    fetch(
+      "https://biborton-server.vercel.app/getProductsByTags?name=40 clearance",
+    )
       .then((res) => res.json())
       .then((data) => {
         setOfferyProducts(data);

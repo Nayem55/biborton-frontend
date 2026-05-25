@@ -12,7 +12,7 @@ const Offer25Percent = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:3200/getProductsByTags?name=August 25")
+    fetch("https://biborton-server.vercel.app/getProductsByTags?name=August 25")
       .then((res) => res.json())
       .then((data) => {
         setOfferyProducts(data);

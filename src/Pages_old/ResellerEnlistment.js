@@ -27,7 +27,7 @@ const ResellerSignup = () => {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:3200/resellers", {
+      const res = await fetch("https://biborton-server.vercel.app/resellers", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

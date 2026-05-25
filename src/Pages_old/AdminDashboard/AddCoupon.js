@@ -37,7 +37,7 @@ const AddCoupon = () => {
       maximum_amount: "0.00",
       email_restrictions: [],
     };
-    fetch("http://localhost:3200/addCoupon", {
+    fetch("https://biborton-server.vercel.app/addCoupon", {
       method: "post",
       headers: {
         "content-type": "application/json",

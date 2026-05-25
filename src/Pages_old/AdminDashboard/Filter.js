@@ -31,7 +31,7 @@ import "ag-grid-community/styles/ag-theme-alpine.css";
 ModuleRegistry.registerModules([AllCommunityModule]);
 
 const PAGE_SIZE = 50;
-const API_BASE = "http://localhost:3200";
+const API_BASE = "https://biborton-server.vercel.app";
 const UNDO_REDO_LIMIT = 20;
 const REQUIRED_FIELDS = ["status", "stock_status"];
 const EDITABLE_FIELDS = new Set([

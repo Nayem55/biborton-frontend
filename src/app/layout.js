@@ -105,7 +105,7 @@ export default function RootLayout({ children }) {
 
         {/* Preconnect to critical domains */}
         <link rel="preconnect" href="https://luvit.com.bd" />
-        <link rel="preconnect" href="http://localhost:3200" />
+        <link rel="preconnect" href="https://biborton-server.vercel.app" />
       </head>
 
       <body>

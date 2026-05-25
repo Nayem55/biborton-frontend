@@ -13,7 +13,7 @@ const EditBlog = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:3200/getBlog/${id}`)
+    fetch(`https://biborton-server.vercel.app/getBlog/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setName(data?.title?.rendered);
@@ -69,7 +69,7 @@ const EditBlog = () => {
         ],
       },
     };
-    fetch(`http://localhost:3200/editBlog/${id}`, {
+    fetch(`https://biborton-server.vercel.app/editBlog/${id}`, {
       method: "put",
       headers: {
         "content-type": "application/json",
@@ -105,7 +105,7 @@ const EditBlog = () => {
         ],
       },
     };
-    fetch(`http://localhost:3200/editBlog/${id}`, {
+    fetch(`https://biborton-server.vercel.app/editBlog/${id}`, {
       method: "put",
       headers: {
         "content-type": "application/json",

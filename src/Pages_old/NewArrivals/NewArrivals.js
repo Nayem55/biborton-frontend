@@ -15,7 +15,7 @@ const NewArrivals = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`http://localhost:3200/newArrivals`)
+    fetch(`https://biborton-server.vercel.app/newArrivals`)
       .then((res) => res.json())
       .then((data) => {
         setNewProducts(data);

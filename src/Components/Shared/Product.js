@@ -7,7 +7,8 @@ import { addToDb } from "../../utilities/CartDb";
 import Link from "next/link";
 import Image from "next/image";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3200";
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_URL || "https://biborton-server.vercel.app";
 
 const Product = ({ product }) => {
   const { cart, setCart } = useContext(ThemeContext);

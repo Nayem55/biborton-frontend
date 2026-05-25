@@ -16,8 +16,8 @@ const CustomerOrders = () => {
     const fetchOrders = async () => {
       try {
         const [res1, res2] = await Promise.all([
-          fetch(`http://localhost:3200/userOrder/${ph}`),
-          fetch(`http://localhost:3200/user1Order/${ph}`),
+          fetch(`https://biborton-server.vercel.app/userOrder/${ph}`),
+          fetch(`https://biborton-server.vercel.app/user1Order/${ph}`),
         ]);
 
         const data1 = await res1.json();

@@ -5,8 +5,8 @@ const useProduct = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    // fetch("http://localhost:3200/products")
-    fetch("http://localhost:3200/products")
+    // fetch("https://biborton-server.vercel.app/products")
+    fetch("https://biborton-server.vercel.app/products")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
@@ -18,4 +18,4 @@ const useProduct = () => {
 };
 export default useProduct;
 
-// http://localhost:3200/
+// https://biborton-server.vercel.app/

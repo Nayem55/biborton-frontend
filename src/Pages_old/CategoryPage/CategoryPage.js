@@ -24,7 +24,9 @@ const CategoryPage = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3200/categoryProductCount?name=${category}`)
+    fetch(
+      `https://biborton-server.vercel.app/categoryProductCount?name=${category}`,
+    )
       .then((res) => res.json())
       .then((data) => {
         const count = data.count;
@@ -32,7 +34,7 @@ const CategoryPage = () => {
         setPageCount(pages);
       });
 
-    fetch(`http://localhost:3200/categories`)
+    fetch(`https://biborton-server.vercel.app/categories`)
       .then((res) => res.json())
       .then((data) => setCategories(data));
   }, [category]);
@@ -42,7 +44,7 @@ const CategoryPage = () => {
     setLoading(true);
 
     fetch(
-      `http://localhost:3200/getProductsByCategories?name=${category}&page=${page}`,
+      `https://biborton-server.vercel.app/getProductsByCategories?name=${category}&page=${page}`,
     )
       .then((res) => res.json())
       .then((data) => {

@@ -13,7 +13,7 @@ const EditCoupon = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:3200/getCoupon/${id}`)
+    fetch(`https://biborton-server.vercel.app/getCoupon/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setCoupon(data);
@@ -54,7 +54,7 @@ const EditCoupon = () => {
       maximum_amount: "0.00",
       email_restrictions: [],
     };
-    fetch(`http://localhost:3200/editCoupon/${id}`, {
+    fetch(`https://biborton-server.vercel.app/editCoupon/${id}`, {
       method: "put",
       headers: {
         "content-type": "application/json",

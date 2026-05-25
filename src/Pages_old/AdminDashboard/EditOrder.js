@@ -20,7 +20,7 @@ const EditOrder = () => {
   const [user] = useAuthState(auth);
 
   useEffect(() => {
-    fetch(`http://localhost:3200/uniqueOrder/${id}`)
+    fetch(`https://biborton-server.vercel.app/uniqueOrder/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setDate(data.order_date);
@@ -28,7 +28,7 @@ const EditOrder = () => {
         setPlatform(data.platform);
         setOrder(data);
       });
-    fetch(`http://localhost:3200/getCoupons`)
+    fetch(`https://biborton-server.vercel.app/getCoupons`)
       .then((res) => res.json())
       .then((data) => setCoupons(data));
   }, []);
@@ -40,7 +40,7 @@ const EditOrder = () => {
       last_updated: new Date().toISOString(), // <-- Add this line
     };
 
-    fetch(`http://localhost:3200/editOrder/${id}`, {
+    fetch(`https://biborton-server.vercel.app/editOrder/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -105,7 +105,7 @@ const EditOrder = () => {
             parseInt(order.shipping_total),
         );
       }
-      fetch(`http://localhost:3200/editOrder/${id}`, {
+      fetch(`https://biborton-server.vercel.app/editOrder/${id}`, {
         method: "put",
         headers: {
           "content-type": "application/json",
