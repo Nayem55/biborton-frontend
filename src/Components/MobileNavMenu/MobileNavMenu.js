@@ -88,10 +88,6 @@ const MobileNavMenu = ({ popCart, handlePopCart }) => {
             aria-label="Home"
             className="absolute  left-1/3 -translate-x-1/2 -ml-2 md:ml-1  pr-7 md:pr-0"
           >
-            {/* <p className="text-black text-2xl md:text-3xl font-bold tracking-[0.3em]">
-              Biborton
-            </p> */}
-            {/* অথবা ইমেজ  */}
             <img
               src="https://i.ibb.co.com/qL6G2k62/3039b878-bec9-43ca-b082-1cec9a342a71-removebg-preview.png"
               alt="Biborton"

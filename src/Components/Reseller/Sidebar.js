@@ -17,7 +17,7 @@ const Sidebar = ({
       >
         <div className="p-6 border-b">
           <p className="text-xs font-semibold tracking-wider text-gray-500">
-            Junaid Jamshed Fragrances
+            Junaid Jamshed collections
           </p>
           <h2 className="text-2xl font-extrabold text-gray-900 mt-2">
             Reseller Hub

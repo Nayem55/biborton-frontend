@@ -12,10 +12,11 @@ async function getJSON(url) {
 export default async function ProvidersServer({ children }) {
   const [
     ChosenForYou,
+    saree,
     premium,
     MostFavorite,
     flormar,
-    Perfume,
+    fashion,
     bodyspray,
     bestSellings,
     newArrival,
@@ -24,6 +25,7 @@ export default async function ProvidersServer({ children }) {
     products,
   ] = await Promise.all([
     getJSON(`${API}/productsByCategories?name=Tshirt`),
+    getJSON(`${API}/productsByCategories?name=saree`),
     getJSON(`${API}/productsByCategories?name=shirt`),
     getJSON(`${API}/productsByCategories?name=Two piece`),
     getJSON(`${API}/productsByCategories?name=Three piece`),
@@ -40,10 +42,11 @@ export default async function ProvidersServer({ children }) {
     <Providers
       initialData={{
         ChosenForYou,
+        saree,
         premium,
         MostFavorite,
         flormar,
-        Perfume,
+        fashion,
         bodyspray,
         bestSellings,
         newArrival,

@@ -1,7 +1,7 @@
 import React from "react";
 
 export const metadata = {
-  title: "Refund Policy - Biborton| Fragrances |",
+  title: "Refund Policy - Biborton| collections |",
   description: "Read our Refund Policy.",
 };
 
@@ -18,12 +18,10 @@ const Refund = () => {
         Biborton Return Policy
       </p>
       <p className="font-bold">
-        Thanks for shopping from Biborton Beauty & Fragrances.
+        Thanks for shopping from Biborton Fashion World.
       </p>
       <p>If you are unsatisfied with your purchase, we're here to help.</p>
-      <p className="font-bold mt-6">
-        Biborton Beauty & Fragrances Return Policy
-      </p>
+      <p className="font-bold mt-6">Biborton Fashion World Return Policy</p>
       <p>
         1. You have 3 calendar days to return an item from the date you received
         it.
@@ -39,9 +37,7 @@ const Refund = () => {
         unboxing video is mandatory as per our policy. Without an unboxing
         video, the policy will not be applicable.
       </p>
-      <p className="font-bold mt-6">
-        Biborton Beauty & Fragrances Refund Policy
-      </p>
+      <p className="font-bold mt-6">Biborton Fashion World Refund Policy</p>
       <p>
         1. Once we receive your item, we will inspect it and notify you that we
         have received your returned item.
@@ -56,7 +52,7 @@ const Refund = () => {
         refund issues.
       </p>
       <p className="font-bold mt-6">
-        Biborton Beauty & Fragrances Delivery Charge Policy
+        Biborton Fashion World Delivery Charge Policy
       </p>
       <p>
         1. You will be responsible for paying for your own delivery charge for
@@ -68,7 +64,7 @@ const Refund = () => {
         from your refund.
         <br />
       </p>
-      <p className="font-bold mt-6">Contact Biborton Beauty & Fragrances</p>
+      <p className="font-bold mt-6">Contact Biborton Fashion World</p>
       <p>
         If you have any questions on how to return your item to us:
         <span className="font-bold"> Inbox us on Facebook. </span> Or you can
@@ -76,8 +72,8 @@ const Refund = () => {
         number.
       </p>
       <p className="mt-4">
-        <span className="font-bold">Note:</span> Biborton Beauty & Fragrances
-        holds the terms and conditions of the Return & Refund Policy.
+        <span className="font-bold">Note:</span> Biborton Fashion World holds
+        the terms and conditions of the Return & Refund Policy.
       </p>
     </div>
   );

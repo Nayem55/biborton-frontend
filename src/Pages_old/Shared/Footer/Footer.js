@@ -70,13 +70,7 @@ const Footer = () => {
     },
     {
       title: "Accessories",
-      items: [
-        "Watches",
-        "Sunglasses",
-        "Wallets",
-        "Belts",
-        "Jewellery",
-      ],
+      items: ["Watches", "Sunglasses", "Wallets", "Belts", "Jewellery"],
     },
     {
       title: "Electronics & Home",
@@ -206,217 +200,187 @@ const Footer = () => {
           />
         </div>
 
-{/* MAIN FOOTER */}
-<div className="grid gap-10 border-b border-white/25 py-7 lg:grid-cols-[1.05fr_0.9fr_0.95fr_0.9fr_1.35fr]">
-  {/* Shop Men */}
-  <nav className="flex flex-col" aria-label="Shop Men">
-    <FooterTitle>Shop Men</FooterTitle>
+        {/* MAIN FOOTER */}
+        <div className="grid gap-10 border-b border-white/25 py-7 lg:grid-cols-[1.05fr_0.9fr_0.95fr_0.9fr_1.35fr]">
+          {/* Shop Men */}
+          <nav className="flex flex-col" aria-label="Shop Men">
+            <FooterTitle>Shop Men</FooterTitle>
 
-    <LinkItem to={categoryHref("Men's T-Shirts")}>
-      Men's T-Shirts
-    </LinkItem>
+            <LinkItem to={categoryHref("Men's T-Shirts")}>
+              Men's T-Shirts
+            </LinkItem>
 
-    <LinkItem to={categoryHref("Men's Shirts")}>
-      Men's Shirts
-    </LinkItem>
+            <LinkItem to={categoryHref("Men's Shirts")}>Men's Shirts</LinkItem>
 
-    <LinkItem to={categoryHref("Men's Polo")}>
-      Men's Polo
-    </LinkItem>
+            <LinkItem to={categoryHref("Men's Polo")}>Men's Polo</LinkItem>
 
-    <LinkItem to={categoryHref("Men's Jeans")}>
-      Men's Jeans
-    </LinkItem>
+            <LinkItem to={categoryHref("Men's Jeans")}>Men's Jeans</LinkItem>
 
-    <LinkItem to={categoryHref("Men's Pants & Trousers")}>
-      Men's Pants & Trousers
-    </LinkItem>
+            <LinkItem to={categoryHref("Men's Pants & Trousers")}>
+              Men's Pants & Trousers
+            </LinkItem>
 
-    <LinkItem to={categoryHref("Men's Panjabi & Kurta")}>
-      Men's Panjabi & Kurta
-    </LinkItem>
+            <LinkItem to={categoryHref("Men's Panjabi & Kurta")}>
+              Men's Panjabi & Kurta
+            </LinkItem>
 
-    <LinkItem to={categoryHref("Men's Jackets")}>
-      Men's Jackets
-    </LinkItem>
+            <LinkItem to={categoryHref("Men's Jackets")}>
+              Men's Jackets
+            </LinkItem>
 
-    <LinkItem to={categoryHref("Men's Hoodies & Sweatshirts")}>
-      Men's Hoodies & Sweatshirts
-    </LinkItem>
+            <LinkItem to={categoryHref("Men's Hoodies & Sweatshirts")}>
+              Men's Hoodies & Sweatshirts
+            </LinkItem>
 
-    <LinkItem to={categoryHref("Footwear")}>Footwear</LinkItem>
-  </nav>
+            <LinkItem to={categoryHref("Footwear")}>Footwear</LinkItem>
+          </nav>
 
-  {/* Shop Women */}
-  <nav className="flex flex-col" aria-label="Shop Women">
-    <FooterTitle>Shop Women</FooterTitle>
+          {/* Shop Women */}
+          <nav className="flex flex-col" aria-label="Shop Women">
+            <FooterTitle>Shop Women</FooterTitle>
 
-    <LinkItem to={categoryHref("Women's Saree")}>
-      Women's Saree
-    </LinkItem>
+            <LinkItem to={categoryHref("Women's Saree")}>
+              Women's Saree
+            </LinkItem>
 
-    <LinkItem to={categoryHref("Women's Salwar Kameez")}>
-      Women's Salwar Kameez
-    </LinkItem>
+            <LinkItem to={categoryHref("Women's Salwar Kameez")}>
+              Women's Salwar Kameez
+            </LinkItem>
 
-    <LinkItem to={categoryHref("Women's Kurti & Tops")}>
-      Women's Kurti & Tops
-    </LinkItem>
+            <LinkItem to={categoryHref("Women's Kurti & Tops")}>
+              Women's Kurti & Tops
+            </LinkItem>
 
-    <LinkItem to={categoryHref("Women's Dresses")}>
-      Women's Dresses
-    </LinkItem>
+            <LinkItem to={categoryHref("Women's Dresses")}>
+              Women's Dresses
+            </LinkItem>
 
-    <LinkItem to={categoryHref("Women's Gown")}>
-      Women's Gown
-    </LinkItem>
+            <LinkItem to={categoryHref("Women's Gown")}>Women's Gown</LinkItem>
 
-    <LinkItem to={categoryHref("Women's Jeans & Pants")}>
-      Women's Jeans & Pants
-    </LinkItem>
+            <LinkItem to={categoryHref("Women's Jeans & Pants")}>
+              Women's Jeans & Pants
+            </LinkItem>
 
-    <LinkItem to={categoryHref("Women's Skirts")}>
-      Women's Skirts
-    </LinkItem>
+            <LinkItem to={categoryHref("Women's Skirts")}>
+              Women's Skirts
+            </LinkItem>
 
-    <LinkItem to={categoryHref("Women's Hijab & Abaya")}>
-      Women's Hijab & Abaya
-    </LinkItem>
+            <LinkItem to={categoryHref("Women's Hijab & Abaya")}>
+              Women's Hijab & Abaya
+            </LinkItem>
 
-    <LinkItem to={categoryHref("Women's Winter Collection")}>
-      Women's Winter Collection
-    </LinkItem>
-  </nav>
+            <LinkItem to={categoryHref("Women's Winter Collection")}>
+              Women's Winter Collection
+            </LinkItem>
+          </nav>
 
-  {/* Accessories & Electronics */}
-  <nav className="flex flex-col" aria-label="Accessories">
-    <FooterTitle>Accessories</FooterTitle>
+          {/* Accessories & Electronics */}
+          <nav className="flex flex-col" aria-label="Accessories">
+            <FooterTitle>Accessories</FooterTitle>
 
-    <LinkItem to={categoryHref("Watches")}>Watches</LinkItem>
+            <LinkItem to={categoryHref("Watches")}>Watches</LinkItem>
 
-    <LinkItem to={categoryHref("Sunglasses")}>
-      Sunglasses
-    </LinkItem>
+            <LinkItem to={categoryHref("Sunglasses")}>Sunglasses</LinkItem>
 
-    <LinkItem to={categoryHref("Wallets")}>Wallets</LinkItem>
+            <LinkItem to={categoryHref("Wallets")}>Wallets</LinkItem>
 
-    <LinkItem to={categoryHref("Belts")}>Belts</LinkItem>
+            <LinkItem to={categoryHref("Belts")}>Belts</LinkItem>
 
-    <LinkItem to={categoryHref("Bags & Backpacks")}>
-      Bags & Backpacks
-    </LinkItem>
+            <LinkItem to={categoryHref("Bags & Backpacks")}>
+              Bags & Backpacks
+            </LinkItem>
 
-    <LinkItem to={categoryHref("Jewellery")}>
-      Jewellery
-    </LinkItem>
+            <LinkItem to={categoryHref("Jewellery")}>Jewellery</LinkItem>
 
-    <LinkItem to={categoryHref("Electronics")}>
-      Electronics
-    </LinkItem>
+            <LinkItem to={categoryHref("Electronics")}>Electronics</LinkItem>
 
-    <LinkItem to={categoryHref("Mobile Accessories")}>
-      Mobile Accessories
-    </LinkItem>
+            <LinkItem to={categoryHref("Mobile Accessories")}>
+              Mobile Accessories
+            </LinkItem>
 
-    <LinkItem to={categoryHref("Smart Gadgets")}>
-      Smart Gadgets
-    </LinkItem>
-  </nav>
+            <LinkItem to={categoryHref("Smart Gadgets")}>
+              Smart Gadgets
+            </LinkItem>
+          </nav>
 
-  {/* Help */}
-  <nav className="flex flex-col" aria-label="Help">
-    <FooterTitle>Help</FooterTitle>
+          {/* Help */}
+          <nav className="flex flex-col" aria-label="Help">
+            <FooterTitle>Help</FooterTitle>
 
-    <LinkItem to="/contact">Contact Us</LinkItem>
+            <LinkItem to="/contact">Contact Us</LinkItem>
 
-    <LinkItem to="/refund">
-      Returns & Exchanges
-    </LinkItem>
+            <LinkItem to="/refund">Returns & Exchanges</LinkItem>
 
-    <LinkItem to="/shippingPolicy">
-      Shipping Policy
-    </LinkItem>
+            <LinkItem to="/shippingPolicy">Shipping Policy</LinkItem>
 
-    <LinkItem to="/terms">
-      Terms & Conditions
-    </LinkItem>
+            <LinkItem to="/terms">Terms & Conditions</LinkItem>
 
-    <LinkItem to="/privacyPolicy">
-      Privacy Policy
-    </LinkItem>
+            <LinkItem to="/privacyPolicy">Privacy Policy</LinkItem>
 
-    <LinkItem to="/customerDashboard">
-      Order Tracking
-    </LinkItem>
+            <LinkItem to="/customerDashboard">Order Tracking</LinkItem>
 
-    <LinkItem to="/malls">
-      Store Locations
-    </LinkItem>
+            <LinkItem to="/malls">Store Locations</LinkItem>
 
-    <LinkItem to="/shop">
-      New Arrivals
-    </LinkItem>
+            <LinkItem to="/shop">New Arrivals</LinkItem>
 
-    <LinkItem to="/shop">
-      Best Sellers
-    </LinkItem>
-  </nav>
+            <LinkItem to="/shop">Best Sellers</LinkItem>
+          </nav>
 
-  {/* Signup */}
-  <div className="lg:pl-2">
-    <h3 className="max-w-[320px] font-serif text-[24px] font-bold leading-[1.1] text-white sm:text-[28px]">
-      We Belong to Something Beautiful
-    </h3>
+          {/* Signup */}
+          <div className="lg:pl-2">
+            <h3 className="max-w-[320px] font-serif text-[24px] font-bold leading-[1.1] text-white sm:text-[28px]">
+              We Belong to Something Beautiful
+            </h3>
 
-    <form className="mt-20 max-w-[290px] sm:mt-16">
-      <label className="mb-2 block text-[12px] font-bold">
-        Sign me up for texts from Biborton
-      </label>
+            <form className="mt-20 max-w-[290px] sm:mt-16">
+              <label className="mb-2 block text-[12px] font-bold">
+                Sign me up for texts from Biborton
+              </label>
 
-      <div className="flex gap-3">
-        <input
-          type="tel"
-          placeholder="Mobile Phone Number"
-          className="h-8 flex-1 rounded-sm bg-white px-3 text-[12px] text-black outline-none"
-        />
+              <div className="flex gap-3">
+                <input
+                  type="tel"
+                  placeholder="Mobile Phone Number"
+                  className="h-8 flex-1 rounded-sm bg-white px-3 text-[12px] text-black outline-none"
+                />
 
-        <button
-          type="button"
-          className="h-8 rounded-full border border-white px-5 text-[12px] font-bold text-white transition hover:bg-white hover:text-black"
-        >
-          Continue
-        </button>
-      </div>
-    </form>
+                <button
+                  type="button"
+                  className="h-8 rounded-full border border-white px-5 text-[12px] font-bold text-white transition hover:bg-white hover:text-black"
+                >
+                  Continue
+                </button>
+              </div>
+            </form>
 
-    <form className="mt-6 max-w-[290px]">
-      <label className="mb-2 block text-[12px] font-bold">
-        Sign up for Biborton Emails
-      </label>
+            <form className="mt-6 max-w-[290px]">
+              <label className="mb-2 block text-[12px] font-bold">
+                Sign up for Biborton Emails
+              </label>
 
-      <div className="flex gap-3">
-        <input
-          type="email"
-          placeholder="Enter your email address"
-          className="h-8 flex-1 rounded-sm bg-white px-3 text-[12px] text-black outline-none"
-        />
+              <div className="flex gap-3">
+                <input
+                  type="email"
+                  placeholder="Enter your email address"
+                  className="h-8 flex-1 rounded-sm bg-white px-3 text-[12px] text-black outline-none"
+                />
 
-        <button
-          type="button"
-          className="h-8 rounded-full border border-white px-5 text-[12px] font-bold text-white transition hover:bg-white hover:text-black"
-        >
-          Sign Up
-        </button>
-      </div>
-    </form>
-  </div>
-</div>
+                <button
+                  type="button"
+                  className="h-8 rounded-full border border-white px-5 text-[12px] font-bold text-white transition hover:bg-white hover:text-black"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
 
         {/* BOTTOM BAR */}
         <div className="flex flex-col gap-8 py-6 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <p className="text-[11px] font-semibold text-white/80">
-              © {year} Biborton Beauty & Fragrances. All rights reserved.
+              © {year} Biborton Fashion World. All rights reserved.
             </p>
 
             <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-[11px] font-semibold text-white/80">

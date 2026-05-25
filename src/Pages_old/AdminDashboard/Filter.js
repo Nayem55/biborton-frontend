@@ -49,8 +49,8 @@ const EDITABLE_FIELDS = new Set([
 ]);
 
 const MANUAL_BRANDS = [
-  "armaf",
-  "armaf beauty",
+  "biborton",
+  "biborton beauty",
   "flormar",
   "jdot",
   "eby",

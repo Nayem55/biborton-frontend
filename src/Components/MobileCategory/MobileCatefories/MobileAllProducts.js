@@ -3,12 +3,11 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-
 const MobileAllProducts = () => {
   const [linkOneHover, setLinkOneHover] = useState(false);
 
   return (
-    <div className={`mobile-perfume transition-all ease-in-out duration-300`}>
+    <div className={`mobile-fashion transition-all ease-in-out duration-300`}>
       <button
         onClick={() => setLinkOneHover(!linkOneHover)}
         className={`mr-10 w-[85%] text-start relative ${
@@ -18,7 +17,7 @@ const MobileAllProducts = () => {
         SHOP
         <FontAwesomeIcon
           className=" w-3 absolute right-0"
-          icon={faChevronDown }
+          icon={faChevronDown}
         ></FontAwesomeIcon>
       </button>
 
@@ -31,10 +30,7 @@ const MobileAllProducts = () => {
       >
         <div>
           <hr className=" w-full my-2 text-accent" />
-          <Link
-            href="/shop"
-            className=" hover:text-accent"
-          >
+          <Link href="/shop" className=" hover:text-accent">
             All Products
           </Link>
           <hr className=" w-full my-2 text-accent" />
@@ -59,72 +55,60 @@ const MobileAllProducts = () => {
             Sunscreen
           </Link>
           <hr className=" w-full my-2" />
-        <Link
-          href="/product-category/hand wash"
-          className=" hover:text-accent"
-        >
-          Hand Wash
-        </Link>
-        <hr className=" w-full my-2" />
-        <Link
-          href="/product-category/shower gel"
-          className=" hover:text-accent"
-        >
-          Shower Gel
-        </Link>
-        <hr className=" w-full my-2" />
-        <Link
-          href="/product-category/soothing gel"
-          className=" hover:text-accent"
-        >
-          Soothing Gel
-        </Link>
-        <hr className=" w-full my-2" />
-        <Link
-          href="/product-category/oil"
-          className=" hover:text-accent"
-        >
-          Hair Oil
-        </Link>
-        <hr className=" w-full my-2" />
-        <Link
-          href="/product-category/shampoo"
-          className=" hover:text-accent"
-        >
-          Hair Shampoo
-        </Link>
-        <hr className=" w-full my-2" />
-        <Link
-          href="/product-category/conditioner"
-          className=" hover:text-accent"
-        >
-          Hair Conditioner
-        </Link>
-        <hr className=" w-full my-2" />
-        <Link
-          href="/product-category/moisturizer"
-          className=" hover:text-accent"
-        >
-          Moisturizer
-        </Link>
-        <hr className=" w-full my-2" />
-        <Link
-          href="/product-category/mist toner"
-          className=" hover:text-accent"
-        >
-          Mist Toner
-        </Link>
- 
-        <hr className=" w-full my-2 text-accent" />
-        <Link
-          href="/product-category/lotion"
-          className=" hover:text-accent"
-        >
-          Lotion
-        </Link>
- 
-    
+          <Link
+            href="/product-category/hand wash"
+            className=" hover:text-accent"
+          >
+            Hand Wash
+          </Link>
+          <hr className=" w-full my-2" />
+          <Link
+            href="/product-category/shower gel"
+            className=" hover:text-accent"
+          >
+            Shower Gel
+          </Link>
+          <hr className=" w-full my-2" />
+          <Link
+            href="/product-category/soothing gel"
+            className=" hover:text-accent"
+          >
+            Soothing Gel
+          </Link>
+          <hr className=" w-full my-2" />
+          <Link href="/product-category/oil" className=" hover:text-accent">
+            Hair Oil
+          </Link>
+          <hr className=" w-full my-2" />
+          <Link href="/product-category/shampoo" className=" hover:text-accent">
+            Hair Shampoo
+          </Link>
+          <hr className=" w-full my-2" />
+          <Link
+            href="/product-category/conditioner"
+            className=" hover:text-accent"
+          >
+            Hair Conditioner
+          </Link>
+          <hr className=" w-full my-2" />
+          <Link
+            href="/product-category/moisturizer"
+            className=" hover:text-accent"
+          >
+            Moisturizer
+          </Link>
+          <hr className=" w-full my-2" />
+          <Link
+            href="/product-category/mist toner"
+            className=" hover:text-accent"
+          >
+            Mist Toner
+          </Link>
 
+          <hr className=" w-full my-2 text-accent" />
+          <Link href="/product-category/lotion" className=" hover:text-accent">
+            Lotion
+          </Link>
         </div>
       </div>
     </div>

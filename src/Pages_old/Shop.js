@@ -138,7 +138,7 @@ const Shop = ({ initialProducts = [], initialPageCount = 0 }) => {
           <div className="flex flex-col items-center gap-4">
             <div className="h-12 w-12 animate-spin rounded-full border-2 border-accent border-t-transparent"></div>
             <p className="mt-2 text-sm tracking-widest opacity-70">
-              Loading fragrances...
+              Loading collections...
             </p>
           </div>
         </div>

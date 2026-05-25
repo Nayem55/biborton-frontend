@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const ArtisanPathSection = () => {
   return (
@@ -14,14 +14,19 @@ const ArtisanPathSection = () => {
           The Artisan's Path
         </span>
         <h2 className="serif-text text-5xl md:text-6xl mb-10 leading-tight">
-          Mastery in <br />Every Drop
+          Mastery in <br />
+          Every Drop
         </h2>
         <div className="space-y-6 text-gray-600  leading-loose text-lg font-light max-w-lg">
           <p>
-            Born in the historic hills of Grasse and refined in modern laboratories, J. represents the intersection of ancestral wisdom and contemporary science.
+            Born in the historic hills of Grasse and refined in modern
+            laboratories, biborton represents the intersection of ancestral
+            wisdom and contemporary science.
           </p>
           <p>
-            Each batch is aged for six months in temperature-controlled oak barrels to reach its peak olfactory expression. We believe in silence, patience, and the uncompromising pursuit of quality.
+            Each batch is aged for six months in temperature-controlled oak
+            barrels to reach its peak olfactory expression. We believe in
+            silence, patience, and the uncompromising pursuit of quality.
           </p>
         </div>
         <a

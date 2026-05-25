@@ -52,10 +52,10 @@ const CustomerReview = () => {
               </div>
               <p class="text-sm font-serif italic leading-relaxed mb-6">
                 "The selection here is unparalleled. I found my wedding scent
-                after the fragrance finder quiz. Simply impeccable service."
+                after the collection finder quiz. Simply impeccable service."
               </p>
               <span class="text-[10px] uppercase tracking-widest font-bold">
-                — Sarah J.
+                — Sarah biborton
               </span>
             </div>
             <div class="bg-white p-10 text-center shadow-sm border border-gray-50">

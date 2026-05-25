@@ -74,14 +74,17 @@ export default function Providers({ children, initialData }) {
   const [searchText, setSearchText] = useState("");
 
   // ✅ SSR hydration for category data
-  const [Perfume, setPerfume] = useState(initialData?.Perfume || []);
+  const [fashion, setfashion] = useState(initialData?.fashion || []);
   const [bodyspray, setBodyspray] = useState(initialData?.bodyspray || []);
   const [bestSellings, setBestSellings] = useState(
     initialData?.bestSellings || [],
   );
-const [newArrival, setNewArrival] = useState(initialData?.newArrival || []);
+  const [newArrival, setNewArrival] = useState(initialData?.newArrival || []);
   const [ChosenForYou, setChosenForYou] = useState(
     initialData?.ChosenForYou || [],
+  );
+  const [saree, setSaree] = useState(
+    initialData?.saree || [],
   );
   const [MostFavorite, setMostFavorite] = useState(
     initialData?.MostFavorite || [],
@@ -143,8 +146,9 @@ const [newArrival, setNewArrival] = useState(initialData?.newArrival || []);
     // Check if we have ANY SSR data - if yes, don't fetch again
     const hasSSRData =
       initialData?.ChosenForYou?.length > 0 ||
+      initialData?.saree?.length > 0 ||
       initialData?.premium?.length > 0 ||
-      initialData?.Perfume?.length > 0 ||
+      initialData?.fashion?.length > 0 ||
       initialData?.bodyspray?.length > 0 ||
       initialData?.MostFavorite?.length > 0 ||
       initialData?.flormar?.length > 0 ||
@@ -163,10 +167,11 @@ const [newArrival, setNewArrival] = useState(initialData?.newArrival || []);
       try {
         const [
           ChosenForYouRes,
+          sareeRes,
           premiumRes,
           favProductsRes,
           flormarRes,
-          PerfumeRes,
+          fashionRes,
           bodySprayRes,
           bestSellingsRes,
           newRes,
@@ -175,6 +180,11 @@ const [newArrival, setNewArrival] = useState(initialData?.newArrival || []);
         ] = await Promise.all([
           fetch(
             `${process.env.NEXT_PUBLIC_API_URL}/productsByCategories?name=shirt`,
+          )
+            .then((r) => r.json())
+            .catch(() => []),
+          fetch(
+            `${process.env.NEXT_PUBLIC_API_URL}/productsByCategories?name=saree`,
           )
             .then((r) => r.json())
             .catch(() => []),
@@ -204,11 +214,13 @@ const [newArrival, setNewArrival] = useState(initialData?.newArrival || []);
             .then((r) => r.json())
             .catch(() => []),
           fetch(
-            `${process.env.NEXT_PUBLIC_API_URL}/productsByCategories?name=best sellings`,)
+            `${process.env.NEXT_PUBLIC_API_URL}/productsByCategories?name=best sellings`,
+          )
             .then((r) => r.json())
             .catch(() => []),
           fetch(
-            `${process.env.NEXT_PUBLIC_API_URL}/productsByCategories?name=new`,)
+            `${process.env.NEXT_PUBLIC_API_URL}/productsByCategories?name=new`,
+          )
             .then((r) => r.json())
             .catch(() => []),
 
@@ -221,8 +233,9 @@ const [newArrival, setNewArrival] = useState(initialData?.newArrival || []);
         ]);
 
         setChosenForYou(ChosenForYouRes || []);
+        setSaree(sareeRes);
         setpremium(premiumRes || []);
-        setPerfume(PerfumeRes || []);
+        setfashion(fashionRes || []);
         setBodyspray(bodySprayRes || []);
         setBestSellings(bestSellingsRes || []);
         setNew(newRes || []);
@@ -263,9 +276,10 @@ const [newArrival, setNewArrival] = useState(initialData?.newArrival || []);
       allOrder,
       loading: loadingProducts,
       ChosenForYou,
+      saree,
       premium,
       flormar,
-      Perfume,
+      fashion,
       MostFavorite,
       bodyspray,
       bestSellings,
@@ -286,6 +300,7 @@ const [newArrival, setNewArrival] = useState(initialData?.newArrival || []);
     }),
     [
       ChosenForYou,
+      saree,
       products,
       blogs,
       blogLoading,
@@ -293,7 +308,7 @@ const [newArrival, setNewArrival] = useState(initialData?.newArrival || []);
       loadingProducts,
       premium,
       flormar,
-      Perfume,
+      fashion,
       MostFavorite,
       bodyspray,
       newArrival,

@@ -181,7 +181,7 @@ const ProductsByTag = () => {
       ) : (
         <div className="2xl:w-[65%] lg:w-[90%] mx-auto mt-10">
           <Helmet>
-            <title>{`${product?.name} - Junaid Jamshed Fragrances`}</title>
+            <title>{`${product?.name} - Junaid Jamshed collections`}</title>
             <meta
               name="description"
               content={
@@ -195,7 +195,7 @@ const ProductsByTag = () => {
             {/* Open Graph tags */}
             <meta
               property="og:title"
-              content={`${product?.name} - Junaid Jamshed Fragrances`}
+              content={`${product?.name} - Junaid Jamshed collections`}
             />
             <meta
               property="og:description"
@@ -221,7 +221,7 @@ const ProductsByTag = () => {
                 {
                   "@context": "http://schema.org",
                   "@type": "Product",
-                  "name": "${product?.name} - Junaid Jamshed Fragrances",
+                  "name": "${product?.name} - Junaid Jamshed collections",
                   "description": "${
                     product?.meta_description
                       ? product?.meta_description
@@ -232,7 +232,7 @@ const ProductsByTag = () => {
                   }",
                   "brand": {
                     "@type": "Brand",
-                    "name": "Junaid Jamshed Fragrances"
+                    "name": "Junaid Jamshed collections"
                   },
                   "gtin13": "${sku}",
                   "offers": {

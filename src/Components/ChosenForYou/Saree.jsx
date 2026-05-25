@@ -3,12 +3,11 @@ import { ThemeContext } from "../../Contexts/ThemeContext";
 import { useContext } from "react";
 import Link from "next/link";
 
-const NewArrival = () => {
-  const { newArrival } = useContext(ThemeContext);
-  // const products = bestSellings?.slice(0, 4);
-  const products = newArrival;
-
-  const isLoading = !newArrival || newArrival.length === 0;
+const Saree = () => {
+  const { saree } = useContext(ThemeContext);
+  const products = saree.slice(0, 12);
+  // const products = MostFavorite
+  const isLoading = !saree || saree.length === 0;
 
   // ✅ JSON-LD structured data
   const structuredData = {
@@ -37,33 +36,28 @@ const NewArrival = () => {
 
   return (
     <section
-      className="overflow-hidden py-24 my-16 bg-gradient-to-b from-white to-gray-50 pt-3"
-      aria-label="Signature fashion Collection"
+      className="overflow-hidden pt-8 pb-16"
+      aria-label="Signature beauty Collection"
     >
       {/* ✅ Structured Data */}
       {!isLoading && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredData),
-          }}
-        />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       )}
 
-      <div className="container mx-auto px-6 text-center">
-        {/* Section Header */}
-
-        <div class="flex justify-between items-end mb-5 pb-4">
+      <div className="container mx-auto px-4 md:px-1 text-center">
+        <div class="flex justify-between items-end mb-5  pb-6">
           <div>
             <h2 class="text-[10px] uppercase text-left tracking-[0.4em] text-gray-400 ml-1 mb-1">
-              Best Selection
+              Best Selling
             </h2>
             <h3 class="text-xl sm:text-2xl uppercase   md:text-3xl">
-              New Arrivals
+              Saree Collection
             </h3>
           </div>
           <Link
-            href="/product-category/new"
+            href="/product-category/tshirt"
             class="text-[11px] font-bold text-gray-800 uppercase  border-b tracking-[0.2em] border-gray-700 pb-1 hover:text-gold-accent hover:border-gold-accent transition-all"
           >
             See More
@@ -81,12 +75,13 @@ const NewArrival = () => {
         ) : (
           <>
             {/* Product Grid */}
-            <div className="mt-14 grid grid-cols-2 gap:2 md:gap-3 sm:grid-cols-2 lg:grid-cols-6">
+            <div className="mt-5 grid grid-cols-2 gap-3 sm:gap-4 md:gap- lg:grid-cols-6 lg:gap-3 ">
               {products.map((product) => (
                 <Product key={product?._id} product={product} />
               ))}
             </div>
 
+            {/* CTA */}
             {/* <div className="mt-24">
               <Link
                 href="/shop"
@@ -102,4 +97,4 @@ const NewArrival = () => {
   );
 };
 
-export default NewArrival;
+export default Saree;

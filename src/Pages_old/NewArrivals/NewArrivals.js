@@ -33,7 +33,7 @@ const NewArrivals = () => {
         <title>New Arrivals | Natual Beauty Products Shop Now!</title>
         <meta
           name="description"
-          content="Discover the newest beauty products and trends at Junaid Jamshed Fragrances. Update your skincare routine with our latest arrivals."
+          content="Discover the newest beauty products and trends at Junaid Jamshed collections. Update your skincare routine with our latest arrivals."
         />
         <link rel="canonical" href={`https://biborton.shop/newarrivals`} />
       </Helmet>

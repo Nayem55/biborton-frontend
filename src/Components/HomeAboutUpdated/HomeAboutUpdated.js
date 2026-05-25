@@ -9,7 +9,7 @@ const HomeAboutUpdated = () => {
         <div className="w-full lg:w-1/2 h-[400px] md:h-[500px] lg:h-[500px] flex justify-center ">
           <Image
             src="https://luvit.com.bd/wp-content/uploads/2026/02/Snapinsta.app_.webp"
-            alt="Miss Armaf Mystique"
+            alt="Miss biborton Mystique"
             width={480}
             height={480}
             className="shadow-lg"
@@ -19,11 +19,11 @@ const HomeAboutUpdated = () => {
         {/* Right Content */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center px-6 md:px-16">
           <h2 className="text-2xl md:text-2xl lg:text-3xl font-serif font-bold mb-6 uppercase">
-            Fragrance That Defines You
+            collection That Defines You
           </h2>
 
           <p className="text-gray-700 max-w-md mb-10 leading-relaxed">
-            Our fragrances are thoughtfully crafted to symbolize confidence and
+            Our collections are thoughtfully crafted to symbolize confidence and
             individuality.
           </p>
 

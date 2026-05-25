@@ -17,7 +17,7 @@ const Achievements = () => {
               <div className="relative w-full overflow-hidden rounded-xl">
                 <img
                   src="https://luvit.com.bd/wp-content/uploads/2025/08/8e9c20b4-d575-46f9-bcc2-e644849a4936-800x800.jpg"
-                  alt="South Asian Business Excellence Awards 2025 trophy and Junaid Jamshed Fragrances branding"
+                  alt="South Asian Business Excellence Awards 2025 trophy and Junaid Jamshed collections branding"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />

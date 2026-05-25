@@ -8,66 +8,66 @@ const BestSellers = () => {
   const products = [
     {
       name: "Mushfiqur Rahim Bold MR 15",
-      type: "J. Junaid Jamshed Parfume",
+      type: "biborton Junaid Jamshed Parfume",
       price: "BDT  5490",
       url: "product/mushfiqur-rahim-bold-mr-15",
       image:
         // "https://luvit.com.bd/wp-content/uploads/2026/02/61.webp",
-        "https://luvit.com.bd/wp-content/uploads/2026/03/Armaf-product-phorography-secound-round-5.png",
+        "https://luvit.com.bd/wp-content/uploads/2026/03/biborton-product-phorography-secound-round-5.png",
     },
     {
       name: "Club De Nuit Woman 105ML",
-      type: "ARMAF Parfum",
+      type: "biborton Parfum",
       price: "BDT 5490",
       url: "/product/club-de-nuit-woman-105ml",
       image:
         // "https://luvit.com.bd/wp-content/uploads/2026/02/69.jpg",
-        "https://luvit.com.bd/wp-content/uploads/2026/03/Armaf-product-phorography-secound-round-4.png",
+        "https://luvit.com.bd/wp-content/uploads/2026/03/biborton-product-phorography-secound-round-4.png",
     },
     {
       name: "Club De Nuit Intense Man",
-      type: "ARMAF Parfum",
+      type: "biborton Parfum",
       price: "BDT 7979",
       url: "/product/club-de-nuit-intense-m",
       image:
         // "https://luvit.com.bd/wp-content/uploads/2026/01/MR-15-Bold.jpeg",
-        "https://luvit.com.bd/wp-content/uploads/2026/03/Armaf-product-phorography-secound-round-3.png",
+        "https://luvit.com.bd/wp-content/uploads/2026/03/biborton-product-phorography-secound-round-3.png",
     },
     {
       name: "Mushfiqur Rahim MR 15 100 ML",
-      type: "J. Junaid Jamshed Parfum",
+      type: "biborton Junaid Jamshed Parfum",
       price: "BDT  5490",
       url: "/product/mushfiqur-rahim-mr-15",
       image:
         // "https://luvit.com.bd/wp-content/uploads/2026/01/MR-15.jpeg",
-        "https://luvit.com.bd/wp-content/uploads/2026/03/Armaf-product-phorography-secound-round-2.png",
+        "https://luvit.com.bd/wp-content/uploads/2026/03/biborton-product-phorography-secound-round-2.png",
     },
   ];
   // const products = [
   //   {
   //     name: "Zarar 100 ML",
-  //     type: "J. Junaid Jamshed Parfum",
+  //     type: "biborton Junaid Jamshed Parfum",
   //     price: "BDT 3990",
   //     image:
   //       "https://luvit.com.bd/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-17-at-12.58.59-PM-2.jpeg",
   //   },
   //   {
   //     name: "Janan Gold 100 ML",
-  //     type: "J. Junaid Jamshed Parfum",
+  //     type: "biborton Junaid Jamshed Parfum",
   //     price: "BDT 3990",
   //     image:
   //       "https://luvit.com.bd/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-17-at-12.39.35-PM.jpeg",
   //   },
   //   {
   //     name: "Zarar Gold 100 ML",
-  //     type: "J. Junaid Jamshed Parfum",
+  //     type: "biborton Junaid Jamshed Parfum",
   //     price: "BDT 3990",
   //     image:
   //       "https://luvit.com.bd/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-17-at-12.58.59-PM-3.jpeg",
   //   },
   //   {
   //     name: "Uroosa 50 ML",
-  //     type: "J. Junaid Jamshed Parfum",
+  //     type: "biborton Junaid Jamshed Parfum",
   //     price: "BDT 3990",
   //     image:
   //       "https://luvit.com.bd/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-17-at-12.58.59-PM.jpeg",
@@ -98,7 +98,9 @@ const BestSellers = () => {
           <span className="text-gold uppercase tracking-[0.4em] text-[10px] font-bold mb-4">
             Best Sellers
           </span>
-          <h2 className="serif-text text-2xl uppercase md:text-3xl">Most Popular</h2>
+          <h2 className="serif-text text-2xl uppercase md:text-3xl">
+            Most Popular
+          </h2>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
@@ -143,15 +145,13 @@ const BestSellers = () => {
         </div>
       </div>
 
-
-      
       <div className="mt-40 flex justify-center relative ">
         <Image
           className="max-w-full h-auto"
-          // src="https://luvit.com.bd/wp-content/uploads/2026/02/armaf_banner.webp"
-          // src="https://luvit.com.bd/wp-content/uploads/2026/02/armaf-club-de-nuit-intense-edt-vs-pure-parfum-675901.webp"
+          // src="https://luvit.com.bd/wp-content/uploads/2026/02/biborton_banner.webp"
+          // src="https://luvit.com.bd/wp-content/uploads/2026/02/biborton-club-de-nuit-intense-edt-vs-pure-parfum-675901.webp"
           src="https://luvit.com.bd/wp-content/uploads/2026/02/SHK_4.webp"
-          alt="Armaf Perfume"
+          alt="biborton fashion"
           width={5120}
           height={400}
           loading="lazy"
@@ -161,10 +161,10 @@ const BestSellers = () => {
         {/* Overlay Text */}
         <div className="absolute text-center sm:text-left left-5 top-6 sm:top-[30%] md:top-[40%] text-white px-4 ">
           {/* <h1 className="text-2xl md:text-4xl font-bold mb-4">CLUB DE NUIT</h1> */}
-          <h1 className="text-2xl md:text-4xl font-bold mb-4">ARMAF SHK</h1>
+          <h1 className="text-2xl md:text-4xl font-bold mb-4">biborton SHK</h1>
           <p className="text-base mb-6 ">
-            Discover a line defined by confidence and quiet mastery. Find
-            your story.
+            Discover a line defined by confidence and quiet mastery. Find your
+            story.
           </p>
           <Link
             href={"/shop"}

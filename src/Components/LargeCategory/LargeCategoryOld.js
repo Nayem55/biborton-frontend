@@ -50,16 +50,25 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
       { label: "New Arrivals", href: "/product-category/new" },
       { label: "Best Sellers", href: "/product-category/best seller" },
       { label: "Jdot Products", href: "/product-category/jdot product" },
-      { label: "Armaf Products", href: "/product-category/armaf product" },
+      {
+        label: "biborton Products",
+        href: "/product-category/biborton product",
+      },
     ],
-    PERFUMES: [
-      { label: "All Perfumes", href: "/product-category/perfume" },
-      { label: "Jdot Perfumes", href: "/product-category/jdot perfume" },
-      { label: "Armaf Perfumes", href: "/product-category/armaf perfume" },
+    fashionS: [
+      { label: "All fashions", href: "/product-category/fashion" },
+      { label: "Jdot fashions", href: "/product-category/jdot fashion" },
+      {
+        label: "biborton fashions",
+        href: "/product-category/biborton fashion",
+      },
     ],
     "BODY SPRAY": [
       { label: "Jdot Collection", href: "/product-category/jdot body spray" },
-      { label: "Armaf Collection", href: "/product-category/armaf body spray" },
+      {
+        label: "biborton Collection",
+        href: "/product-category/biborton body spray",
+      },
     ],
   };
 
@@ -103,7 +112,7 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
             "Shop",
             "Mackeup",
             "Skincare",
-            "Fragrance",
+            "collection",
             "Body spray",
             "Brands",
             "Top deals", */}
@@ -117,8 +126,8 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
                 hasDropdown: true,
               },
               {
-                label: "PERFUMES",
-                href: "/product-category/perfume",
+                label: "fashionS",
+                href: "/product-category/fashion",
                 hasDropdown: true,
               },
               {

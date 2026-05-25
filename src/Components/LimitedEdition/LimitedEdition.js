@@ -29,7 +29,7 @@ const LimitedEdition = () => {
     <section className="relative bg-[#0d0d0d] overflow-hidden py-32">
       <div className="absolute inset-0 z-0">
         <img
-          alt="Perfume Silhouette"
+          alt="fashion Silhouette"
           className="w-full h-full object-cover opacity-40 brightness-50"
           // src="https://luvit.com.bd/wp-content/uploads/2026/01/WhatsApp_Image_2026-01-15_at_10.38.27_AM__1_-removebg-preview.png"
           src="https://luvit.com.bd/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-17-at-12.41.26-PM-2.jpeg"
@@ -84,7 +84,7 @@ const LimitedEdition = () => {
 
         <div className="max-w-md mx-auto">
           <p className="text-gray-400 mb-8 text-sm tracking-wide leading-relaxed italic">
-            Launching soon: the Strike Series and MR15 Series perfumes, crafted
+            Launching soon: the Strike Series and MR15 Series fashions, crafted
             for a refined and lasting impression.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">

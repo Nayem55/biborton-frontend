@@ -1,7 +1,7 @@
 import BlogsClient from "./BlogsClient";
 
 export const metadata = {
-  title: "Biborton| Fragrances |",
+  title: "Biborton| collections |",
   description:
     "Explore beauty tips, wellness trends, and natural enhancement insights. Stay updated with Earth Beauty and You.",
   alternates: {

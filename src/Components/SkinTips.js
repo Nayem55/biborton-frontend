@@ -20,7 +20,7 @@ const SkinTips = () => {
       id: "653644b0cfa28b8acca14f06",
       img: "https://luvit.com.bd/wp-content/uploads/2024/01/09.-Blog-Image.jpg",
       alt: "Vitamin C Face Wash benefits",
-      title_en: "Vitamin C Face Wash and Junaid Jamshed Fragrances.",
+      title_en: "Vitamin C Face Wash and Junaid Jamshed collections.",
       title_bn: "ভিটামিন সি ফেসওয়াশ এবং আর্থ বিউটি অ্যান্ড ইউ",
     },
     {
@@ -28,7 +28,7 @@ const SkinTips = () => {
       img: "https://luvit.com.bd/wp-content/uploads/2024/01/WhatsApp-Image-2023-03-01-at-5.15.23-PM.jpeg",
       alt: "Brightening skincare solution",
       title_en:
-        "Solution for Brightening: Junaid Jamshed Fragrances Milk Face Wash.",
+        "Solution for Brightening: Junaid Jamshed collections Milk Face Wash.",
       title_bn: "ব্রাইটেনিং এর সলিউশনে আর্থ বিউটি অ্যান্ড ইউ মিল্ক ফেসওয়াশ",
     },
   ];

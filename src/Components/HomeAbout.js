@@ -19,13 +19,13 @@ const HomeAbout = () => {
   const aboutSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    name: "About J. Fragrances",
+    name: "About biborton collections",
     description:
-      "J. (Junaid Jamshed) Fragrances blend tradition and modern elegance to create timeless, long-lasting perfumes.",
+      "biborton (Junaid Jamshed) collections blend tradition and modern elegance to create timeless, long-lasting fashions.",
     url: "https://biborton.shop/about",
     publisher: {
       "@type": "Organization",
-      name: "J. (Junaid Jamshed)",
+      name: "biborton (Junaid Jamshed)",
       logo: "https://biborton.shop/images/logo.png",
     },
   };
@@ -44,7 +44,7 @@ const HomeAbout = () => {
           <div className="flex justify-center">
             <LazyLoadImage
               src="https://luvit.com.bd/wp-content/uploads/2026/01/29104039_2116081551955562_4356205025605713920_n-533x800.jpg"
-              alt="J. Fragrances luxury perfume collection"
+              alt="biborton collections luxury fashion collection"
               effect="blur"
               className="rounded-2xl shadow-2xl max-w-full object-cover"
               width={isDesktop ? 460 : undefined}
@@ -62,21 +62,21 @@ const HomeAbout = () => {
               id="about-heading"
               className="text-4xl sm:text-5xl xl:text-6xl font-extrabold leading-tight tracking-tight text-accent"
             >
-              Fragrance That <br className="hidden sm:block" /> Defines You
+              collection That <br className="hidden sm:block" /> Defines You
             </h4>
 
             <div className="mt-6 h-[2px] w-24 bg-accent opacity-70"></div>
 
             <p className="mt-8 text-lg sm:text-xl leading-relaxed text-secondary/80">
-              J. (Junaid Jamshed) Fragrances are thoughtfully crafted to embody
-              elegance, confidence, and individuality. Each creation blends
-              premium ingredients with timeless Eastern traditions and modern
-              sophistication.
+              biborton (Junaid Jamshed) collections are thoughtfully crafted to
+              embody elegance, confidence, and individuality. Each creation
+              blends premium ingredients with timeless Eastern traditions and
+              modern sophistication.
             </p>
 
             <p className="mt-6 text-lg sm:text-xl leading-relaxed text-secondary/80">
               From fresh citrus openings to deep woody and musky finishes, our
-              perfumes are designed to leave a lasting impression — refined,
+              fashions are designed to leave a lasting impression — refined,
               authentic, and unmistakably yours.
             </p>
 

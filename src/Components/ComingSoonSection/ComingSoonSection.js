@@ -65,7 +65,7 @@ const ComingSoonSection = () => {
           <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto font-light">
             The <span className="text-gray-200 font-medium">Strike Series</span>{" "}
             and <span className="text-gray-200 font-medium">MR15 Series</span>{" "}
-            perfumes, <br className="hidden md:block" />
+            fashions, <br className="hidden md:block" />
             crafted for a refined and lasting impression.
           </p>
         </motion.div>

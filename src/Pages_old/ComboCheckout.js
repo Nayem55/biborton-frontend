@@ -323,7 +323,7 @@ const ComboCheckout = () => {
   return (
     <div className="2xl:w-[85%] lg:w-[90%] w-[90%] mx-auto ">
       <Helmet>
-        <title>Check Out - Junaid Jamshed Fragrances</title>
+        <title>Check Out - Junaid Jamshed collections</title>
         <meta name="description" content="" />
       </Helmet>
       <div className="my-10 lg:my-10">

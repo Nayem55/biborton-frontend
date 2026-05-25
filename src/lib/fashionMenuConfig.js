@@ -103,9 +103,7 @@ export const FASHION_MENU_CONFIG = [
       {
         title: "Children",
         items: mapItems([
-          "Kids Boys Collection",
-          "Kids Girls Collection",
-          "Couple Collection",
+          "Kid's Collection",
           "Gift Items",
         ]),
       },

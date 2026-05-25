@@ -12,9 +12,9 @@ const FlormarSection = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Signature Fragrances Collection",
+    name: "Signature collections Collection",
     description:
-      "Discover our signature fragrances crafted for elegance, confidence, and long-lasting impressions.",
+      "Discover our signature collections crafted for elegance, confidence, and long-lasting impressions.",
     itemListElement: products?.map((product, index) => ({
       "@type": "Product",
       position: index + 1,
@@ -36,7 +36,7 @@ const FlormarSection = () => {
   return (
     <section
       className=" overflow-hidden bg-gradient-to-b from-white to-gray-50 pb-10"
-      aria-label="Signature Perfume Collection"
+      aria-label="Signature fashion Collection"
     >
       {/* ✅ Structured Data */}
       {!isLoading && (
@@ -53,11 +53,11 @@ const FlormarSection = () => {
               Signature Collection
             </h2>
             <h3 class="text-xl sm:text-2xl uppercase   md:text-3xl">
-              Armaf Beauty Collection
+              biborton Beauty Collection
             </h3>
           </div>
           <Link
-            href="/product-category/armaf beauty product"
+            href="/product-category/biborton beauty product"
             class="text-[11px] font-bold text-gray-800 uppercase  border-b tracking-[0.2em] border-gray-700 pb-1 hover:text-gold-accent hover:border-gold-accent transition-all"
           >
             See More
@@ -69,7 +69,7 @@ const FlormarSection = () => {
           <div className="mt-20 flex flex-col items-center justify-center">
             <div className="h-12 w-12 animate-spin rounded-full border-2 border-accent border-t-transparent"></div>
             <p className="mt-4 text-sm tracking-widest text-secondary opacity-70">
-              Loading fragrances...
+              Loading collections...
             </p>
           </div>
         ) : (
@@ -84,7 +84,7 @@ const FlormarSection = () => {
             {/* CTA */}
             {/* <div className="mt-16   ">
               <Link
-                to="/product-category/fragrance"
+                to="/product-category/collection"
                 className="inline-block rounded-lg bg-black px-12 py-3 text-sm sm:text-base font-semibold tracking-wider text-white transition-all duration-300 hover:bg-red-700 hover:scale-105"
               >
                 Explore the Collection

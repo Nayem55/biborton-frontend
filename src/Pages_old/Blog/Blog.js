@@ -19,7 +19,7 @@ const Blog = () => {
   return (
     <div className="w-[80%] mx-auto py-10 relative">
       <Helmet>
-        <title>{`${blog?.title?.rendered} - Junaid Jamshed Fragrances`}</title>
+        <title>{`${blog?.title?.rendered} - Junaid Jamshed collections`}</title>
         <meta
           name="description"
           content={stripHTMLTags(blog?.content.rendered).slice(0, 150) + "...."}

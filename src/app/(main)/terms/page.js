@@ -1,7 +1,7 @@
 import React from "react";
 
 export const metadata = {
-  title: "Terms & Conditions -Biborton| Fragrances |",
+  title: "Terms & Conditions -Biborton| collections |",
   description: "Read our Terms & Conditions.",
 };
 
@@ -10,7 +10,7 @@ const Terms = () => {
     <div className="px-[6%] py-[10%] sm:px-[10%] sm:py-[6%]">
       <p className="text-xl text-center font-bold mb-10">Terms & Conditions</p>
       <p>
-        We, at Biborton| Fragrances |, value the trust you place in us. That’s
+        We, at Biborton| collections |, value the trust you place in us. That’s
         why we insist upon the highest standards for secure transactions and
         customer information privacy. Please read the following statement to
         learn about our information gathering and dissemination practices.
@@ -19,7 +19,7 @@ const Terms = () => {
       <p className="mt-4 text-black text-opacity-70">
         1. Our privacy policy is subject to change at any time without notice.
         To make sure you are aware of any changes, please review this policy
-        periodically. Biborton| Fragrances | has the all rights to cancel any
+        periodically. Biborton| collections | has the all rights to cancel any
         order for anytime.
         <br />
         2. By visiting this Website you agree to be bound by the terms and

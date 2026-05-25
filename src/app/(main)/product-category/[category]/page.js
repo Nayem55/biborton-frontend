@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
 
   const description =
     meta?.meta_description ||
-    `Shop ${category} at ${BRAND_NAME}. Discover authentic beauty and fragrance products at the best price in Bangladesh.`;
+    `Shop ${category} at ${BRAND_NAME}. Discover authentic beauty and collection products at the best price in Bangladesh.`;
 
   const canonical = `${SITE_URL}/product-category/${encodeURIComponent(
     category,

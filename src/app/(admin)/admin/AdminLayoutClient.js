@@ -198,7 +198,7 @@ export default AdminLayoutClient;
 //   <Link href="/" className="block p-4 mb-6">
 //     <Image
 //       src="https://luvit.com.bd/wp-content/uploads/2026/02/Aroma-Talks-logo-2.png"
-//       alt="J. Fragrances Logo"
+//       alt="biborton collections Logo"
 //       width={150}
 //       height={80}
 //       priority

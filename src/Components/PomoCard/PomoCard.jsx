@@ -10,13 +10,14 @@ const categories = [
     link: "product-category/flormar gel cream",
     tag: "NEW COLLECTION",
     // image: "https://luvit.com.bd/wp-content/uploads/2026/04/flormar-product-photogrph-2.png", Larger img for better quality
-    image: "https://luvit.com.bd/wp-content/uploads/2026/05/flormar-product-photogrph-2.png",
+    image:
+      "https://luvit.com.bd/wp-content/uploads/2026/05/flormar-product-photogrph-2.png",
   },
 
   {
     id: 2,
-    title: "signature Jdot Perfume",
-    subtitle: "Jdot Perfume", 
+    title: "signature Jdot fashion",
+    subtitle: "Jdot fashion",
     tag: "NEW COLLECTION",
     link: "product/mushfiqur-rahim-bold-mr-15",
     // image: "https://luvit.com.bd/wp-content/uploads/2026/04/flormar-product-photogrph-1.png", Larger img for better quality
@@ -30,7 +31,8 @@ const categories = [
     subtitle: "makeup primer",
     tag: "NEW COLLECTION",
     // image: "https://luvit.com.bd/wp-content/uploads/2026/04/flormar-product-photogrph-3.png", Larger img for better quality
-    image: "https://luvit.com.bd/wp-content/uploads/2026/05/flormar-product-photogrph-3.png",
+    image:
+      "https://luvit.com.bd/wp-content/uploads/2026/05/flormar-product-photogrph-3.png",
   },
 ];
 
@@ -65,9 +67,7 @@ const ShopByCategory = () => {
                   {item.title}
                 </h3>
 
-                <p className="text-lg text-gray-800 mb-4">
-                  {item.subtitle}
-                </p>
+                <p className="text-lg text-gray-800 mb-4">{item.subtitle}</p>
 
                 <Link
                   href={item.link}

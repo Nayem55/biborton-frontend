@@ -14,9 +14,9 @@ const BestSale = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Signature Fragrances Collection",
+    name: "Signature collections Collection",
     description:
-      "Discover our signature fragrances crafted for elegance, confidence, and long-lasting impressions.",
+      "Discover our signature collections crafted for elegance, confidence, and long-lasting impressions.",
     itemListElement: products?.map((product, index) => ({
       "@type": "Product",
       position: index + 1,
@@ -38,7 +38,7 @@ const BestSale = () => {
   return (
     <section
       className="overflow-hidden bg-gradient-to-b from-white to-gray-50 py-20"
-      aria-label="Signature Perfume Collection"
+      aria-label="Signature fashion Collection"
     >
       {/* ✅ Structured Data */}
       {!isLoading && (
@@ -75,7 +75,7 @@ const BestSale = () => {
           <div className="mt-20 flex flex-col items-center justify-center">
             <div className="h-12 w-12 animate-spin rounded-full border-2 border-accent border-t-transparent"></div>
             <p className="mt-4 text-sm tracking-widest text-secondary opacity-70">
-              Loading fragrances...
+              Loading collections...
             </p>
           </div>
         ) : (

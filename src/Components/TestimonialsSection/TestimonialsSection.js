@@ -5,7 +5,7 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       quote:
-        "Nuit Rouge has become my signature. A fragrance that doesn't just trail—it commands the room with absolute silence.",
+        "Nuit Rouge has become my signature. A collection that doesn't just trail—it commands the room with absolute silence.",
       name: "Julian V.",
       role: "Architect",
       image:
@@ -21,7 +21,7 @@ const TestimonialsSection = () => {
     },
     {
       quote:
-        "J. has redefined what luxury means to me. The complexity of the base notes is unlike any other house in Paris.",
+        "biborton has redefined what luxury means to me. The complexity of the base notes is unlike any other house in Paris.",
       name: "Marcus L.",
       role: "Sommelier",
       image:

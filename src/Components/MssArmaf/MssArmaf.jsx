@@ -39,7 +39,6 @@ const MssArmaf = () => {
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4 md:px-1">
         {items.map((item) => (
           <div key={item.id} className="cursor-pointer">
-            
             {/* Image */}
             <div className="relative w-full h-[220px] rounded-md overflow-hidden">
               <Image

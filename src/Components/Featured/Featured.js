@@ -105,10 +105,10 @@ const Featured = () => {
             Be Kind to Skin
           </h4>
           <p className="text-center text-sm 2xl:text-xl mb-4 text-[#006938] font-bold">
-            At <strong>Junaid Jamshed Fragrances</strong>, we believe simplicity
-            isn’t just a trend—it’s a promise. We craft our skincare with the
-            belief that clean beauty should be accessible to everyone without
-            compromising on quality or sustainability.
+            At <strong>Junaid Jamshed collections</strong>, we believe
+            simplicity isn’t just a trend—it’s a promise. We craft our skincare
+            with the belief that clean beauty should be accessible to everyone
+            without compromising on quality or sustainability.
           </p>
           <p className="text-center text-sm 2xl:text-xl mb-4 text-[#006938] font-bold">
             Embrace your natural beauty inside and out. Join us on a journey of
@@ -147,7 +147,7 @@ const Featured = () => {
             Kind to Animals!
           </h3>
           <p className="text-center text-sm 2xl:text-xl mb-4 text-[#006938] font-bold">
-            At Junaid Jamshed Fragrances, kindness isn’t just about healthy
+            At Junaid Jamshed collections, kindness isn’t just about healthy
             skin—it’s about blooming with an open heart toward all living
             beings. We believe true beauty radiates from compassion.
           </p>
@@ -158,7 +158,7 @@ const Featured = () => {
             sourced ethically to ensure no harm is done.
           </p>
           <p className="text-center text-sm 2xl:text-xl mb-4 text-[#006938] font-bold">
-            When you choose Junaid Jamshed Fragrances, you choose more than
+            When you choose Junaid Jamshed collections, you choose more than
             skincare; you choose kindness that ripples outward. Join us in
             celebrating a world where beauty shines brightest when it embraces
             all living beings.

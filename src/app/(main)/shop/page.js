@@ -27,14 +27,14 @@ export async function generateMetadata() {
   return {
     title: "Shop - Biborton Fashion World",
     description:
-      "Shop Junaid Jamshed Fragrances , attars, body sprays, and premium fragrances in Bangladesh. Explore best sellers, new arrivals, and exclusive collections.",
+      "Shop Junaid Jamshed collections , attars, body sprays, and premium collections in Bangladesh. Explore best sellers, new arrivals, and exclusive collections.",
     alternates: { canonical: "https://biborton.shop/shop" },
     robots: { index: true, follow: true },
     openGraph: {
       type: "website",
-      title: "Shop All Fragrances | ",
+      title: "Shop All collections | ",
       description:
-        "Discover the complete collection of Junaid Jamshed Fragrances and fragrances in Bangladesh.",
+        "Discover the complete collection of Junaid Jamshed collections and collections in Bangladesh.",
       url: "https://biborton.shop/shop",
     },
   };
@@ -50,7 +50,7 @@ export default async function ShopPage() {
 
   return (
     <>
-      <h1 className="sr-only">J. Perfumes & Fragrances</h1>
+      <h1 className="sr-only">biborton fashions & collections</h1>
 
       <script
         type="application/ld+json"
@@ -58,9 +58,9 @@ export default async function ShopPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ItemList",
-            name: "Junaid Jamshed Fragrances Shop",
+            name: "Junaid Jamshed collections Shop",
             description:
-              "Shop all perfumes and fragrances from Junaid Jamshed Bangladesh",
+              "Shop all fashions and collections from Junaid Jamshed Bangladesh",
             itemListElement: (initialProducts || []).map((product, index) => ({
               "@type": "ListItem",
               position: index + 1,

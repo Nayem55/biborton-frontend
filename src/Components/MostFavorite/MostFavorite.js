@@ -14,9 +14,9 @@ const MostFavorite = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Signature Fragrances Collection",
+    name: "Signature collections Collection",
     description:
-      "Discover our signature fragrances crafted for elegance, confidence, and long-lasting impressions.",
+      "Discover our signature collections crafted for elegance, confidence, and long-lasting impressions.",
     itemListElement: products?.map((product, index) => ({
       "@type": "Product",
       position: index + 1,
@@ -38,7 +38,7 @@ const MostFavorite = () => {
   return (
     <section
       className="overflow-hidden bg-gradient-to-b from-white to-gray-50 py-20"
-      aria-label="Signature Perfume Collection"
+      aria-label="Signature fashion Collection"
     >
       {/* ✅ Structured Data */}
       {!isLoading && (
@@ -69,10 +69,10 @@ const MostFavorite = () => {
 
           {/* Right */}
           <Link
-            href="/product-category/perfume"
+            href="/product-category/fashion"
             className="hidden md:inline-flex group  items-center gap-2 text-sm font-medium tracking-wide text-gold hover:text-accent transition-colors"
           >
-            View All Fragrances
+            View All collections
             <span className="block h-[1px] w-6 bg-current transition-all duration-300 group-hover:w-10"></span>
           </Link>
         </div>
@@ -82,7 +82,7 @@ const MostFavorite = () => {
           <div className="mt-20 flex flex-col items-center justify-center">
             <div className="h-12 w-12 animate-spin rounded-full border-2 border-accent border-t-transparent"></div>
             <p className="mt-4 text-sm tracking-widest text-secondary opacity-70">
-              Loading fragrances...
+              Loading collections...
             </p>
           </div>
         ) : (
@@ -97,7 +97,7 @@ const MostFavorite = () => {
             {/* CTA */}
             <div className="mt-16   md:hidden">
               <Link
-                href="/product-category/perfume"
+                href="/product-category/fashion"
                 className="inline-block rounded-lg bg-black px-12 py-3 text-sm sm:text-base font-semibold tracking-wider text-white transition-all duration-300 hover:bg-red-700 hover:scale-105"
               >
                 Explore the Collection

@@ -115,7 +115,7 @@ const HomeCicaCare = () => {
           ✔️ Vegan Formula
         </div>
         <div className="px-3 py-2 bg-white rounded-md shadow">
-          ✔️ Fragrance-Free
+          ✔️ collection-Free
         </div>
         <div className="px-3 py-2 bg-white rounded-md shadow">
           ✔️ Sensitive-Skin Safe

@@ -2,29 +2,14 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import "./Home.css";
-
-import Banner from "../../Components/Banner/Banner";
-import MostFavorite from "../../Components/MostFavorite/MostFavorite";
-import FeaturesSection from "../../Components/FeaturesSection/FeaturesSection";
-import BestSellers from "../../Components/BestSellers/BestSellers";
-import StoreLocator from "../../Components/StoreLocator/StoreLocator";
-import HomeAboutUpdated from "../../Components/HomeAboutUpdated/HomeAboutUpdated";
 import BestSale from "../../Components/BestSale/BestSale";
 import PremiumSection from "../../Components/PremiumSection/PremiumSection";
-import BodySpraySecrion from "../../Components/BodySpraySecrion/BodySpraySecrion";
 import MssArmaf from "../../Components/MssArmaf/MssArmaf";
-import SingleProduct from "../../Components/SingleProduct/SingleProduct";
-import FlormarSection from "../../Components/FlormarSection/FlormarSection";
-import flormarSection from "../../Components/FlormarSection/FlormarSection";
-import Header from "../../Components/Header/Header";
-import ShopByCategory from "../../Components/ShopByCategory/ShopByCategory";
-import CustomerReview from "../../Components/CustomerReview/CustomerReview";
 import ShopByBrand from "../../Components/ShopByBrand/ShopByBrand";
 import ChosenForYou from "../../Components/ChosenForYou/ChosenForYou";
-import PomoCard from "../../Components/PomoCard/PomoCard";
 import BannerCard from "../../Components/Banner/CardBanner";
 import NewArrival from "../../Components/BestSale copy/NewArrival";
-import { FASHION_CATEGORIES } from "../../lib/fashionMenuConfig";
+import Saree from "../../Components/ChosenForYou/Saree";
 
 // Lazy load heavy video components
 const VideoBanner = dynamic(
@@ -71,17 +56,19 @@ const NewsletterSection = dynamic(
 const Home = () => {
   return (
     <div className="home">
-      <h1 className="sr-only">Biborton | Fashion and Lifestyle in Bangladesh</h1>
+      <h1 className="sr-only">
+        Biborton | Fashion and Lifestyle in Bangladesh
+      </h1>
       {/* <Banner /> */}
       <BannerCard></BannerCard>
       <ShopByBrand></ShopByBrand>
       <ChosenForYou></ChosenForYou>
+      <Saree></Saree>
       <MssArmaf></MssArmaf>
       <BestSale />
       <NewArrival></NewArrival>
       <PremiumSection />
       <GallerySection />
-
     </div>
   );
 };

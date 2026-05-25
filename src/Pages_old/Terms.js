@@ -5,7 +5,7 @@ const Terms = () => {
     <div className="px-[6%] py-[10%] sm:px-[10%] sm:py-[6%]">
       <p className="text-xl text-center font-bold mb-10">Terms & Conditions</p>
       <p>
-        We, at Junaid Jamshed Fragrances, value the trust you place in us.
+        We, at Junaid Jamshed collections, value the trust you place in us.
         That’s why we insist upon the highest standards for secure transactions
         and customer information privacy. Please read the following statement to
         learn about our information gathering and dissemination practices.
@@ -14,8 +14,8 @@ const Terms = () => {
       <p className="mt-4 text-black text-opacity-70">
         1. Our privacy policy is subject to change at any time without notice.
         To make sure you are aware of any changes, please review this policy
-        periodically. Junaid Jamshed Fragrances has the all rights to cancel any
-        order for anytime.
+        periodically. Junaid Jamshed collections has the all rights to cancel
+        any order for anytime.
         <br />
         2. By visiting this Website you agree to be bound by the terms and
         conditions of this Privacy Policy. If you do not agree please do not use

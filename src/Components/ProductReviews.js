@@ -14,7 +14,7 @@ const reviews: Review[] = [
   {
     product: "Apple Cider + Salicylic Acid Anti‑Dandruff Shampoo",
     body:
-      "My scalp used to feel itchy by mid‑day. After two washes with this shampoo, flakes reduced and my hair feels cleaner for longer. Love the mild fragrance too!",
+      "My scalp used to feel itchy by mid‑day. After two washes with this shampoo, flakes reduced and my hair feels cleaner for longer. Love the mild collection too!",
     name: "Sadia Islam",
     city: "Dhaka",
     rating: 5,

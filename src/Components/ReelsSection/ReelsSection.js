@@ -11,98 +11,97 @@ const ReelsSection = () => {
       video:
         "https://luvit.com.bd/wp-content/uploads/2026/02/reels_video-1.mp4",
       title: "Deep Blue",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
     {
       video:
-        "https://luvit.com.bd/wp-content/uploads/2026/01/@JJunaidJamshedPK-Janan-Gold-Edition-junaidjamshed-jdotfragrances.mp4",
+        "https://luvit.com.bd/wp-content/uploads/2026/01/@JJunaidJamshedPK-Janan-Gold-Edition-junaidjamshed-jdotcollections.mp4",
       title: "Janan Gold Edition ",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
     {
-      video:
-        "https://luvit.com.bd/wp-content/uploads/2026/01/reels.mp4",
+      video: "https://luvit.com.bd/wp-content/uploads/2026/01/reels.mp4",
       title: "Own Your Game",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
     {
       video:
         "https://luvit.com.bd/wp-content/uploads/2026/02/reels_video-5.mp4",
       title: "Deep Blue",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
 
     {
       video:
         "https://luvit.com.bd/wp-content/uploads/2026/02/reels_video-4.mp4",
       title: "Deep Blue",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
     {
       video:
         "https://luvit.com.bd/wp-content/uploads/2026/02/reels_video-2.mp4",
       title: "Deep Blue",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
     {
       video:
         "https://luvit.com.bd/wp-content/uploads/2026/02/reels_video-3.mp4",
       title: "Deep Blue",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
     {
       video:
-        "https://luvit.com.bd/wp-content/uploads/2026/01/Deep-Black-_-J.-Fragrances.mp4",
+        "https://luvit.com.bd/wp-content/uploads/2026/01/Deep-Black-_-biborton-collections.mp4",
       title: "Deep Black",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
     {
       video:
-        "https://luvit.com.bd/wp-content/uploads/2026/01/Deep-Blue-_-J.-Fragrances-2.mp4?_=0",
+        "https://luvit.com.bd/wp-content/uploads/2026/01/Deep-Blue-_-biborton-collections-2.mp4?_=0",
       title: "Deep Blue",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
     {
       video:
-        "https://luvit.com.bd/wp-content/uploads/2026/01/Deep-Black-_-J.-Fragrances.mp4",
+        "https://luvit.com.bd/wp-content/uploads/2026/01/Deep-Black-_-biborton-collections.mp4",
       title: "Deep Black",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
     {
       video:
-        "https://luvit.com.bd/wp-content/uploads/2026/01/Deep-Black-_-J.-Fragrances.mp4",
+        "https://luvit.com.bd/wp-content/uploads/2026/01/Deep-Black-_-biborton-collections.mp4",
       title: "Deep Black",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
     {
       video:
-        "https://luvit.com.bd/wp-content/uploads/2026/01/@JJunaidJamshedPK-Janan-Gold-Edition-junaidjamshed-jdotfragrances.mp4",
+        "https://luvit.com.bd/wp-content/uploads/2026/01/@JJunaidJamshedPK-Janan-Gold-Edition-junaidjamshed-jdotcollections.mp4",
       title: "Janan Gold Edition ",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
     {
       video:
-        "https://luvit.com.bd/wp-content/uploads/2026/01/Deep-Blue-_-J.-Fragrances-2.mp4?_=0",
+        "https://luvit.com.bd/wp-content/uploads/2026/01/Deep-Blue-_-biborton-collections-2.mp4?_=0",
       title: "Deep Blue",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
     {
       video:
-        "https://luvit.com.bd/wp-content/uploads/2026/01/Deep-Black-_-J.-Fragrances.mp4",
+        "https://luvit.com.bd/wp-content/uploads/2026/01/Deep-Black-_-biborton-collections.mp4",
       title: "Deep Black",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
     {
       video:
-        "https://luvit.com.bd/wp-content/uploads/2026/01/@JJunaidJamshedPK-Janan-Gold-Edition-junaidjamshed-jdotfragrances.mp4",
+        "https://luvit.com.bd/wp-content/uploads/2026/01/@JJunaidJamshedPK-Janan-Gold-Edition-junaidjamshed-jdotcollections.mp4",
       title: "Janan Gold Edition ",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
     {
       video:
-        "https://luvit.com.bd/wp-content/uploads/2026/01/J.-Fragrances-x-BD-l-Coming-Soon.mp4",
+        "https://luvit.com.bd/wp-content/uploads/2026/01/biborton-collections-x-BD-l-Coming-Soon.mp4",
       title: "Own Your Game",
-      subtitle: "J. Fragrances",
+      subtitle: "biborton collections",
     },
   ];
 

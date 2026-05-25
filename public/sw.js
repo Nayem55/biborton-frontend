@@ -1,21 +1,17 @@
 // Service Worker for offline support and caching
-const CACHE_NAME = 'jj-fragrances-v1';
-const urlsToCache = [
-  '/',
-  '/offline.html',
-];
+const CACHE_NAME = "jj-collections-v1";
+const urlsToCache = ["/", "/offline.html"];
 
 // Install event - cache essential resources
-self.addEventListener('install', (event) => {
+self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => cache.addAll(urlsToCache))
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(urlsToCache)),
   );
   self.skipWaiting();
 });
 
 // Activate event - clean up old caches
-self.addEventListener('activate', (event) => {
+self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((cacheNames) => {
       return Promise.all(
@@ -23,23 +19,24 @@ self.addEventListener('activate', (event) => {
           if (cacheName !== CACHE_NAME) {
             return caches.delete(cacheName);
           }
-        })
+        }),
       );
-    })
+    }),
   );
   self.clients.claim();
 });
 
 // Fetch event - serve from cache, fallback to network
-self.addEventListener('fetch', (event) => {
+self.addEventListener("fetch", (event) => {
   // Skip non-GET requests
-  if (event.request.method !== 'GET') return;
+  if (event.request.method !== "GET") return;
 
   // Skip chrome extensions and other non-http requests
-  if (!event.request.url.startsWith('http')) return;
+  if (!event.request.url.startsWith("http")) return;
 
   event.respondWith(
-    caches.match(event.request)
+    caches
+      .match(event.request)
       .then((response) => {
         // Cache hit - return response
         if (response) {
@@ -51,7 +48,11 @@ self.addEventListener('fetch', (event) => {
 
         return fetch(fetchRequest).then((response) => {
           // Check if valid response
-          if (!response || response.status !== 200 || response.type !== 'basic') {
+          if (
+            !response ||
+            response.status !== 200 ||
+            response.type !== "basic"
+          ) {
             return response;
           }
 
@@ -59,11 +60,14 @@ self.addEventListener('fetch', (event) => {
           const responseToCache = response.clone();
 
           // Cache images and static assets
-          if (event.request.url.match(/\.(jpg|jpeg|png|gif|webp|avif|svg|css|js)$/)) {
-            caches.open(CACHE_NAME)
-              .then((cache) => {
-                cache.put(event.request, responseToCache);
-              });
+          if (
+            event.request.url.match(
+              /\.(jpg|jpeg|png|gif|webp|avif|svg|css|js)$/,
+            )
+          ) {
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, responseToCache);
+            });
           }
 
           return response;
@@ -71,7 +75,7 @@ self.addEventListener('fetch', (event) => {
       })
       .catch(() => {
         // If both cache and network fail, show offline page
-        return caches.match('/offline.html');
-      })
+        return caches.match("/offline.html");
+      }),
   );
 });

@@ -16,19 +16,25 @@ const ShopByCategory = () => {
             <h3 class="text-3xl">Shop By Category</h3>
           </div>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <Link class="group relative h-80 overflow-hidden bg-white" href="/product-category/perfume">
+            <Link
+              class="group relative h-80 overflow-hidden bg-white"
+              href="/product-category/fashion"
+            >
               <img
-                alt="Perfumes"
+                alt="fashions"
                 class="w-full h-full object-cover transition duration-700 group-hover:scale-105"
                 src="https://luvit.com.bd/wp-content/uploads/2026/03/Shop-by-category-1.webp"
               />
               <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all flex items-center justify-center">
                 <span class="text-white text-xs tracking-widest font-bold uppercase border-b border-transparent group-hover:border-white py-1">
-                  Perfumes
+                  fashions
                 </span>
               </div>
             </Link>
-            <Link class="group relative h-80 overflow-hidden bg-white" href="/product-category/body spray">
+            <Link
+              class="group relative h-80 overflow-hidden bg-white"
+              href="/product-category/body spray"
+            >
               <img
                 alt="Body Sprays"
                 class="w-full h-full object-cover transition duration-700 group-hover:scale-105"
@@ -41,7 +47,10 @@ const ShopByCategory = () => {
                 </span>
               </div>
             </Link>
-            <Link class="group relative h-80 overflow-hidden bg-white" href="/product-category/attar">
+            <Link
+              class="group relative h-80 overflow-hidden bg-white"
+              href="/product-category/attar"
+            >
               <img
                 alt="attar"
                 class="w-full h-full object-cover transition duration-700 group-hover:scale-105"
@@ -54,7 +63,10 @@ const ShopByCategory = () => {
                 </span>
               </div>
             </Link>
-            <Link class="group relative h-80 overflow-hidden bg-white" href="/product-category/perfume">
+            <Link
+              class="group relative h-80 overflow-hidden bg-white"
+              href="/product-category/fashion"
+            >
               <img
                 alt="Deodorants"
                 class="w-full h-full object-cover transition duration-700 group-hover:scale-105"
@@ -71,7 +83,7 @@ const ShopByCategory = () => {
         </div>
       </section>
 
-{/* Icon  */}
+      {/* Icon  */}
       <section class="py-10  bg-gray-50">
         <div class="container mx-auto px-6">
           <div class="grid grid-cols-2 md:grid-cols-4 gap-8">

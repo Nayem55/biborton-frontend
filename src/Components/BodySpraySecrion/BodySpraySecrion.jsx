@@ -15,9 +15,9 @@ const BodySpraySecrion = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Signature Fragrances Collection",
+    name: "Signature collections Collection",
     description:
-      "Discover our signature fragrances crafted for elegance, confidence, and long-lasting impressions.",
+      "Discover our signature collections crafted for elegance, confidence, and long-lasting impressions.",
     itemListElement: products?.map((product, index) => ({
       "@type": "Product",
       position: index + 1,
@@ -39,7 +39,7 @@ const BodySpraySecrion = () => {
   return (
     <section
       className="overflow-hidden bg-gradient-to-b from-white to-gray-50 py-20"
-      aria-label="Signature Perfume Collection"
+      aria-label="Signature fashion Collection"
     >
       {/* ✅ Structured Data */}
       {!isLoading && (
@@ -87,7 +87,7 @@ const BodySpraySecrion = () => {
             {/* CTA */}
             {/* <div className="mt-16   ">
               <Link
-                to="/product-category/fragrance"
+                to="/product-category/collection"
                 className="inline-block rounded-lg bg-black px-12 py-3 text-sm sm:text-base font-semibold tracking-wider text-white transition-all duration-300 hover:bg-red-700 hover:scale-105"
               >
                 Explore the Collection

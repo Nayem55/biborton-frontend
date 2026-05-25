@@ -11,19 +11,19 @@ const InstaShop = () => {
     {
       url: "https://www.instagram.com/p/CzQ4LEFShLH/",
       img: instaImg2,
-      alt: "Coconut Oil - Junaid Jamshed Fragrances",
+      alt: "Coconut Oil - Junaid Jamshed collections",
       caption: "Coconut Oil",
     },
     {
       url: "https://www.instagram.com/p/CzELm7rSiy9/",
       img: instaImg1,
-      alt: "Onion Oil - Junaid Jamshed Fragrances",
+      alt: "Onion Oil - Junaid Jamshed collections",
       caption: "Onion Oil",
     },
     {
       url: "https://www.instagram.com/p/CzTnh5rS_tV/",
       img: instaImg,
-      alt: "Argan Oil - Junaid Jamshed Fragrances",
+      alt: "Argan Oil - Junaid Jamshed collections",
       caption: "Argan Oil",
     },
   ];
@@ -31,12 +31,12 @@ const InstaShop = () => {
   return (
     <section
       className="overflow-hidden"
-      aria-label="Junaid Jamshed Fragrances Instagram Shop section"
+      aria-label="Junaid Jamshed collections Instagram Shop section"
     >
       <div className="my-10 flex flex-col items-center">
         {/* ✅ SEO-friendly Heading */}
         <h6 className="text-2xl text-center font-bold">
-          Junaid Jamshed Fragrances Instashop
+          Junaid Jamshed collections Instashop
         </h6>
 
         {/* ✅ Instagram Posts Grid */}
@@ -93,7 +93,7 @@ const InstaShop = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Junaid Jamshed Fragrances",
+            name: "Junaid Jamshed collections",
             url: "https://biborton.shop",
             sameAs: ["https://www.instagram.com/earthbeautyandyou/"],
           })}

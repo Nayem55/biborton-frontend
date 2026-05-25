@@ -18,8 +18,8 @@ const HomeBrands = () => {
       setQuantity(1); // Keep it 1 based on current logic, but made SSR safe
     };
     handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
     <div className="homeBrand 2xl:w-[80%] lg:w-[85%] mx-auto px-4 lg:px-0 ">
@@ -41,14 +41,14 @@ const HomeBrands = () => {
             onClick={() => {
               setCategory("brand");
               localStorage.setItem("category", "brand");
-              setBrand("armaf");
-              localStorage.setItem("brand", "armaf");
+              setBrand("biborton");
+              localStorage.setItem("brand", "biborton");
             }}
             className="mb-16"
-            href="/category/armaf"
+            href="/category/biborton"
           >
             <img
-              src="https://cdn.shopify.com/s/files/1/0559/7921/2972/files/Armaf_Luxury_french_logo_350x.jpg?v=1620128356"
+              src="https://cdn.shopify.com/s/files/1/0559/7921/2972/files/biborton_Luxury_french_logo_350x.jpg?v=1620128356"
               alt=""
             />
           </Link>
@@ -86,10 +86,10 @@ const HomeBrands = () => {
             onClick={() => {
               setCategory("brand");
               localStorage.setItem("category", "brand");
-              setBrand("armaf enchanted");
-              localStorage.setItem("brand", "armaf enchanted");
+              setBrand("biborton enchanted");
+              localStorage.setItem("brand", "biborton enchanted");
             }}
-            href="/category/armaf enchanted"
+            href="/category/biborton enchanted"
           >
             <img
               src="https://cdn.shopify.com/s/files/1/0559/7921/2972/files/Estiara_Logo_350x.jpg?v=1620128356"

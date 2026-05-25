@@ -223,7 +223,7 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
 
           <div className="text-[#b82332] font-medium flex ml-auto gap-2">
             <BadgePercent className="w-5 h-5" />
-            <span>Fresh Fashion Deals!</span>
+            <span>Exclusive Fashion Deals!</span>
           </div>
         </div>
       </div>

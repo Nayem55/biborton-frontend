@@ -8,7 +8,7 @@ const VideoPlayer = () => {
           className="absolute inset-0 w-full h-full"
           // src="https://www.youtube.com/embed/OD9p9IrVBXM?autoplay=1&mute=1&playsinline=1&loop=1&playlist=OD9p9IrVBXM"
           src="https://www.youtube.com/embed/NQysW2PVtlk?si=TX4i_Emqk4PkSEtN&autoplay=1&mute=1&playsinline=1&loop=1&playlist=NQysW2PVtlk"
-          title="J. Fragrances Brand Film"
+          title="biborton collections Brand Film"
           frameBorder="0"
           allow="autoplay; encrypted-media; picture-in-picture"
           allowFullScreen

@@ -1,7 +1,7 @@
 import AdminLayoutClient from "./AdminLayoutClient";
 
 export const metadata = {
-  title: "Admin Dashboard - Biborton| Fragrances |",
+  title: "Admin Dashboard - Biborton| collections |",
   description: "Admin Panel",
 };
 

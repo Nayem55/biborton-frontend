@@ -27,7 +27,7 @@ export default function MediaCoverageSectionEBY() {
 
           <h2 className="mt-2 sm:mt-4 text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight">
             <span className="bg-gradient-to-r from-emerald-600 via-teal-600 to-lime-600 bg-clip-text text-transparent">
-              Junaid Jamshed Fragrances
+              Junaid Jamshed collections
             </span>{" "}
             <span className="sm:inline hidden">in the Spotlight</span>
             <span className="sm:hidden block">— in the Spotlight</span>
@@ -40,7 +40,7 @@ export default function MediaCoverageSectionEBY() {
           <div className="relative w-full">
             <img
               src={img}
-              alt="Junaid Jamshed Fragrances — Media feature visual"
+              alt="Junaid Jamshed collections — Media feature visual"
               className="w-full h-auto sm:inset-0 sm:h-full sm:w-full object-contain sm:object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
               loading="lazy"
             />
@@ -66,11 +66,11 @@ export default function MediaCoverageSectionEBY() {
                   Featured Story
                 </p>
                 <h3 className="mt-1 text-xl sm:text-2xl font-bold text-gray-900">
-                  Clean Beauty, Real Results — Junaid Jamshed Fragrances in the
+                  Clean Beauty, Real Results — Junaid Jamshed collections in the
                   Media
                 </h3>
                 <p className="mt-2 text-sm text-gray-700">
-                  Junaid Jamshed Fragrances is redefining skincare with a
+                  Junaid Jamshed collections is redefining skincare with a
                   commitment to nature-inspired, safe, and effective
                   formulations. Our recent media features highlight how we bring
                   together clean beauty, sustainable practices, and real results
@@ -98,11 +98,11 @@ export default function MediaCoverageSectionEBY() {
                 Featured Story
               </p>
               <h3 className="mt-1 text-lg font-bold text-gray-900">
-                Clean Beauty, Real Results — Junaid Jamshed Fragrances in the
+                Clean Beauty, Real Results — Junaid Jamshed collections in the
                 Media
               </h3>
               <p className="mt-2 text-sm text-gray-700">
-                Junaid Jamshed Fragrances is redefining skincare with a
+                Junaid Jamshed collections is redefining skincare with a
                 commitment to nature-inspired, safe, and effective formulations.
                 Our recent media features highlight how we bring together clean
                 beauty, sustainable practices, and real results — helping

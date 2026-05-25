@@ -50,13 +50,13 @@ export async function generateMetadata({ params }) {
   // ✅ Dynamic Meta Title (priority based)
   const title =
     product?.meta_title ||
-    `${product?.name} Price in Bangladesh | Buy Original ${product?.brand || ""} Perfume | Biborton`;
+    `${product?.name} Price in Bangladesh | Buy Original ${product?.brand || ""} fashion | Biborton`;
 
   // ✅ Dynamic Meta Description (priority based)
   const description =
     product?.meta_description ||
     stripHTML(product?.short_description || "").slice(0, 160) ||
-    `${product?.name} by ${product?.brand || "top brand"} at best price in Bangladesh. Buy original perfume from Biborton Fashion World.`;
+    `${product?.name} by ${product?.brand || "top brand"} at best price in Bangladesh. Buy original fashion from Biborton Fashion World.`;
 
   return {
     title,
@@ -66,13 +66,13 @@ export async function generateMetadata({ params }) {
       product?.name,
       `${product?.name} price in Bangladesh`,
       `${product?.brand} product`,
-      "buy perfume Bangladesh",
-      "original perfume BD",
-      "best perfume in bd",
-      "best fragrances in bd",
+      "buy fashion Bangladesh",
+      "original fashion BD",
+      "best fashion in bd",
+      "best collections in bd",
       "Biborton shop",
       "Biborton bd",
-      "Biborton perfume",
+      "Biborton fashion",
       "Biborton beauty products",
     ],
 

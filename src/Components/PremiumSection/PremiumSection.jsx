@@ -13,9 +13,9 @@ const PremiumSection = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Signature Fragrances Collection",
+    name: "Signature collections Collection",
     description:
-      "Discover our signature fragrances crafted for elegance, confidence, and long-lasting impressions.",
+      "Discover our signature collections crafted for elegance, confidence, and long-lasting impressions.",
     itemListElement: products?.map((product, index) => ({
       "@type": "Product",
       position: index + 1,
@@ -37,7 +37,7 @@ const PremiumSection = () => {
   return (
     <section
       className="overflow-hidden  pt-5 mt-14 pb-16 "
-      aria-label="Signature Perfume Collection"
+      aria-label="Signature fashion Collection"
     >
       {/* ✅ Structured Data */}
       {!isLoading && (
@@ -60,10 +60,10 @@ const PremiumSection = () => {
           </div>
 
           <Link
-            href="/product-category/fragrance"
+            href="/product-category/collection"
             className="hidden md:inline-flex group  items-center gap-2 text-sm font-medium tracking-wide text-black hover:text-[#131624] underline  transition-colors"
           >
-            View All Fragrances
+            View All collections
             <span className="block h-[1px] w-6 bg-current transition-all duration-300 group-hover:w-10"></span>
           </Link>
         </div> */}
@@ -74,7 +74,7 @@ const PremiumSection = () => {
               Signature Collection
             </h2>
             <h3 class="text-xl sm:text-2xl uppercase   md:text-3xl">
-              Premium Perfume
+              Premium fashion
             </h3>
           </div>
           <Link
@@ -90,7 +90,7 @@ const PremiumSection = () => {
           <div className="mt-20 flex flex-col items-center justify-center">
             <div className="h-12 w-12 animate-spin rounded-full border-2 border-accent border-t-transparent"></div>
             <p className="mt-4 text-sm tracking-widest text-secondary opacity-70">
-              Loading fragrances...
+              Loading collections...
             </p>
           </div>
         ) : (

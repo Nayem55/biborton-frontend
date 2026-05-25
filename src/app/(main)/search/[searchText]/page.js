@@ -9,7 +9,7 @@ export async function generateMetadata({ params }) {
   const searchText = decodeURIComponent(String(searchTextRaw));
 
   return {
-    title: `Search Results for "${searchText}" - Fragrances`,
+    title: `Search Results for "${searchText}" - collections`,
     description: `Search results for ${searchText}`,
     robots: {
       index: false,

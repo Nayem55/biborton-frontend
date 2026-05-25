@@ -3,9 +3,9 @@ import React from "react";
 // import img from '../../../../Images/shipping.jpg';
 
 export const metadata = {
-  title: "Shipping Policy | Biborton| Fragrances |",
+  title: "Shipping Policy | Biborton| collections |",
   description:
-    "Read Biborton| Fragrances | shipping policy to understand our delivery processes, times, and eco-friendly practices. Your satisfaction is our priority",
+    "Read Biborton| collections | shipping policy to understand our delivery processes, times, and eco-friendly practices. Your satisfaction is our priority",
   alternates: {
     canonical: "https://biborton.shop/shippingPolicy", // Adjusted from original which had /about accidentally?
   },
