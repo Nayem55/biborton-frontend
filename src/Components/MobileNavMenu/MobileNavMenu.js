@@ -30,23 +30,29 @@ const MobileNavMenu = ({ popCart, handlePopCart }) => {
     }
   }, []);
 
-  const handleSearch = useCallback((value) => {
-    setShowSearch(value);
+  const handleSearch = useCallback(
+    (value) => {
+      setShowSearch(value);
 
-    if (value) {
-      setMenu(false);
-      handlePopCart(false);
-    }
-  }, [handlePopCart]);
+      if (value) {
+        setMenu(false);
+        handlePopCart(false);
+      }
+    },
+    [handlePopCart],
+  );
 
-  const handleMenu = useCallback((value) => {
-    setMenu(value);
-    setShowSearch(false);
+  const handleMenu = useCallback(
+    (value) => {
+      setMenu(value);
+      setShowSearch(false);
 
-    if (value) {
-      handlePopCart(false);
-    }
-  }, [handlePopCart]);
+      if (value) {
+        handlePopCart(false);
+      }
+    },
+    [handlePopCart],
+  );
 
   useEffect(() => {
     const isOpen = popCart || showSearch || menu;
@@ -80,31 +86,35 @@ const MobileNavMenu = ({ popCart, handlePopCart }) => {
         }`}
       >
         <div className="mx-auto max-w-screen-xl px-4 h-14 flex items-center justify-between">
-          <button
-            type="button"
-            aria-label="Open menu"
-            onClick={() => handleMenu(true)}
-            className="text-black/90 hover:text-black transition-colors touch-manipulation"
-          >
-            <Menu className="w-7 h-7" />
-          </button>
+          
+          {/* Left Side */}
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              aria-label="Open menu"
+              onClick={() => handleMenu(true)}
+              className="text-black/90 hover:text-black transition-colors touch-manipulation"
+            >
+              <Menu className="w-6 h-6" />
+            </button>
 
-          <Link
-            href="/"
-            aria-label="Home"
-            className="absolute left-1/2 -translate-x-1/2"
-            onClick={closeAll}
-          >
-            <img
-              src="https://i.ibb.co.com/qL6G2k62/3039b878-bec9-43ca-b082-1cec9a342a71-removebg-preview.png"
-              alt="Biborton"
-              className="h-10 object-contain"
-              title="Biborton Logo"
-              width={140}
-              height={50}
-            />
-          </Link>
+            <Link
+              href="/"
+              aria-label="Home"
+              onClick={closeAll}
+            >
+              <img
+                src="https://i.ibb.co.com/qL6G2k62/3039b878-bec9-43ca-b082-1cec9a342a71-removebg-preview.png"
+                alt="Biborton"
+                className="h-10 object-contain mt-[-8px] ml-[-20px]"
+                title="Biborton Logo"
+                width={140}
+                height={50}
+              />
+            </Link>
+          </div>
 
+          {/* Right Side */}
           <div className="flex items-center gap-5 sm:gap-6 -mr-1">
             <button
               type="button"

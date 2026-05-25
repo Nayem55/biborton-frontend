@@ -54,7 +54,7 @@ const LargeCategory = ({ popCart, handlePopCart }) => {
       <div className="bg-white text-black">
         <div className="container mx-auto text-white text-xs py-4 flex justify-between ">
           {/* <span>Save up to 20% on all products with "GET20OFF" code</span> */}
-          <span className="">
+          <span className="text-black">
             Fashion for Every Moment - Free Shipping on Orders Over BDT 3000
           </span>
           <div className="flex gap-6">
