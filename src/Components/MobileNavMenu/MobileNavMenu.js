@@ -95,7 +95,7 @@ const MobileNavMenu = ({ popCart, handlePopCart }) => {
               onClick={() => handleMenu(true)}
               className="text-black/90 hover:text-black transition-colors touch-manipulation"
             >
-              <Menu className="w-6 h-6" />
+              <Menu className="w-7 h-7" />
             </button>
 
             <Link
