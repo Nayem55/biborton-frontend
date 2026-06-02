@@ -47,7 +47,7 @@ const mapItems = (items) => items.map((label) => ({ label, href: categoryHref(la
 export const FASHION_MENU_CONFIG = [
   {
     name: "Men",
-    link: categoryHref("Men's T-Shirts"),
+    link: "/",
     dropdown: [
       {
         title: "Top Wear",
@@ -73,7 +73,7 @@ export const FASHION_MENU_CONFIG = [
   },
   {
     name: "Women",
-    link: categoryHref("Women's Dresses"),
+    link: "/",
     dropdown: [
       {
         title: "Traditional",
@@ -98,7 +98,7 @@ export const FASHION_MENU_CONFIG = [
   },
   {
     name: "Kids",
-    link: categoryHref("Kids Boys Collection"),
+    link: "/",
     dropdown: [
       {
         title: "Children",
@@ -111,7 +111,7 @@ export const FASHION_MENU_CONFIG = [
   },
   {
     name: "Accessories",
-    link: categoryHref("Watches"),
+    link: "/",
     dropdown: [
       {
         title: "Fashion Accessories",
@@ -128,7 +128,7 @@ export const FASHION_MENU_CONFIG = [
   },
   {
     name: "Electronics",
-    link: categoryHref("Electronics"),
+    link: "/",
     dropdown: [
       {
         title: "Gadgets",
@@ -143,7 +143,7 @@ export const FASHION_MENU_CONFIG = [
   },
   {
     name: "Home Decor",
-    link: categoryHref("Home Decor"),
+    link: "/",
     dropdown: [
       {
         title: "Decor Essentials",

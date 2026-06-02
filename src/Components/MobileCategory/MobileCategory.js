@@ -49,7 +49,7 @@ const MobileCategory = ({ menu, handleMenu }) => {
               <div className="flex items-center justify-between">
                 <Link
                   href={item.link}
-                  onClick={closeMenu}
+                  onClick={() => toggleMenu(item.name)}
                   className="flex-1 py-3 px-4 font-medium hover:bg-white/10 rounded-lg"
                 >
                   {item.name}
