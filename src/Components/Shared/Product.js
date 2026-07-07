@@ -34,15 +34,15 @@ const Product = ({ product }) => {
     toast.success("Added to cart");
 
     if (typeof window !== "undefined" && typeof window.fbq === "function") {
-      window.fbq("track", "AddToCart", {
-        content_ids: [String(item?._id)],
-        content_name: item?.name || "",
-        content_type: "product",
-        value: Number(
-          (item?.on_sale ? item?.sale_price : item?.regular_price) || 0,
-        ),
-        currency: "BDT",
-      });
+      // window.fbq("track", "AddToCart", {
+      //   content_ids: [String(item?._id)],
+      //   content_name: item?.name || "",
+      //   content_type: "product",
+      //   value: Number(
+      //     (item?.on_sale ? item?.sale_price : item?.regular_price) || 0,
+      //   ),
+      //   currency: "BDT",
+      // });
     }
   };
 

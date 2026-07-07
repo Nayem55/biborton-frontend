@@ -99,8 +99,8 @@ export default function RootLayout({ children }) {
         {/* Removed external font CDNs - now using self-hosted fonts */}
 
         {/* DNS Prefetch for external domains */}
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://connect.facebook.net" />
+        {/* <link rel="dns-prefetch" href="https://www.googletagmanager.com" /> */}
+        {/* <link rel="dns-prefetch" href="https://connect.facebook.net" /> */}
         <link rel="dns-prefetch" href="https://www.youtube.com" />
 
         {/* Preconnect to critical domains */}
@@ -110,7 +110,7 @@ export default function RootLayout({ children }) {
 
       <body>
         {/* GA4 */}
-        <Script
+        {/* <Script
           src={`https://www.googletagmanager.com/gtag/js?id=G-FKMEMND3MX`}
           strategy="afterInteractive"
         />
@@ -121,7 +121,7 @@ export default function RootLayout({ children }) {
             gtag('js', new Date());
             gtag('config', 'G-FKMEMND3MX', { page_path: window.location.pathname });
           `}
-        </Script>
+        </Script> */}
 
         {/* Meta Pixel */}
         {/* <Script id="meta-pixel" strategy="afterInteractive">
